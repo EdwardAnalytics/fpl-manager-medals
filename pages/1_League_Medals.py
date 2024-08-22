@@ -1,8 +1,3 @@
-# Include notes on awards. E.g. yoyo score is based only on those who have played more than 1 season
-
-# pictures in tables: st.column_config.ImageColumn
-# https://docs.streamlit.io/develop/api-reference/data/st.column_config/st.column_config.imagecolumn
-
 import streamlit as st
 import base64
 
@@ -40,11 +35,6 @@ st.set_page_config(
     page_icon=":soccer:",
 )
 
-st.markdown("""
-**Tip:** The sidebar is hidden on mobile devices. Tap the ☰ icon at the top left to access it!
-""")
-
-st.sidebar.markdown("# Sidebar Content")
 
 
 # Hide deploy button
