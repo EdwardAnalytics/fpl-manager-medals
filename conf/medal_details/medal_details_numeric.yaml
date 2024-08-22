@@ -1,0 +1,133 @@
+Pep Guardiola Award:
+  feature_name: min_rank_history
+  objective: minimise
+  sentiment: positive
+  text: You are in the top <percentage> of managers for your best season ranking of <value>.
+  gold_threshold: 10
+  silver_threshold: 20
+  bronze_threshold: 30
+  image_path: assets/award_images/pep_guardiola.jpg
+  medal_background: 'https://www.mancity.com/news/mens/pep-guardiola-premier-league-stats-eight-seasons-63851799'
+  medal_details: This is awarded to
+
+Carlo Ancelotti Award:
+  feature_name: classic_leagues_competed_in
+  objective: maximise
+  sentiment: positive
+  text: You are in a lot of classic leagues. You are in <value>, which puts you in the top <percentage> of managers by classic leagues competing in.
+  gold_threshold: 10
+  silver_threshold: 20
+  bronze_threshold: 30
+  image_path: assets/award_images/carlo_ancelotti.jpg
+  medal_background: https://www.espn.co.uk/football/story/_/id/37627973/real-madrid-carlo-ancelotti-wins-laliga-become-first-coach-win-titles-all-europe-top-five-leagues
+  medal_details: This is awarded to
+
+Yo-Yo Club Grimsby Town Award:
+  feature_name: yoyo_score
+  objective: maximise
+  sentiment: positive
+  text: Your overall rank fluctuates season on season. You are in the top <percentage> of managers by yo-yo score.
+  gold_threshold: 10
+  silver_threshold: 20
+  bronze_threshold: 30
+  image_path: assets/award_images/grimsby_town.jpg
+  medal_background: https://www.reddit.com/r/soccer/comments/u2yibs/15_biggest_yoyo_clubs_in_english_footballnumbers/#lightbox
+  medal_details: This is only awarded to those who have played more than one season.
+
+Brighton & Hove Albion Award:
+  feature_name: rising_score
+  objective: maximise
+  sentiment: positive
+  text: Your team is on the way up. You are in the top <percentage> of managers by overall rank growth each season.
+  gold_threshold: 10
+  silver_threshold: 20
+  bronze_threshold: 30
+  image_path: assets/award_images/bhafc.jpg
+  medal_background: 'https://www.fanchants.com/football-songs/brighton-chants/r07_0027d/'
+  medal_details: This is calcaulted by creating a simple linear regression model to the overall rank of the manager over their past seasons. The coeficcient is then taken as the "rising score". If this is negative, it means the rank is declining overall. Those with a smaller coefficent are deemed to be declining in rank at a greater rate.   
+
+Oldham Athletic Award:
+  feature_name: rising_score
+  objective: minimise
+  sentiment: negative
+  text: Your team is on the way down. You are in the top <percentage> of managers by overall rank decline each season.
+  gold_threshold: 10
+  silver_threshold: 20
+  bronze_threshold: 30
+  image_path: assets/award_images/oldham_athletic.jpg
+  medal_background: https://www.bbc.co.uk/sport/football/61425957
+  medal_details: This takes the value calculated in the rising score (as described in the Brighton & Hove Albion Award). Those with a larger coefficent are deemed to be growing in rank at a greater rate.   
+
+James Milner Award:
+  feature_name: leagues_admin
+  objective: maximise
+  sentiment: positive
+  text: You enjoy admin. You are in the top <percentage> of managers by number of leagues administered.
+  gold_threshold: 10
+  silver_threshold: 20
+  bronze_threshold: 30
+  image_path: assets/award_images/james_milner.jpg
+  medal_background: https://x.com/boringmilner
+  medal_details: This is awarded to
+
+Alex Ferguson Award:
+  feature_name: seasons_played_in
+  objective: maximise
+  sentiment: positive
+  text: You are an experienced manager. You are in the top <percentage> of managers by number of seasons played.
+  gold_threshold: 10
+  silver_threshold: 20
+  bronze_threshold: 30
+  image_path: assets/award_images/alex_ferguson.jpg
+  medal_background: https://en.wikipedia.org/wiki/List_of_Premier_League_managers
+  medal_details: This is awarded to
+
+Gareth Southgate Award:
+  feature_name: points_on_bench_percentage
+  objective: maximise
+  sentiment: negative
+  text: You leave a lot of points on your bench. <value>% of all your points are sitting on your bench, putting you in the top <percentage> of managers by proportion of points on the bench.
+  gold_threshold: 10
+  silver_threshold: 20
+  bronze_threshold: 30
+  image_path: assets/award_images/gareth_southgate.jpg
+  medal_background: https://www.reuters.com/sports/soccer/englands-southgate-defends-reluctance-use-his-bench-2024-07-09/
+  medal_details: This is awarded to
+
+Daniel Levy Award:
+  feature_name: bank_mean
+  objective: maximise
+  sentiment: negative
+  text: You do not invest in your team. You keep on average £<value>m in the bank each gameweek. You are in the top <percentage> of managers by average money in the bank.
+  gold_threshold: 10
+  silver_threshold: 20
+  bronze_threshold: 30
+  image_path: assets/award_images/daniel_levy.jpg
+  medal_background: https://www.theguardian.com/football/2017/jul/25/tottenham-chairman-daniel-levy-mocks-unsustainable-spending
+  medal_details: This is awarded to
+
+Carlos Tevez Award:
+  feature_name: rival_team_player
+  partition_feature: favourite_team
+  objective: maximise
+  sentiment: negative
+  text: You have pick players who play for <partition_value>'s (your supported team) rivals. In total, rival players have taken up <value> positions in your squad throughout the season. You are in the top <percentage> of <partition_value> fans by rival players selected.
+  gold_threshold: 10
+  silver_threshold: 20
+  bronze_threshold: 30
+  image_path: assets/award_images/carlos_tevez.jpg
+  medal_background: https://www.theguardian.com/football/2009/jul/13/carlos-tevez-manchester-city
+  medal_details: This is awarded to
+
+Matt Le Tissier Award:
+  feature_name: rival_team_player
+  partition_feature: favourite_team
+  objective: minimise
+  sentiment: positive
+  text: You are a loyal manager. You are in the bottom <percentage> of <partition_value> supporters by the total number of players selected from rival teams. In total, rival players have taken up <value> positions in your squad throughout the season.
+  gold_threshold: 10
+  silver_threshold: 20
+  bronze_threshold: 30
+  image_path: assets/award_images/matt_le_tissier.jpg
+  medal_background: https://www.theguardian.com/football/2002/may/05/newsstory.sport
+  medal_details: This is awarded to

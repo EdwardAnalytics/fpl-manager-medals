@@ -1,0 +1,54 @@
+column_name,value,percentage_share,rank_ascending,rank_descending
+player_region_iso_code_long,England,0.34,25.0,1.0
+player_region_iso_code_long,Egypt,0.14,24.0,2.0
+player_region_iso_code_long,Malaysia,0.04,21.0,3.0
+player_region_iso_code_long,Wales,0.04,21.0,3.0
+player_region_iso_code_long,Scotland,0.04,21.0,3.0
+player_region_iso_code_long,Algeria,0.02,1.0,6.0
+player_region_iso_code_long,Ireland,0.02,1.0,6.0
+player_region_iso_code_long,Kenya,0.02,1.0,6.0
+player_region_iso_code_long,Belgium,0.02,1.0,6.0
+player_region_iso_code_long,South Africa,0.02,1.0,6.0
+player_region_iso_code_long,Somalia,0.02,1.0,6.0
+player_region_iso_code_long,Norway,0.02,1.0,6.0
+player_region_iso_code_long,Cambodia,0.02,1.0,6.0
+player_region_iso_code_long,Iraq,0.02,1.0,6.0
+player_region_iso_code_long,USA,0.02,1.0,6.0
+player_region_iso_code_long,Indonesia,0.02,1.0,6.0
+player_region_iso_code_long,Saudi Arabia,0.02,1.0,6.0
+player_region_iso_code_long,Zimbabwe,0.02,1.0,6.0
+player_region_iso_code_long,Gambia,0.02,1.0,6.0
+player_region_iso_code_long,Tunisia,0.02,1.0,6.0
+player_region_iso_code_long,Uruguay,0.02,1.0,6.0
+player_region_iso_code_long,Israel,0.02,1.0,6.0
+player_region_iso_code_long,Ghana,0.02,1.0,6.0
+player_region_iso_code_long,Nigeria,0.02,1.0,6.0
+player_region_iso_code_long,Sweden,0.02,1.0,6.0
+name_change_blocked,False,1.0,1.0,1.0
+kit,False,0.92,2.0,1.0
+kit,True,0.08,1.0,2.0
+kit_shirt_type,No Kit Shirt,0.92,3.0,1.0
+kit_shirt_type,plain,0.06,2.0,2.0
+kit_shirt_type,hoops,0.02,1.0,3.0
+kit_shirt_logo,No Kit Logo,0.92,2.0,1.0
+kit_shirt_logo,none,0.08,1.0,2.0
+kit_socks_type,No Kit Socks,0.92,2.0,1.0
+kit_socks_type,plain,0.08,1.0,2.0
+kit_shorts,#E1E1E1,0.5,3.0,1.0
+kit_shorts,#d0021b,0.25,1.0,2.0
+kit_shorts,#220f8e,0.25,1.0,2.0
+kit_full,False,0.92,2.0,1.0
+kit_full,True,0.08,1.0,2.0
+rival_team_player_categorical,Picked Rivals,0.7,4.0,1.0
+rival_team_player_categorical,Not Picked Rivals,0.12,3.0,2.0
+rival_team_player_categorical,No Rival Team,0.1,2.0,3.0
+rival_team_player_categorical,No historical GW Data,0.08,1.0,4.0
+favourite_team,Liverpool,0.28,9.0,1.0
+favourite_team,Man Utd,0.16,8.0,2.0
+favourite_team,Man City,0.12,6.0,3.0
+favourite_team,Arsenal,0.12,6.0,3.0
+favourite_team,Not Specified,0.1,5.0,5.0
+favourite_team,Chelsea,0.08,3.0,6.0
+favourite_team,Spurs,0.08,3.0,6.0
+favourite_team,West Ham,0.04,2.0,8.0
+favourite_team,Ipswich,0.02,1.0,9.0

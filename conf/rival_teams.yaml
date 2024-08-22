@@ -1,0 +1,53 @@
+Arsenal:
+  - Chelsea
+  - Spurs
+  - West Ham
+Chelsea:
+  - Arsenal
+  - Spurs
+  - West Ham
+  - Fulham
+Spurs:
+  - Arsenal
+  - Chelsea
+  - West Ham
+Aston Villa:
+  - Wolves
+Wolves:
+  - Aston Villa
+West Ham:
+  - Spurs
+  - Arsenal
+  - Chelsea
+Leicester:
+  - Nott'm Forest
+Nott'm Forest:
+  - Leicester
+Liverpool:
+  - Everton
+  - Man Utd
+Man Utd:
+  - Liverpool
+  - Man City
+Man City:
+  - Liverpool
+  - Man Utd
+Brentford:
+  - Fulham
+Fulham:
+  - Brentford
+  - Chelsea
+Brighton:
+  - Crystal Palace
+Crystal Palace:
+  - Brighton
+Everton:
+  - Liverpool
+Ipswich:
+  - None
+Newcastle:
+  - None
+Bournemouth:
+  - None
+Southampton:
+  - None
