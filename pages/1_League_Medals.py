@@ -95,7 +95,7 @@ def main():
         step=1,
         format="%d",
         value=None,
-        help="League ID is located league table URL: `https://fantasy.premierleague.com/leagues/XXXXXX/standings/c`",
+        help="Team ID is located in the team points URL: `https://fantasy.premierleague.com/entry/XXXXXX/event/1`",
     )
 
     if id is None:
