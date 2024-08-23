@@ -80,6 +80,8 @@ st.markdown(
 def main():
     try:
         st.title("FPL Manager Medals: League")
+        if st.button(":twisted_rightwards_arrows: Switch to Team Medals"):
+            st.switch_page("Team_Medals.py")
 
         # Add github link and logo
         LOGO_IMAGE = "assets//pwt.png"

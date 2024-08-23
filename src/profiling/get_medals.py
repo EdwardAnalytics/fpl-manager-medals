@@ -118,7 +118,10 @@ def get_numeric_medals(medal_details_numeric, lookup_table_numeric, team_data):
             medal = "No Medal"
 
         # Manual fix for teams with no rival
-        if medal_details["feature_name"] == "rival_team_player" and partition_value == "Not Specified":
+        if (
+            medal_details["feature_name"] == "rival_team_player"
+            and partition_value == "Not Specified"
+        ):
             medal = "No Medal"
         elif medal_details["feature_name"] == "rival_team_player" and rival_teams[
             partition_value
