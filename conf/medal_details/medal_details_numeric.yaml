@@ -9,8 +9,8 @@ Pep Guardiola Award:
   image_path: assets/award_images/pep_guardiola.jpg
   medal_background: 'https://www.mancity.com/news/mens/pep-guardiola-premier-league-stats-eight-seasons-63851799'
   medal_details: 
-    This award is presented to managers who have achieved a top ranking in at least one season. 
-    It compares the manager's best season ranking against others, celebrating those who have reached the highest tiers.
+    This award is based on each manager's greatest past season overall rank. 
+    It compares the manager's best season ranking against others, celebrating those who have reached the highest levels.
 
 Carlo Ancelotti Award:
   feature_name: classic_leagues_competed_in
@@ -52,7 +52,7 @@ Brighton & Hove Albion Award:
   medal_background: 'https://www.fanchants.com/football-songs/brighton-chants/r07_0027d/'
   medal_details: 
     This award is granted to managers whose overall rank has shown consistent improvement across seasons. 
-    It is determined using a linear regression model, with those displaying the highest upward trajectory being honored.
+    It is determined using a simple linear regression model, based on the negative coefficient. With those displaying the greatest rank decrease being honoured.
 
 Oldham Athletic Award:
   feature_name: rising_score
@@ -66,7 +66,7 @@ Oldham Athletic Award:
   medal_background: https://www.bbc.co.uk/sport/football/61425957
   medal_details: 
     Presented to managers whose overall rank has declined over time. 
-    Based on the negative coefficient from the rising score, this award goes to those with the most significant rank drops.
+    It is determined using a simple linear regression model, based on the coefficient. With those displaying the greatest rank increase being honoured
 
 James Milner Award:
   feature_name: leagues_admin

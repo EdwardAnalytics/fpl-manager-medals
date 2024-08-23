@@ -34,7 +34,7 @@ medals_dict = {
 
 # Get gameweek scored
 file_path = "data/training_meta.json"
-with open(file_path, 'r') as file:
+with open(file_path, "r") as file:
     training_meta = json.load(file)
 
 # Pre processing
@@ -155,7 +155,7 @@ def main():
                     current_gameweek=current_gameweek,
                     player_data=player_data,
                 )
-            #st.markdown(f"*Data up to Gameweek {training_meta['training_data_gameweek']}*")
+            # st.markdown(f"*Data up to Gameweek {training_meta['training_data_gameweek']}*")
 
             st.header(f"{league_name} Medals", divider="grey")
 
@@ -479,6 +479,7 @@ def main():
                     hide_index=True,
                 )
                 st.text("")
+
 
 if __name__ == "__main__":
     main()
