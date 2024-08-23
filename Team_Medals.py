@@ -536,7 +536,7 @@ def main():
 
                         with col2:
                             st.image(image=medals_dict[index]["image_path"])
-                
+
     except Exception as e:
         st.error(
             """:lion_face: Unable to get league data. League ID is a number located in the league URL: `https://fantasy.premierleague.com/leagues/XXXXXX/standings/c`"""

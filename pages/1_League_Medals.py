@@ -78,7 +78,7 @@ st.markdown(
 
 
 def main():
-    try: 
+    try:
         st.title("FPL Manager Medals: League")
 
         # Add github link and logo
@@ -480,7 +480,7 @@ def main():
                         hide_index=True,
                     )
                     st.text("")
-                
+
     except Exception as e:
         st.error(
             """:lion_face: Unable to get league data. League ID is a number located in the league URL: `https://fantasy.premierleague.com/leagues/XXXXXX/standings/c`"""
