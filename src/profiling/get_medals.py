@@ -1,6 +1,12 @@
 import pandas as pd
 import inflect
 
+from src.app_tools.yaml_loader import load_yaml_file
+
+# Get medal details
+yaml_file_path = "conf/rival_teams.yaml"
+rival_teams = load_yaml_file(yaml_file_path)
+
 
 def team_medal_numeric(
     lookup_table_numeric, feature_name, value, objective, partition_value
@@ -109,6 +115,12 @@ def get_numeric_medals(medal_details_numeric, lookup_table_numeric, team_data):
         elif percentage <= medal_details["bronze_threshold"]:
             medal = "Bronze"
         else:
+            medal = "No Medal"
+
+        # Manual fix for teams with no rival
+        if medal_details["feature_name"] == "rival_team_player" and rival_teams[
+            partition_value
+        ] == ["None"]:
             medal = "No Medal"
 
         # Manual fix for bank value, it is 10 times the actual value in the data
