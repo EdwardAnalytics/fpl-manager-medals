@@ -25,10 +25,10 @@ player_data, current_gameweek = get_player_data(current_season_year=current_seas
 file_path = "data/training_meta.json"
 
 # Read the JSON data from the file
-with open(file_path, 'r') as file:
+with open(file_path, "r") as file:
     training_meta = json.load(file)
 
-if training_meta['training_data_gameweek'] == current_gameweek:
+if training_meta["training_data_gameweek"] == current_gameweek:
     print("Model training up to date.")
     sys.exit()  # Exit the script
 

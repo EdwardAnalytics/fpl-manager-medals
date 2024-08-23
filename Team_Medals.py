@@ -9,6 +9,11 @@ import json
 from src.scoring import get_team_medals, get_league_medals
 import pandas as pd
 
+# Get gameweek scored
+file_path = "data/training_meta.json"
+with open(file_path, "r") as file:
+    training_meta = json.load(file)
+
 # Pre processing
 # Get boostrap data
 bootstrap_data = get_boostrap_data()
@@ -111,6 +116,7 @@ def main():
                 current_gameweek=current_gameweek,
                 player_data=player_data,
             )
+        # st.markdown(f"*Data up to Gameweek {training_meta['training_data_gameweek']}*")
 
         st.header(f"{team_name} Medals", divider="grey")
 
