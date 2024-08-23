@@ -8,10 +8,33 @@ from src.data_prep.load_data import (
 import json
 from src.scoring import get_league_medals, get_leagues_competing_in
 import pandas as pd
+from src.app_tools.yaml_loader import load_yaml_file
+
+# Get medal details
+yaml_file_path = "conf/medal_details/medal_details_numeric.yaml"
+medal_details_numeric = load_yaml_file(yaml_file_path)
+
+yaml_file_path = "conf/medal_details/medal_details_categorical.yaml"
+medal_details_categorical = load_yaml_file(yaml_file_path)
+
+yaml_file_path = "conf/medal_details/medal_details_binary.yaml"
+medal_details_binary = load_yaml_file(yaml_file_path)
+
+yaml_file_path = "conf/medal_details/medal_details_special.yaml"
+medal_details_special = load_yaml_file(yaml_file_path)
+
+# Combine medals
+medals_dict = {
+    **medal_details_numeric,
+    **medal_details_categorical,
+    **medal_details_binary,
+    **medal_details_special,
+}
+
 
 # Get gameweek scored
 file_path = "data/training_meta.json"
-with open(file_path, "r") as file:
+with open(file_path, 'r') as file:
     training_meta = json.load(file)
 
 # Pre processing
@@ -132,9 +155,7 @@ def main():
                     current_gameweek=current_gameweek,
                     player_data=player_data,
                 )
-            st.markdown(
-                f"*Data up to Gameweek {training_meta['training_data_gameweek']}*"
-            )
+            #st.markdown(f"*Data up to Gameweek {training_meta['training_data_gameweek']}*")
 
             st.header(f"{league_name} Medals", divider="grey")
 
@@ -148,10 +169,12 @@ def main():
             st.text("")
             index = 0
             if index < number_of_medals:
-                st.subheader(medal_list[index])
+                medal_name = medal_list[index]
+                st.subheader(medal_name)
                 league_medals_filtered = league_medals[
-                    league_medals["Medal Name"] == medal_list[index]
+                    league_medals["Medal Name"] == medal_name
                 ]
+                st.markdown(f"*{medals_dict[medal_name]['medal_details']}*")
                 st.dataframe(
                     league_medals_filtered[["Manager", "Team", "Medal"]],
                     hide_index=True,
@@ -159,10 +182,12 @@ def main():
                 st.text("")
             index += 1
             if index < number_of_medals:
-                st.subheader(medal_list[index])
+                medal_name = medal_list[index]
+                st.subheader(medal_name)
                 league_medals_filtered = league_medals[
-                    league_medals["Medal Name"] == medal_list[index]
+                    league_medals["Medal Name"] == medal_name
                 ]
+                st.markdown(f"*{medals_dict[medal_name]['medal_details']}*")
                 st.dataframe(
                     league_medals_filtered[["Manager", "Team", "Medal"]],
                     hide_index=True,
@@ -170,10 +195,12 @@ def main():
                 st.text("")
             index += 1
             if index < number_of_medals:
-                st.subheader(medal_list[index])
+                medal_name = medal_list[index]
+                st.subheader(medal_name)
                 league_medals_filtered = league_medals[
-                    league_medals["Medal Name"] == medal_list[index]
+                    league_medals["Medal Name"] == medal_name
                 ]
+                st.markdown(f"*{medals_dict[medal_name]['medal_details']}*")
                 st.dataframe(
                     league_medals_filtered[["Manager", "Team", "Medal"]],
                     hide_index=True,
@@ -181,10 +208,12 @@ def main():
                 st.text("")
             index += 1
             if index < number_of_medals:
-                st.subheader(medal_list[index])
+                medal_name = medal_list[index]
+                st.subheader(medal_name)
                 league_medals_filtered = league_medals[
-                    league_medals["Medal Name"] == medal_list[index]
+                    league_medals["Medal Name"] == medal_name
                 ]
+                st.markdown(f"*{medals_dict[medal_name]['medal_details']}*")
                 st.dataframe(
                     league_medals_filtered[["Manager", "Team", "Medal"]],
                     hide_index=True,
@@ -192,10 +221,12 @@ def main():
                 st.text("")
             index += 1
             if index < number_of_medals:
-                st.subheader(medal_list[index])
+                medal_name = medal_list[index]
+                st.subheader(medal_name)
                 league_medals_filtered = league_medals[
-                    league_medals["Medal Name"] == medal_list[index]
+                    league_medals["Medal Name"] == medal_name
                 ]
+                st.markdown(f"*{medals_dict[medal_name]['medal_details']}*")
                 st.dataframe(
                     league_medals_filtered[["Manager", "Team", "Medal"]],
                     hide_index=True,
@@ -203,10 +234,12 @@ def main():
                 st.text("")
             index += 1
             if index < number_of_medals:
-                st.subheader(medal_list[index])
+                medal_name = medal_list[index]
+                st.subheader(medal_name)
                 league_medals_filtered = league_medals[
-                    league_medals["Medal Name"] == medal_list[index]
+                    league_medals["Medal Name"] == medal_name
                 ]
+                st.markdown(f"*{medals_dict[medal_name]['medal_details']}*")
                 st.dataframe(
                     league_medals_filtered[["Manager", "Team", "Medal"]],
                     hide_index=True,
@@ -214,10 +247,12 @@ def main():
                 st.text("")
             index += 1
             if index < number_of_medals:
-                st.subheader(medal_list[index])
+                medal_name = medal_list[index]
+                st.subheader(medal_name)
                 league_medals_filtered = league_medals[
-                    league_medals["Medal Name"] == medal_list[index]
+                    league_medals["Medal Name"] == medal_name
                 ]
+                st.markdown(f"*{medals_dict[medal_name]['medal_details']}*")
                 st.dataframe(
                     league_medals_filtered[["Manager", "Team", "Medal"]],
                     hide_index=True,
@@ -225,10 +260,12 @@ def main():
                 st.text("")
             index += 1
             if index < number_of_medals:
-                st.subheader(medal_list[index])
+                medal_name = medal_list[index]
+                st.subheader(medal_name)
                 league_medals_filtered = league_medals[
-                    league_medals["Medal Name"] == medal_list[index]
+                    league_medals["Medal Name"] == medal_name
                 ]
+                st.markdown(f"*{medals_dict[medal_name]['medal_details']}*")
                 st.dataframe(
                     league_medals_filtered[["Manager", "Team", "Medal"]],
                     hide_index=True,
@@ -236,10 +273,12 @@ def main():
                 st.text("")
             index += 1
             if index < number_of_medals:
-                st.subheader(medal_list[index])
+                medal_name = medal_list[index]
+                st.subheader(medal_name)
                 league_medals_filtered = league_medals[
-                    league_medals["Medal Name"] == medal_list[index]
+                    league_medals["Medal Name"] == medal_name
                 ]
+                st.markdown(f"*{medals_dict[medal_name]['medal_details']}*")
                 st.dataframe(
                     league_medals_filtered[["Manager", "Team", "Medal"]],
                     hide_index=True,
@@ -247,10 +286,12 @@ def main():
                 st.text("")
             index += 1
             if index < number_of_medals:
-                st.subheader(medal_list[index])
+                medal_name = medal_list[index]
+                st.subheader(medal_name)
                 league_medals_filtered = league_medals[
-                    league_medals["Medal Name"] == medal_list[index]
+                    league_medals["Medal Name"] == medal_name
                 ]
+                st.markdown(f"*{medals_dict[medal_name]['medal_details']}*")
                 st.dataframe(
                     league_medals_filtered[["Manager", "Team", "Medal"]],
                     hide_index=True,
@@ -258,10 +299,12 @@ def main():
                 st.text("")
             index += 1
             if index < number_of_medals:
-                st.subheader(medal_list[index])
+                medal_name = medal_list[index]
+                st.subheader(medal_name)
                 league_medals_filtered = league_medals[
-                    league_medals["Medal Name"] == medal_list[index]
+                    league_medals["Medal Name"] == medal_name
                 ]
+                st.markdown(f"*{medals_dict[medal_name]['medal_details']}*")
                 st.dataframe(
                     league_medals_filtered[["Manager", "Team", "Medal"]],
                     hide_index=True,
@@ -269,10 +312,12 @@ def main():
                 st.text("")
             index += 1
             if index < number_of_medals:
-                st.subheader(medal_list[index])
+                medal_name = medal_list[index]
+                st.subheader(medal_name)
                 league_medals_filtered = league_medals[
-                    league_medals["Medal Name"] == medal_list[index]
+                    league_medals["Medal Name"] == medal_name
                 ]
+                st.markdown(f"*{medals_dict[medal_name]['medal_details']}*")
                 st.dataframe(
                     league_medals_filtered[["Manager", "Team", "Medal"]],
                     hide_index=True,
@@ -280,10 +325,12 @@ def main():
                 st.text("")
             index += 1
             if index < number_of_medals:
-                st.subheader(medal_list[index])
+                medal_name = medal_list[index]
+                st.subheader(medal_name)
                 league_medals_filtered = league_medals[
-                    league_medals["Medal Name"] == medal_list[index]
+                    league_medals["Medal Name"] == medal_name
                 ]
+                st.markdown(f"*{medals_dict[medal_name]['medal_details']}*")
                 st.dataframe(
                     league_medals_filtered[["Manager", "Team", "Medal"]],
                     hide_index=True,
@@ -291,10 +338,12 @@ def main():
                 st.text("")
             index += 1
             if index < number_of_medals:
-                st.subheader(medal_list[index])
+                medal_name = medal_list[index]
+                st.subheader(medal_name)
                 league_medals_filtered = league_medals[
-                    league_medals["Medal Name"] == medal_list[index]
+                    league_medals["Medal Name"] == medal_name
                 ]
+                st.markdown(f"*{medals_dict[medal_name]['medal_details']}*")
                 st.dataframe(
                     league_medals_filtered[["Manager", "Team", "Medal"]],
                     hide_index=True,
@@ -302,10 +351,12 @@ def main():
                 st.text("")
             index += 1
             if index < number_of_medals:
-                st.subheader(medal_list[index])
+                medal_name = medal_list[index]
+                st.subheader(medal_name)
                 league_medals_filtered = league_medals[
-                    league_medals["Medal Name"] == medal_list[index]
+                    league_medals["Medal Name"] == medal_name
                 ]
+                st.markdown(f"*{medals_dict[medal_name]['medal_details']}*")
                 st.dataframe(
                     league_medals_filtered[["Manager", "Team", "Medal"]],
                     hide_index=True,
@@ -313,10 +364,12 @@ def main():
                 st.text("")
             index += 1
             if index < number_of_medals:
-                st.subheader(medal_list[index])
+                medal_name = medal_list[index]
+                st.subheader(medal_name)
                 league_medals_filtered = league_medals[
-                    league_medals["Medal Name"] == medal_list[index]
+                    league_medals["Medal Name"] == medal_name
                 ]
+                st.markdown(f"*{medals_dict[medal_name]['medal_details']}*")
                 st.dataframe(
                     league_medals_filtered[["Manager", "Team", "Medal"]],
                     hide_index=True,
@@ -324,10 +377,12 @@ def main():
                 st.text("")
             index += 1
             if index < number_of_medals:
-                st.subheader(medal_list[index])
+                medal_name = medal_list[index]
+                st.subheader(medal_name)
                 league_medals_filtered = league_medals[
-                    league_medals["Medal Name"] == medal_list[index]
+                    league_medals["Medal Name"] == medal_name
                 ]
+                st.markdown(f"*{medals_dict[medal_name]['medal_details']}*")
                 st.dataframe(
                     league_medals_filtered[["Manager", "Team", "Medal"]],
                     hide_index=True,
@@ -335,10 +390,12 @@ def main():
                 st.text("")
             index += 1
             if index < number_of_medals:
-                st.subheader(medal_list[index])
+                medal_name = medal_list[index]
+                st.subheader(medal_name)
                 league_medals_filtered = league_medals[
-                    league_medals["Medal Name"] == medal_list[index]
+                    league_medals["Medal Name"] == medal_name
                 ]
+                st.markdown(f"*{medals_dict[medal_name]['medal_details']}*")
                 st.dataframe(
                     league_medals_filtered[["Manager", "Team", "Medal"]],
                     hide_index=True,
@@ -346,10 +403,12 @@ def main():
                 st.text("")
             index += 1
             if index < number_of_medals:
-                st.subheader(medal_list[index])
+                medal_name = medal_list[index]
+                st.subheader(medal_name)
                 league_medals_filtered = league_medals[
-                    league_medals["Medal Name"] == medal_list[index]
+                    league_medals["Medal Name"] == medal_name
                 ]
+                st.markdown(f"*{medals_dict[medal_name]['medal_details']}*")
                 st.dataframe(
                     league_medals_filtered[["Manager", "Team", "Medal"]],
                     hide_index=True,
@@ -357,16 +416,69 @@ def main():
                 st.text("")
             index += 1
             if index < number_of_medals:
-                st.subheader(medal_list[index])
+                medal_name = medal_list[index]
+                st.subheader(medal_name)
                 league_medals_filtered = league_medals[
-                    league_medals["Medal Name"] == medal_list[index]
+                    league_medals["Medal Name"] == medal_name
                 ]
+                st.markdown(f"*{medals_dict[medal_name]['medal_details']}*")
                 st.dataframe(
                     league_medals_filtered[["Manager", "Team", "Medal"]],
                     hide_index=True,
                 )
                 st.text("")
-
+            index += 1
+            if index < number_of_medals:
+                medal_name = medal_list[index]
+                st.subheader(medal_name)
+                league_medals_filtered = league_medals[
+                    league_medals["Medal Name"] == medal_name
+                ]
+                st.markdown(f"*{medals_dict[medal_name]['medal_details']}*")
+                st.dataframe(
+                    league_medals_filtered[["Manager", "Team", "Medal"]],
+                    hide_index=True,
+                )
+                st.text("")
+            index += 1
+            if index < number_of_medals:
+                medal_name = medal_list[index]
+                st.subheader(medal_name)
+                league_medals_filtered = league_medals[
+                    league_medals["Medal Name"] == medal_name
+                ]
+                st.markdown(f"*{medals_dict[medal_name]['medal_details']}*")
+                st.dataframe(
+                    league_medals_filtered[["Manager", "Team", "Medal"]],
+                    hide_index=True,
+                )
+                st.text("")
+            index += 1
+            if index < number_of_medals:
+                medal_name = medal_list[index]
+                st.subheader(medal_name)
+                league_medals_filtered = league_medals[
+                    league_medals["Medal Name"] == medal_name
+                ]
+                st.markdown(f"*{medals_dict[medal_name]['medal_details']}*")
+                st.dataframe(
+                    league_medals_filtered[["Manager", "Team", "Medal"]],
+                    hide_index=True,
+                )
+                st.text("")
+            index += 1
+            if index < number_of_medals:
+                medal_name = medal_list[index]
+                st.subheader(medal_name)
+                league_medals_filtered = league_medals[
+                    league_medals["Medal Name"] == medal_name
+                ]
+                st.markdown(f"*{medals_dict[medal_name]['medal_details']}*")
+                st.dataframe(
+                    league_medals_filtered[["Manager", "Team", "Medal"]],
+                    hide_index=True,
+                )
+                st.text("")
 
 if __name__ == "__main__":
     main()
