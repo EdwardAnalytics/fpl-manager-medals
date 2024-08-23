@@ -9,6 +9,7 @@ def get_kit_information(team_data):
         kit_shirt_logo = None
         kit_socks_type = None
         kit_shorts = None
+        kit_shirt_base = None
 
     else:
         kit_dict = ast.literal_eval(team_data["kit"])
@@ -17,6 +18,7 @@ def get_kit_information(team_data):
         kit_shirt_logo = kit_dict["kit_shirt_logo"]
         kit_socks_type = kit_dict["kit_socks_type"]
         kit_shorts = kit_dict["kit_shorts"]
+        kit_shirt_base = kit_dict["kit_shirt_base"]
 
     # Append full kit flag
     kit_full = (
@@ -26,6 +28,7 @@ def get_kit_information(team_data):
         and kit_socks_type.lower() != "none"
         and kit_shorts is not None
         and kit_shorts.lower() != "none"
+        and kit_shirt_base.upper() != "#E1E1E1"
     )
 
     kit_summary_data = {
