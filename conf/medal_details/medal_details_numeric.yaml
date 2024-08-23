@@ -129,7 +129,7 @@ Carlos Tevez Award:
   partition_feature: favourite_team
   objective: maximise
   sentiment: negative
-  text: You have pick players who play for <partition_value>'s (your supported team) rivals. In total, rival players have taken up <value> positions in your squad throughout the season. You are in the top <percentage> of <partition_value> fans by rival players selected.
+  text: You have picked players who play for <partition_value>'s (your supported team) rivals. In total, rival players have taken up <value> positions in your squad throughout the season. You are in the top <percentage> of <partition_value> fans by rival players selected.
   gold_threshold: 10
   silver_threshold: 20
   bronze_threshold: 30
@@ -145,7 +145,7 @@ Matt Le Tissier Award:
   partition_feature: favourite_team
   objective: minimise
   sentiment: positive
-  text: You are a loyal manager. You are in the bottom <percentage> of <partition_value> supporters by the total number of players selected from rival teams. In total, rival players have taken up <value> positions in your squad throughout the season.
+  text: You are a loyal to your supported team <partition_value>. You don't pick many players that play for <partition_value>'s rivals.  You are in the bottom <percentage> of <partition_value> supporters by the total number of players selected from rival teams (you have picked <value> throughout the season).
   gold_threshold: 10
   silver_threshold: 20
   bronze_threshold: 30
