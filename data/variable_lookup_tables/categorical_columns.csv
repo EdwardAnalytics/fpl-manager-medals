@@ -1,16 +1,249 @@
 column_name,value,percentage_share,rank_ascending,rank_descending
-player_region_iso_code_long,Malaysia,0.333,1.0,1.0
-player_region_iso_code_long,Saudi Arabia,0.333,1.0,1.0
-player_region_iso_code_long,England,0.333,1.0,1.0
-name_change_blocked,False,1.0,1.0,1.0
-kit,False,1.0,1.0,1.0
-kit_shirt_type,No Kit Shirt,1.0,1.0,1.0
-kit_shirt_logo,No Kit Logo,1.0,1.0,1.0
-kit_socks_type,No Kit Socks,1.0,1.0,1.0
-kit_full,False,1.0,1.0,1.0
-rival_team_player_categorical,Not Picked Rivals,0.333,1.0,1.0
-rival_team_player_categorical,Picked Rivals,0.333,1.0,1.0
-rival_team_player_categorical,No Rival Team,0.333,1.0,1.0
-favourite_team,Ipswich,0.333,1.0,1.0
-favourite_team,Man Utd,0.333,1.0,1.0
-favourite_team,Not Specified,0.333,1.0,1.0
+player_region_iso_code_long,England,0.305,119.0,1.0
+player_region_iso_code_long,Egypt,0.088,118.0,2.0
+player_region_iso_code_long,Nigeria,0.042,117.0,3.0
+player_region_iso_code_long,Ireland,0.037,116.0,4.0
+player_region_iso_code_long,USA,0.034,115.0,5.0
+player_region_iso_code_long,Norway,0.029,114.0,6.0
+player_region_iso_code_long,Malaysia,0.027,113.0,7.0
+player_region_iso_code_long,South Africa,0.024,112.0,8.0
+player_region_iso_code_long,Australia,0.022,110.0,9.0
+player_region_iso_code_long,Algeria,0.022,110.0,9.0
+player_region_iso_code_long,Kenya,0.022,109.0,11.0
+player_region_iso_code_long,Sweden,0.018,108.0,12.0
+player_region_iso_code_long,Scotland,0.018,106.0,13.0
+player_region_iso_code_long,India,0.018,106.0,13.0
+player_region_iso_code_long,Indonesia,0.016,105.0,15.0
+player_region_iso_code_long,Saudi Arabia,0.014,103.0,16.0
+player_region_iso_code_long,Wales,0.014,103.0,16.0
+player_region_iso_code_long,Iraq,0.012,102.0,18.0
+player_region_iso_code_long,Ghana,0.012,101.0,19.0
+player_region_iso_code_long,Morocco,0.01,100.0,20.0
+player_region_iso_code_long,Northern Ireland,0.01,99.0,21.0
+player_region_iso_code_long,Sudan,0.009,98.0,22.0
+player_region_iso_code_long,Tunisia,0.008,96.0,23.0
+player_region_iso_code_long,Uganda,0.008,96.0,23.0
+player_region_iso_code_long,Kuwait,0.006,93.0,25.0
+player_region_iso_code_long,Canada,0.006,93.0,25.0
+player_region_iso_code_long,Zimbabwe,0.006,93.0,25.0
+player_region_iso_code_long,Thailand,0.006,91.0,28.0
+player_region_iso_code_long,United Arab Emirates,0.006,91.0,28.0
+player_region_iso_code_long,Tanzania,0.006,89.0,30.0
+player_region_iso_code_long,Singapore,0.006,89.0,30.0
+player_region_iso_code_long,Denmark,0.005,88.0,32.0
+player_region_iso_code_long,Finland,0.004,83.0,33.0
+player_region_iso_code_long,Bangladesh,0.004,83.0,33.0
+player_region_iso_code_long,Netherlands,0.004,83.0,33.0
+player_region_iso_code_long,Poland,0.004,83.0,33.0
+player_region_iso_code_long,New Zealand,0.004,83.0,33.0
+player_region_iso_code_long,Ethiopia,0.004,80.0,38.0
+player_region_iso_code_long,Lebanon,0.004,80.0,38.0
+player_region_iso_code_long,Serbia,0.004,80.0,38.0
+player_region_iso_code_long,Bulgaria,0.004,77.0,41.0
+player_region_iso_code_long,Slovakia,0.004,77.0,41.0
+player_region_iso_code_long,Hong Kong,0.004,77.0,41.0
+player_region_iso_code_long,Croatia,0.003,73.0,44.0
+player_region_iso_code_long,Israel,0.003,73.0,44.0
+player_region_iso_code_long,Nepal,0.003,73.0,44.0
+player_region_iso_code_long,Mexico,0.003,73.0,44.0
+player_region_iso_code_long,Belgium,0.002,66.0,48.0
+player_region_iso_code_long,Maldives,0.002,66.0,48.0
+player_region_iso_code_long,Malawi,0.002,66.0,48.0
+player_region_iso_code_long,Libya,0.002,66.0,48.0
+player_region_iso_code_long,Brunei Darussalam,0.002,66.0,48.0
+player_region_iso_code_long,Qatar,0.002,66.0,48.0
+player_region_iso_code_long,Austria,0.002,66.0,48.0
+player_region_iso_code_long,Turkey,0.002,60.0,55.0
+player_region_iso_code_long,South Sudan,0.002,60.0,55.0
+player_region_iso_code_long,Portugal,0.002,60.0,55.0
+player_region_iso_code_long,Mauritius,0.002,60.0,55.0
+player_region_iso_code_long,France,0.002,60.0,55.0
+player_region_iso_code_long,Syria,0.002,60.0,55.0
+player_region_iso_code_long,Bahrain,0.002,51.0,61.0
+player_region_iso_code_long,Somalia,0.002,51.0,61.0
+player_region_iso_code_long,Iceland,0.002,51.0,61.0
+player_region_iso_code_long,China,0.002,51.0,61.0
+player_region_iso_code_long,Germany,0.002,51.0,61.0
+player_region_iso_code_long,Jordan,0.002,51.0,61.0
+player_region_iso_code_long,Namibia,0.002,51.0,61.0
+player_region_iso_code_long,Switzerland,0.002,51.0,61.0
+player_region_iso_code_long,Botswana,0.002,51.0,61.0
+player_region_iso_code_long,Jamaica,0.001,28.0,70.0
+player_region_iso_code_long,Spain,0.001,28.0,70.0
+player_region_iso_code_long,Romania,0.001,28.0,70.0
+player_region_iso_code_long,Pakistan,0.001,28.0,70.0
+player_region_iso_code_long,Senegal,0.001,28.0,70.0
+player_region_iso_code_long,Latvia,0.001,28.0,70.0
+player_region_iso_code_long,Trinidad and Tobago,0.001,28.0,70.0
+player_region_iso_code_long,Sri Lanka,0.001,28.0,70.0
+player_region_iso_code_long,Ukraine,0.001,28.0,70.0
+player_region_iso_code_long,Slovenia,0.001,28.0,70.0
+player_region_iso_code_long,United States Minor Outlying Islands,0.001,28.0,70.0
+player_region_iso_code_long,Myanmar,0.001,28.0,70.0
+player_region_iso_code_long,Greece,0.001,28.0,70.0
+player_region_iso_code_long,Zambia,0.001,28.0,70.0
+player_region_iso_code_long,Hungary,0.001,28.0,70.0
+player_region_iso_code_long,Cambodia,0.001,28.0,70.0
+player_region_iso_code_long,Bosnia-Herzegovina,0.001,28.0,70.0
+player_region_iso_code_long,Gambia,0.001,28.0,70.0
+player_region_iso_code_long,Cameroon,0.001,28.0,70.0
+player_region_iso_code_long,Macedonia,0.001,28.0,70.0
+player_region_iso_code_long,Uruguay,0.001,28.0,70.0
+player_region_iso_code_long,Montenegro,0.001,28.0,70.0
+player_region_iso_code_long,Czech Republic,0.001,28.0,70.0
+player_region_iso_code_long,Cyprus,0.0,1.0,93.0
+player_region_iso_code_long,Guyana,0.0,1.0,93.0
+player_region_iso_code_long,Panama,0.0,1.0,93.0
+player_region_iso_code_long,Bhutan,0.0,1.0,93.0
+player_region_iso_code_long,Chile,0.0,1.0,93.0
+player_region_iso_code_long,Taiwan,0.0,1.0,93.0
+player_region_iso_code_long,Kazakhstan,0.0,1.0,93.0
+player_region_iso_code_long,Japan,0.0,1.0,93.0
+player_region_iso_code_long,Oman,0.0,1.0,93.0
+player_region_iso_code_long,Tuvalu,0.0,1.0,93.0
+player_region_iso_code_long,British Virgin Islands,0.0,1.0,93.0
+player_region_iso_code_long,South Korea,0.0,1.0,93.0
+player_region_iso_code_long,Sint Maarten,0.0,1.0,93.0
+player_region_iso_code_long,Mozambique,0.0,1.0,93.0
+player_region_iso_code_long,Uzbekistan,0.0,1.0,93.0
+player_region_iso_code_long,Cayman Islands,0.0,1.0,93.0
+player_region_iso_code_long,Niue,0.0,1.0,93.0
+player_region_iso_code_long,Afghanistan,0.0,1.0,93.0
+player_region_iso_code_long,Aruba,0.0,1.0,93.0
+player_region_iso_code_long,Iran,0.0,1.0,93.0
+player_region_iso_code_long,Yemen,0.0,1.0,93.0
+player_region_iso_code_long,Saint Martin,0.0,1.0,93.0
+player_region_iso_code_long,Sierra Leone,0.0,1.0,93.0
+player_region_iso_code_long,Angola,0.0,1.0,93.0
+player_region_iso_code_long,Rwanda,0.0,1.0,93.0
+player_region_iso_code_long,Antarctica,0.0,1.0,93.0
+player_region_iso_code_long,Cocos Islands,0.0,1.0,93.0
+name_change_blocked,False,0.992,2.0,1.0
+name_change_blocked,True,0.008,1.0,2.0
+kit,False,0.874,2.0,1.0
+kit,True,0.126,1.0,2.0
+kit_shirt_type,No Kit Shirt,0.874,4.0,1.0
+kit_shirt_type,plain,0.088,3.0,2.0
+kit_shirt_type,stripes,0.025,2.0,3.0
+kit_shirt_type,hoops,0.012,1.0,4.0
+kit_shirt_logo,No Kit Logo,0.874,8.0,1.0
+kit_shirt_logo,none,0.087,7.0,2.0
+kit_shirt_logo,no-racism,0.016,6.0,3.0
+kit_shirt_logo,pl-inspires,0.008,5.0,4.0
+kit_shirt_logo,pl-primary-stars,0.004,4.0,5.0
+kit_shirt_logo,ukraine,0.004,2.0,6.0
+kit_shirt_logo,pl-kicks,0.004,2.0,6.0
+kit_shirt_logo,rainbow-laces,0.003,1.0,8.0
+kit_socks_type,No Kit Socks,0.874,3.0,1.0
+kit_socks_type,plain,0.078,2.0,2.0
+kit_socks_type,hoops,0.047,1.0,3.0
+kit_shorts,#E1E1E1,0.279,83.0,1.0
+kit_shorts,#ffffff,0.155,82.0,2.0
+kit_shorts,#000000,0.131,81.0,3.0
+kit_shorts,#d0021b,0.044,80.0,4.0
+kit_shorts,#f8e71c,0.028,79.0,5.0
+kit_shorts,#417505,0.012,75.0,6.0
+kit_shorts,#bd10e0,0.012,75.0,6.0
+kit_shorts,#7ed321,0.012,75.0,6.0
+kit_shorts,#4a4a4a,0.012,75.0,6.0
+kit_shorts,#9b9b9b,0.008,70.0,10.0
+kit_shorts,#4a90e2,0.008,70.0,10.0
+kit_shorts,#9013fe,0.008,70.0,10.0
+kit_shorts,#8b572a,0.008,70.0,10.0
+kit_shorts,#ff0000,0.008,70.0,10.0
+kit_shorts,#ec0093,0.004,1.0,15.0
+kit_shorts,#101081,0.004,1.0,15.0
+kit_shorts,#f50d0d,0.004,1.0,15.0
+kit_shorts,#3b3434,0.004,1.0,15.0
+kit_shorts,#b8e986,0.004,1.0,15.0
+kit_shorts,#50e3c2,0.004,1.0,15.0
+kit_shorts,#0b1a2c,0.004,1.0,15.0
+kit_shorts,#b610e0,0.004,1.0,15.0
+kit_shorts,#8f921f,0.004,1.0,15.0
+kit_shorts,#a39797,0.004,1.0,15.0
+kit_shorts,#1371e0,0.004,1.0,15.0
+kit_shorts,#6ec211,0.004,1.0,15.0
+kit_shorts,#081f9c,0.004,1.0,15.0
+kit_shorts,#ae1b1b,0.004,1.0,15.0
+kit_shorts,#010202,0.004,1.0,15.0
+kit_shorts,#2a60a5,0.004,1.0,15.0
+kit_shorts,#1e0036,0.004,1.0,15.0
+kit_shorts,#fd0000,0.004,1.0,15.0
+kit_shorts,#e9132d,0.004,1.0,15.0
+kit_shorts,#e010db,0.004,1.0,15.0
+kit_shorts,#714293,0.004,1.0,15.0
+kit_shorts,#fdf7f7,0.004,1.0,15.0
+kit_shorts,#1121a1,0.004,1.0,15.0
+kit_shorts,#f00e0e,0.004,1.0,15.0
+kit_shorts,#100181,0.004,1.0,15.0
+kit_shorts,#1570e5,0.004,1.0,15.0
+kit_shorts,#000625,0.004,1.0,15.0
+kit_shorts,#174cec,0.004,1.0,15.0
+kit_shorts,#6db0fe,0.004,1.0,15.0
+kit_shorts,#c08c8c,0.004,1.0,15.0
+kit_shorts,#0777f5,0.004,1.0,15.0
+kit_shorts,#202586,0.004,1.0,15.0
+kit_shorts,#130202,0.004,1.0,15.0
+kit_shorts,#c5051b,0.004,1.0,15.0
+kit_shorts,#180303,0.004,1.0,15.0
+kit_shorts,#e31ab8,0.004,1.0,15.0
+kit_shorts,#e40000,0.004,1.0,15.0
+kit_shorts,#aa0229,0.004,1.0,15.0
+kit_shorts,#2a82e6,0.004,1.0,15.0
+kit_shorts,#64323c,0.004,1.0,15.0
+kit_shorts,#f71212,0.004,1.0,15.0
+kit_shorts,#f5a623,0.004,1.0,15.0
+kit_shorts,#22215a,0.004,1.0,15.0
+kit_shorts,#c7d7d1,0.004,1.0,15.0
+kit_shorts,#1710e9,0.004,1.0,15.0
+kit_shorts,#220f3f,0.004,1.0,15.0
+kit_shorts,#121111,0.004,1.0,15.0
+kit_shorts,#360c0c,0.004,1.0,15.0
+kit_shorts,#181414,0.004,1.0,15.0
+kit_shorts,#220f8e,0.004,1.0,15.0
+kit_shorts,#9a2c0c,0.004,1.0,15.0
+kit_shorts,#b1a10d,0.004,1.0,15.0
+kit_shorts,#fb0606,0.004,1.0,15.0
+kit_shorts,#1274e6,0.004,1.0,15.0
+kit_shorts,#7ad607,0.004,1.0,15.0
+kit_shorts,#ff6161,0.004,1.0,15.0
+kit_shorts,#0c135f,0.004,1.0,15.0
+kit_shorts,#9f6433,0.004,1.0,15.0
+kit_shorts,#244400,0.004,1.0,15.0
+kit_shorts,#0d0d0d,0.004,1.0,15.0
+kit_shorts,#151313,0.004,1.0,15.0
+kit_shorts,#da0a0a,0.004,1.0,15.0
+kit_shorts,#a300ff,0.004,1.0,15.0
+kit_shorts,#f90498,0.004,1.0,15.0
+kit_shorts,#552ea6,0.004,1.0,15.0
+kit_shorts,#6b89ce,0.004,1.0,15.0
+kit_shorts,#28313a,0.004,1.0,15.0
+kit_shorts,#f52326,0.004,1.0,15.0
+kit_shorts,#262626,0.004,1.0,15.0
+kit_full,False,0.874,2.0,1.0
+kit_full,True,0.126,1.0,2.0
+rival_team_player_categorical,Picked Rivals,0.658,4.0,1.0
+rival_team_player_categorical,Not Picked Rivals,0.156,3.0,2.0
+rival_team_player_categorical,No historical GW Data,0.097,2.0,3.0
+rival_team_player_categorical,No Rival Team,0.089,1.0,4.0
+favourite_team,Man Utd,0.226,21.0,1.0
+favourite_team,Liverpool,0.176,20.0,2.0
+favourite_team,Arsenal,0.14,19.0,3.0
+favourite_team,Man City,0.104,18.0,4.0
+favourite_team,Not Specified,0.095,17.0,5.0
+favourite_team,Chelsea,0.093,16.0,6.0
+favourite_team,Spurs,0.048,15.0,7.0
+favourite_team,Newcastle,0.022,14.0,8.0
+favourite_team,Ipswich,0.014,12.0,9.0
+favourite_team,Aston Villa,0.014,12.0,9.0
+favourite_team,West Ham,0.013,11.0,11.0
+favourite_team,Everton,0.008,10.0,12.0
+favourite_team,Wolves,0.008,8.0,13.0
+favourite_team,Leicester,0.008,8.0,13.0
+favourite_team,Crystal Palace,0.007,7.0,15.0
+favourite_team,Southampton,0.006,6.0,16.0
+favourite_team,Fulham,0.005,5.0,17.0
+favourite_team,Nott'm Forest,0.004,4.0,18.0
+favourite_team,Brighton,0.004,3.0,19.0
+favourite_team,Brentford,0.003,2.0,20.0
+favourite_team,Bournemouth,0.002,1.0,21.0
