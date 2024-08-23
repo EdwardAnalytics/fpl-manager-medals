@@ -3,6 +3,7 @@ from src.app_tools.yaml_loader import load_yaml_file
 from src.data_prep.all_team_data import get_all_team_data
 import pandas as pd
 import random
+import time
 
 # Get config
 yaml_file_path = "conf/parameters.yaml"
@@ -32,14 +33,22 @@ def get_all_data_sample(bootstrap_data, current_gameweek, player_data):
     all_data = []
     counter = 0
     for team_id in sample_ids:
-        team_name, team_data = get_all_team_data(
-            team_id=team_id,
-            bootstrap_data=bootstrap_data,
-            current_gameweek=current_gameweek,
-            player_data=player_data,
-        )
-        all_data.append(team_data)
-        counter += 1
-        print(f"Log: Team {counter} completed")
+        for team_id in sample_ids:
+            try:
+                team_name, team_data = get_all_team_data(
+                    team_id=team_id,
+                    bootstrap_data=bootstrap_data,
+                    current_gameweek=current_gameweek,
+                    player_data=player_data,
+                )
+                all_data.append(team_data)
+                counter += 1
+                print(f"Log: Team {counter} completed")
+                # Add a 0.2-second sleep every 50 iterations
+                if counter % 50 == 0:
+                    time.sleep(0.2)
+            except TypeError as e:
+                print(f"Error processing team {team_id}: {e}")
+                continue  # Skip to the next iteration if an error occurs
 
     return all_data

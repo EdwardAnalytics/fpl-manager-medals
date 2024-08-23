@@ -14,7 +14,7 @@ current_timestamp=$(date +"%Y-%m-%d %H:%M:%S")
 git add .
 
 # Commit changes with a dynamic message
-commit_message="JF: Retraining $current_timestamp"
+commit_message="Bort Bot: Retraining $current_timestamp"
 git commit -m "$commit_message"
 
 # Push changes to the current branch
