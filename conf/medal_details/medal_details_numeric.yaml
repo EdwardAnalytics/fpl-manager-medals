@@ -6,7 +6,7 @@ Pep Guardiola Award:
   gold_threshold: 10
   silver_threshold: 20
   bronze_threshold: 30
-  image_path: assets/award_images/pep_guardiola.jpg
+  image_path: assets/award_images/pep_guardiola.png
   medal_background: 'https://www.mancity.com/news/mens/pep-guardiola-premier-league-stats-eight-seasons-63851799'
   medal_details: 
     This award is based on each manager's greatest past season overall rank. 
@@ -20,7 +20,7 @@ Carlo Ancelotti Award:
   gold_threshold: 10
   silver_threshold: 20
   bronze_threshold: 30
-  image_path: assets/award_images/carlo_ancelotti.jpg
+  image_path: assets/award_images/carlo_ancelotti.png
   medal_background: https://www.espn.co.uk/football/story/_/id/37627973/real-madrid-carlo-ancelotti-wins-laliga-become-first-coach-win-titles-all-europe-top-five-leagues
   medal_details: 
     This medal recognizes managers who are active in numerous classic leagues. 
@@ -34,7 +34,7 @@ Yo-Yo Club Grimsby Town Award:
   gold_threshold: 10
   silver_threshold: 20
   bronze_threshold: 30
-  image_path: assets/award_images/grimsby_town.jpg
+  image_path: assets/award_images/grimsby_town.png
   medal_background: https://www.reddit.com/r/soccer/comments/u2yibs/15_biggest_yoyo_clubs_in_english_footballnumbers/#lightbox
   medal_details: 
     Awarded to managers who experience significant rank fluctuations from season to season. 
@@ -48,7 +48,7 @@ Brighton & Hove Albion Award:
   gold_threshold: 10
   silver_threshold: 20
   bronze_threshold: 30
-  image_path: assets/award_images/bhafc.jpg
+  image_path: assets/award_images/bhafc.png
   medal_background: 'https://www.fanchants.com/football-songs/brighton-chants/r07_0027d/'
   medal_details: 
     This award is granted to managers whose overall rank has shown consistent improvement across seasons. 
@@ -62,7 +62,7 @@ Oldham Athletic Award:
   gold_threshold: 10
   silver_threshold: 20
   bronze_threshold: 30
-  image_path: assets/award_images/oldham_athletic.jpg
+  image_path: assets/award_images/oldham_athletic.png
   medal_background: https://www.bbc.co.uk/sport/football/61425957
   medal_details: 
     Presented to managers whose overall rank has declined over time. 
@@ -76,7 +76,7 @@ James Milner Award:
   gold_threshold: 10
   silver_threshold: 20
   bronze_threshold: 30
-  image_path: assets/award_images/james_milner.jpg
+  image_path: assets/award_images/james_milner.png
   medal_background: https://x.com/boringmilner
   medal_details: 
     Given to managers who have taken on the role of administering the highest number of leagues. 
@@ -90,7 +90,7 @@ Alex Ferguson Award:
   gold_threshold: 10
   silver_threshold: 20
   bronze_threshold: 30
-  image_path: assets/award_images/alex_ferguson.jpg
+  image_path: assets/award_images/alex_ferguson.png
   medal_background: https://en.wikipedia.org/wiki/List_of_Premier_League_managers
   medal_details: 
     Awarded to the most seasoned managers, this medal celebrates those who have played the highest number of seasons. 
@@ -104,7 +104,7 @@ Gareth Southgate Award:
   gold_threshold: 10
   silver_threshold: 20
   bronze_threshold: 30
-  image_path: assets/award_images/gareth_southgate.jpg
+  image_path: assets/award_images/gareth_southgate.png
   medal_background: https://www.reuters.com/sports/soccer/englands-southgate-defends-reluctance-use-his-bench-2024-07-09/
   medal_details: 
     This award goes to managers who frequently leave a significant portion of their points on the bench. 
@@ -118,7 +118,7 @@ Daniel Levy Award:
   gold_threshold: 10
   silver_threshold: 20
   bronze_threshold: 30
-  image_path: assets/award_images/daniel_levy.jpg
+  image_path: assets/award_images/daniel_levy.png
   medal_background: https://www.theguardian.com/football/2017/jul/25/tottenham-chairman-daniel-levy-mocks-unsustainable-spending
   medal_details: 
     This award is presented to managers who maintain a high average balance in the bank each gameweek. 
@@ -133,7 +133,7 @@ Carlos Tevez Award:
   gold_threshold: 10
   silver_threshold: 20
   bronze_threshold: 30
-  image_path: assets/award_images/carlos_tevez.jpg
+  image_path: assets/award_images/carlos_tevez.png
   medal_background: https://www.theguardian.com/football/2009/jul/13/carlos-tevez-manchester-city
   medal_details: 
     Given to managers who frequently select players from teams that rival their supported team. 
@@ -149,7 +149,7 @@ Matt Le Tissier Award:
   gold_threshold: 10
   silver_threshold: 20
   bronze_threshold: 30
-  image_path: assets/award_images/matt_le_tissier.jpg
+  image_path: assets/award_images/matt_le_tissier.png
   medal_background: https://www.theguardian.com/football/2002/may/05/newsstory.sport
   medal_details: 
     This award celebrates loyalty, recognizing managers who have selected the fewest players from rivals of their support team. 
@@ -163,7 +163,7 @@ De Bruyne Award:
   gold_threshold: 10
   silver_threshold: 20
   bronze_threshold: 30
-  image_path: assets/award_images/kdb.jpg
+  image_path: assets/award_images/kdb.png
   medal_background: https://www.premierleague.com/stats/all-time
   medal_details: 
     This award is given to managers whose teams have achieved a significant number of assists, resulting in a high points total from this metric.
@@ -176,7 +176,7 @@ Petr Cech Award:
   gold_threshold: 10
   silver_threshold: 20
   bronze_threshold: 30
-  image_path: assets/award_images/petr_cech.jpg
+  image_path: assets/award_images/petr_cech.png
   medal_background: https://www.premierleague.com/stats/all-time
   medal_details: 
     This award recognizes managers whose teams have consistently earned points from clean sheets across goalkeepers, defenders, and midfielders.
@@ -189,7 +189,7 @@ Robbie Savage Award:
   gold_threshold: 10
   silver_threshold: 20
   bronze_threshold: 30
-  image_path: assets/award_images/robbie_savage.jpg
+  image_path: assets/award_images/robbie_savage.png
   medal_background: https://www.premierleague.com/players/706/Robbie-Savage/stats
   medal_details: 
     This award is presented to managers whose teams have accumulated a high number of yellow cards, indicating frequent disciplinary issues on the pitch.

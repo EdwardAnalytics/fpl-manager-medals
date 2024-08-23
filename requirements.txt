@@ -11,3 +11,4 @@ requests==2.31.0
 streamlit==1.32.2
 PyYAML==6.0.1
 scikit-learn==1.5.1
+pillow==10.2.0
