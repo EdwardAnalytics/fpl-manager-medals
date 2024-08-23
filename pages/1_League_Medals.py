@@ -483,7 +483,7 @@ def main():
 
     except Exception as e:
         st.error(
-            """:lion_face: Unable to get league data. League ID is a number located in the league URL: `https://fantasy.premierleague.com/leagues/XXXXXX/standings/c`"""
+            """:lion_face: Unable to get team data. Team ID is located in the team points URL: `https://fantasy.premierleague.com/entry/XXXXXX/event/1`"""
         )
 
 
