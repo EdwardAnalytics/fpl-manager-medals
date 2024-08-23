@@ -111,6 +111,10 @@ def get_numeric_medals(medal_details_numeric, lookup_table_numeric, team_data):
         else:
             medal = "No Medal"
 
+        # Manual fix for bank value, it is 10 times the actual value in the data
+        if medal_details["feature_name"] == "bank_mean":
+            value = value / 10
+
         # Update text/overview
         overview = medal_details["text"].replace("<percentage>", f"{percentage}%")
         overview = overview.replace("<value>", f'{format(value, ",")}')
