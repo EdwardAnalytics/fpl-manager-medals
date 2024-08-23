@@ -94,7 +94,7 @@ def main():
 
     # Input number
     id = st.number_input(
-        "Enter Team or League ID",
+        "Enter Team",
         step=1,
         format="%d",
         value=None,

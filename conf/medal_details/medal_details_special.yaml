@@ -3,4 +3,5 @@ Harry Kane Award:
   text: You have not received any Gold medals, so you are being honored with the Harry Kane Award.
   image_path: assets/award_images/harry_kane.jpg
   medal_background: https://www.fourfourtwo.com/features/the-harry-kane-trophy-curse-why-englands-greatest-ever-striker-hasnt-won-silverware
-  medal_details: This is awarded to
+  medal_details: 
+    This award is given to managers who have not earned any other Gold medals in this dashboard.

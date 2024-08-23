@@ -8,7 +8,9 @@ Pep Guardiola Award:
   bronze_threshold: 30
   image_path: assets/award_images/pep_guardiola.jpg
   medal_background: 'https://www.mancity.com/news/mens/pep-guardiola-premier-league-stats-eight-seasons-63851799'
-  medal_details: This is awarded to
+  medal_details: 
+    This award is presented to managers who have achieved a top ranking in at least one season. 
+    It compares the manager's best season ranking against others, celebrating those who have reached the highest tiers.
 
 Carlo Ancelotti Award:
   feature_name: classic_leagues_competed_in
@@ -20,7 +22,9 @@ Carlo Ancelotti Award:
   bronze_threshold: 30
   image_path: assets/award_images/carlo_ancelotti.jpg
   medal_background: https://www.espn.co.uk/football/story/_/id/37627973/real-madrid-carlo-ancelotti-wins-laliga-become-first-coach-win-titles-all-europe-top-five-leagues
-  medal_details: This is awarded to
+  medal_details: 
+    This medal recognizes managers who are active in numerous classic leagues. 
+    It honors those whose participation in multiple leagues places them among the most dedicated and involved managers.
 
 Yo-Yo Club Grimsby Town Award:
   feature_name: yoyo_score
@@ -32,7 +36,9 @@ Yo-Yo Club Grimsby Town Award:
   bronze_threshold: 30
   image_path: assets/award_images/grimsby_town.jpg
   medal_background: https://www.reddit.com/r/soccer/comments/u2yibs/15_biggest_yoyo_clubs_in_english_footballnumbers/#lightbox
-  medal_details: This is only awarded to those who have played more than one season.
+  medal_details: 
+    Awarded to managers who experience significant rank fluctuations from season to season. 
+    It highlights those whose rankings vary widely, showcasing their unpredictable performances.
 
 Brighton & Hove Albion Award:
   feature_name: rising_score
@@ -44,7 +50,9 @@ Brighton & Hove Albion Award:
   bronze_threshold: 30
   image_path: assets/award_images/bhafc.jpg
   medal_background: 'https://www.fanchants.com/football-songs/brighton-chants/r07_0027d/'
-  medal_details: This is calcaulted by creating a simple linear regression model to the overall rank of the manager over their past seasons. The coeficcient is then taken as the "rising score". If this is negative, it means the rank is declining overall. Those with a smaller coefficent are deemed to be declining in rank at a greater rate.   
+  medal_details: 
+    This award is granted to managers whose overall rank has shown consistent improvement across seasons. 
+    It is determined using a linear regression model, with those displaying the highest upward trajectory being honored.
 
 Oldham Athletic Award:
   feature_name: rising_score
@@ -56,7 +64,9 @@ Oldham Athletic Award:
   bronze_threshold: 30
   image_path: assets/award_images/oldham_athletic.jpg
   medal_background: https://www.bbc.co.uk/sport/football/61425957
-  medal_details: This takes the value calculated in the rising score (as described in the Brighton & Hove Albion Award). Those with a larger coefficent are deemed to be growing in rank at a greater rate.   
+  medal_details: 
+    Presented to managers whose overall rank has declined over time. 
+    Based on the negative coefficient from the rising score, this award goes to those with the most significant rank drops.
 
 James Milner Award:
   feature_name: leagues_admin
@@ -68,7 +78,9 @@ James Milner Award:
   bronze_threshold: 30
   image_path: assets/award_images/james_milner.jpg
   medal_background: https://x.com/boringmilner
-  medal_details: This is awarded to
+  medal_details: 
+    Given to managers who have taken on the role of administering the highest number of leagues. 
+    It acknowledges those who are deeply involved in the organization and management of multiple leagues.
 
 Alex Ferguson Award:
   feature_name: seasons_played_in
@@ -80,7 +92,9 @@ Alex Ferguson Award:
   bronze_threshold: 30
   image_path: assets/award_images/alex_ferguson.jpg
   medal_background: https://en.wikipedia.org/wiki/List_of_Premier_League_managers
-  medal_details: This is awarded to
+  medal_details: 
+    Awarded to the most seasoned managers, this medal celebrates those who have played the highest number of seasons. 
+    It recognizes experience and long-term commitment to the game.
 
 Gareth Southgate Award:
   feature_name: points_on_bench_percentage
@@ -92,7 +106,9 @@ Gareth Southgate Award:
   bronze_threshold: 30
   image_path: assets/award_images/gareth_southgate.jpg
   medal_background: https://www.reuters.com/sports/soccer/englands-southgate-defends-reluctance-use-his-bench-2024-07-09/
-  medal_details: This is awarded to
+  medal_details: 
+    This award goes to managers who frequently leave a significant portion of their points on the bench. 
+    It highlights those who might need to rethink their bench strategy, as they consistently miss out on potential points.
 
 Daniel Levy Award:
   feature_name: bank_mean
@@ -104,7 +120,9 @@ Daniel Levy Award:
   bronze_threshold: 30
   image_path: assets/award_images/daniel_levy.jpg
   medal_background: https://www.theguardian.com/football/2017/jul/25/tottenham-chairman-daniel-levy-mocks-unsustainable-spending
-  medal_details: This is awarded to
+  medal_details: 
+    This award is presented to managers who maintain a high average balance in the bank each gameweek. 
+    It reflects a cautious approach to spending, often at the expense of team investment.
 
 Carlos Tevez Award:
   feature_name: rival_team_player
@@ -117,7 +135,10 @@ Carlos Tevez Award:
   bronze_threshold: 30
   image_path: assets/award_images/carlos_tevez.jpg
   medal_background: https://www.theguardian.com/football/2009/jul/13/carlos-tevez-manchester-city
-  medal_details: This is awarded to
+  medal_details: 
+    Given to managers who frequently select players from teams that rival their supported team. 
+    It acknowledges the willingness to choose rival players, even if it goes against fan loyalty.
+    For example, a Manchester United fan selected Liverpool and Mancehster City players.
 
 Matt Le Tissier Award:
   feature_name: rival_team_player
@@ -130,4 +151,48 @@ Matt Le Tissier Award:
   bronze_threshold: 30
   image_path: assets/award_images/matt_le_tissier.jpg
   medal_background: https://www.theguardian.com/football/2002/may/05/newsstory.sport
-  medal_details: This is awarded to
+  medal_details: 
+    This award celebrates loyalty, recognizing managers who have selected the fewest players from rivals of their support team. 
+    For example, a Manchester United fan selected few Liverpool or Mancehster City players.
+
+De Bruyne Award:
+  feature_name: assists
+  objective: maximise
+  sentiment: positive
+  text: Your players have accumulated a high number of assists. You are in the top <percentage> of managers by total number of points from assists.
+  gold_threshold: 10
+  silver_threshold: 20
+  bronze_threshold: 30
+  image_path: assets/award_images/kdb.jpg
+  medal_background: https://www.premierleague.com/stats/all-time
+  medal_details: 
+    This award is given to managers whose teams have achieved a significant number of assists, resulting in a high points total from this metric.
+
+Petr Cech Award:
+  feature_name: clean_sheets
+  objective: maximise
+  sentiment: positive
+  text: You gain many points from clean sheets. This includes contributions from goalkeepers, defenders, and midfielders. You are in the top <percentage> of managers by total number of points from clean sheets.
+  gold_threshold: 10
+  silver_threshold: 20
+  bronze_threshold: 30
+  image_path: assets/award_images/petr_cech.jpg
+  medal_background: https://www.premierleague.com/stats/all-time
+  medal_details: 
+    This award recognizes managers whose teams have consistently earned points from clean sheets across goalkeepers, defenders, and midfielders.
+
+Robbie Savage Award:
+  feature_name: yellow_cards
+  objective: maximise
+  sentiment: negative
+  text: Your players receive many yellow cards. You are in the top <percentage> of managers by total number of yellow cards.
+  gold_threshold: 10
+  silver_threshold: 20
+  bronze_threshold: 30
+  image_path: assets/award_images/robbie_savage.jpg
+  medal_background: https://www.premierleague.com/players/706/Robbie-Savage/stats
+  medal_details: 
+    This award is presented to managers whose teams have accumulated a high number of yellow cards, indicating frequent disciplinary issues on the pitch.
+
+
+  
