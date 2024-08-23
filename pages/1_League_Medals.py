@@ -100,7 +100,6 @@ def main():
 
     if id is None:
         # Fetch the leagues only after an ID is entered
-
         league_name = st.selectbox(
             "Select League", options=(("Enter Team ID First", ""))
         )
