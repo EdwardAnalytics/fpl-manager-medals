@@ -84,6 +84,5 @@ def get_all_team_data(team_id, bootstrap_data, current_gameweek, player_data):
     }
 
     all_team_data["favourite_team"] = favourite_team
-    print(all_team_data)
 
     return team_name, all_team_data
