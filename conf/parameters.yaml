@@ -1,2 +1,2 @@
-training_sample_size: 50
+training_sample_size: 2000
 random_seed: 4
