@@ -10,6 +10,7 @@ from src.profiling.create_lookup_tables import (
 from src.app_tools.yaml_loader import load_yaml_file
 import pandas as pd
 import json
+import sys
 
 ### Data Collection
 # Get boostrap data
@@ -18,6 +19,18 @@ bootstrap_data = get_boostrap_data()
 # Get player data
 current_season_year = get_current_season_year(bootstrap_data=bootstrap_data)
 player_data, current_gameweek = get_player_data(current_season_year=current_season_year)
+
+### Check if data updated:
+# Load metadata for scoring
+file_path = "data/training_meta.json"
+
+# Read the JSON data from the file
+with open(file_path, 'r') as file:
+    training_meta = json.load(file)
+
+if training_meta['training_data_gameweek'] == current_gameweek:
+    print("Model training up to date.")
+    sys.exit()  # Exit the script
 
 # Store metadata for scoring
 file_path = "data/training_meta.json"
