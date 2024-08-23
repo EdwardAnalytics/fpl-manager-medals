@@ -55,486 +55,492 @@ st.markdown(
 
 
 def main():
-    st.title(
-        "FPL Manager Medals",
-        help="Note: The sidebar is hidden on mobile devices. Tap the > icon at the top left to access it. This includes getting medals for leagues and further information.",
-    )
-
-    # Add github link and logo
-    LOGO_IMAGE = "assets//pwt.png"
-
-    st.markdown(
-        """
-        <style>
-        .container {
-            display: flex;
-        }
-        .logo-text {
-            font-weight: 0 !important;
-            font-size: 15px !important;
-            padding-top: 0px !important;
-            margin-left: 0px;
-            font-style: italic; 
-        }
-        .logo-img {
-            float:right;
-            width: 28px;
-            height: 28px;
-            margin-right: 8px; 
-        }
-        </style>
-        """,
-        unsafe_allow_html=True,
-    )
-
-    st.markdown(
-        f"""
-        <div class="container">
-            <img class="logo-img" src="data:assets//pwt.png;base64,{base64.b64encode(open(LOGO_IMAGE, "rb").read()).decode()}">
-            <p class="logo-text"><a href="https://github.com/edward-farragher/fpl-manager-segmentation">GitHub Repo</a></p>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-
-    # Input number
-    id = st.number_input(
-        "Enter Team",
-        step=1,
-        format="%d",
-        value=None,
-        help="Team ID is located in the team points URL: `https://fantasy.premierleague.com/entry/XXXXXX/event/1`",
-    )
-    # Button to trigger function execution
-    if st.button(label="Get Medals :soccer:"):
-        # Call your function with the input numbers
-
-        with st.spinner(text="Getting medal data..."):
-            team_name, medals_df = get_team_medals(
-                team_id=id,
-                bootstrap_data=bootstrap_data,
-                current_gameweek=current_gameweek,
-                player_data=player_data,
-            )
-        # st.markdown(f"*Data up to Gameweek {training_meta['training_data_gameweek']}*")
-
-        st.header(f"{team_name} Medals", divider="grey")
-
-        # Get number of medals
-        number_of_medals = len(medals_df)
-        # Replace medal names
-        medals_df["Medal"] = medals_df["Medal"].replace(
-            {"Gold": "🥇", "Silver": "🥈", "Bronze": "🥉"}
+    try:
+        st.title(
+            "FPL Manager Medals",
+            help="Note: The sidebar is hidden on mobile devices. Tap the > icon at the top left to access it. This includes getting medals for leagues and further information.",
         )
 
-        # Convert to lists of dictionaries
-        medals_dict = medals_df.T.to_dict()
-        medals_dict = list(medals_dict.values())
+        # Add github link and logo
+        LOGO_IMAGE = "assets//pwt.png"
 
-        all_medals, summary = st.tabs(["All Medals", "Overview"])
-        with summary:
-            st.dataframe(medals_df[["Medal Name", "Medal"]], hide_index=True)
+        st.markdown(
+            """
+            <style>
+            .container {
+                display: flex;
+            }
+            .logo-text {
+                font-weight: 0 !important;
+                font-size: 15px !important;
+                padding-top: 0px !important;
+                margin-left: 0px;
+                font-style: italic; 
+            }
+            .logo-img {
+                float:right;
+                width: 28px;
+                height: 28px;
+                margin-right: 8px; 
+            }
+            </style>
+            """,
+            unsafe_allow_html=True,
+        )
 
-        with all_medals:
-            index = 0
-            if index < number_of_medals:
-                with st.container(border=True):
-                    col1, col2 = st.columns([3, 1])
-                    with col1:
-                        st.subheader(
-                            f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
-                        )
-                        st.markdown(
-                            f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
-                            unsafe_allow_html=True,
-                        )
+        st.markdown(
+            f"""
+            <div class="container">
+                <img class="logo-img" src="data:assets//pwt.png;base64,{base64.b64encode(open(LOGO_IMAGE, "rb").read()).decode()}">
+                <p class="logo-text"><a href="https://github.com/edward-farragher/fpl-manager-segmentation">GitHub Repo</a></p>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
 
-                    with col2:
-                        st.image(image=medals_dict[index]["image_path"])
+        # Input number
+        id = st.number_input(
+            "Enter Team",
+            step=1,
+            format="%d",
+            value=None,
+            help="Team ID is located in the team points URL: `https://fantasy.premierleague.com/entry/XXXXXX/event/1`",
+        )
+        # Button to trigger function execution
+        if st.button(label="Get Medals :soccer:"):
+            # Call your function with the input numbers
 
-            index += 1
-            if index < number_of_medals:
-                with st.container(border=True):
-                    col1, col2 = st.columns([3, 1])
-                    with col1:
-                        st.subheader(
-                            f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
-                        )
-                        st.markdown(
-                            f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
-                            unsafe_allow_html=True,
-                        )
+            with st.spinner(text="Getting medal data..."):
+                team_name, medals_df = get_team_medals(
+                    team_id=id,
+                    bootstrap_data=bootstrap_data,
+                    current_gameweek=current_gameweek,
+                    player_data=player_data,
+                )
+            # st.markdown(f"*Data up to Gameweek {training_meta['training_data_gameweek']}*")
 
-                    with col2:
-                        st.image(image=medals_dict[index]["image_path"])
+            st.header(f"{team_name} Medals", divider="grey")
 
-            index += 1
-            if index < number_of_medals:
-                with st.container(border=True):
-                    col1, col2 = st.columns([3, 1])
-                    with col1:
-                        st.subheader(
-                            f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
-                        )
-                        st.markdown(
-                            f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
-                            unsafe_allow_html=True,
-                        )
+            # Get number of medals
+            number_of_medals = len(medals_df)
+            # Replace medal names
+            medals_df["Medal"] = medals_df["Medal"].replace(
+                {"Gold": "🥇", "Silver": "🥈", "Bronze": "🥉"}
+            )
 
-                    with col2:
-                        st.image(image=medals_dict[index]["image_path"])
+            # Convert to lists of dictionaries
+            medals_dict = medals_df.T.to_dict()
+            medals_dict = list(medals_dict.values())
 
-            index += 1
-            if index < number_of_medals:
-                with st.container(border=True):
-                    col1, col2 = st.columns([3, 1])
-                    with col1:
-                        st.subheader(
-                            f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
-                        )
-                        st.markdown(
-                            f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
-                            unsafe_allow_html=True,
-                        )
+            all_medals, summary = st.tabs(["All Medals", "Overview"])
+            with summary:
+                st.dataframe(medals_df[["Medal Name", "Medal"]], hide_index=True)
 
-                    with col2:
-                        st.image(image=medals_dict[index]["image_path"])
+            with all_medals:
+                index = 0
+                if index < number_of_medals:
+                    with st.container(border=True):
+                        col1, col2 = st.columns([3, 1])
+                        with col1:
+                            st.subheader(
+                                f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
+                            )
+                            st.markdown(
+                                f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
+                                unsafe_allow_html=True,
+                            )
 
-            index += 1
-            if index < number_of_medals:
-                with st.container(border=True):
-                    col1, col2 = st.columns([3, 1])
-                    with col1:
-                        st.subheader(
-                            f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
-                        )
-                        st.markdown(
-                            f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
-                            unsafe_allow_html=True,
-                        )
+                        with col2:
+                            st.image(image=medals_dict[index]["image_path"])
 
-                    with col2:
-                        st.image(image=medals_dict[index]["image_path"])
+                index += 1
+                if index < number_of_medals:
+                    with st.container(border=True):
+                        col1, col2 = st.columns([3, 1])
+                        with col1:
+                            st.subheader(
+                                f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
+                            )
+                            st.markdown(
+                                f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
+                                unsafe_allow_html=True,
+                            )
 
-            index += 1
-            if index < number_of_medals:
-                with st.container(border=True):
-                    col1, col2 = st.columns([3, 1])
-                    with col1:
-                        st.subheader(
-                            f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
-                        )
-                        st.markdown(
-                            f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
-                            unsafe_allow_html=True,
-                        )
+                        with col2:
+                            st.image(image=medals_dict[index]["image_path"])
 
-                    with col2:
-                        st.image(image=medals_dict[index]["image_path"])
+                index += 1
+                if index < number_of_medals:
+                    with st.container(border=True):
+                        col1, col2 = st.columns([3, 1])
+                        with col1:
+                            st.subheader(
+                                f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
+                            )
+                            st.markdown(
+                                f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
+                                unsafe_allow_html=True,
+                            )
 
-            index += 1
-            if index < number_of_medals:
-                with st.container(border=True):
-                    col1, col2 = st.columns([3, 1])
-                    with col1:
-                        st.subheader(
-                            f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
-                        )
-                        st.markdown(
-                            f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
-                            unsafe_allow_html=True,
-                        )
+                        with col2:
+                            st.image(image=medals_dict[index]["image_path"])
 
-                    with col2:
-                        st.image(image=medals_dict[index]["image_path"])
+                index += 1
+                if index < number_of_medals:
+                    with st.container(border=True):
+                        col1, col2 = st.columns([3, 1])
+                        with col1:
+                            st.subheader(
+                                f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
+                            )
+                            st.markdown(
+                                f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
+                                unsafe_allow_html=True,
+                            )
 
-            index += 1
-            if index < number_of_medals:
-                with st.container(border=True):
-                    col1, col2 = st.columns([3, 1])
-                    with col1:
-                        st.subheader(
-                            f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
-                        )
-                        st.markdown(
-                            f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
-                            unsafe_allow_html=True,
-                        )
+                        with col2:
+                            st.image(image=medals_dict[index]["image_path"])
 
-                    with col2:
-                        st.image(image=medals_dict[index]["image_path"])
+                index += 1
+                if index < number_of_medals:
+                    with st.container(border=True):
+                        col1, col2 = st.columns([3, 1])
+                        with col1:
+                            st.subheader(
+                                f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
+                            )
+                            st.markdown(
+                                f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
+                                unsafe_allow_html=True,
+                            )
 
-            index += 1
-            if index < number_of_medals:
-                with st.container(border=True):
-                    col1, col2 = st.columns([3, 1])
-                    with col1:
-                        st.subheader(
-                            f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
-                        )
-                        st.markdown(
-                            f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
-                            unsafe_allow_html=True,
-                        )
+                        with col2:
+                            st.image(image=medals_dict[index]["image_path"])
 
-                    with col2:
-                        st.image(image=medals_dict[index]["image_path"])
+                index += 1
+                if index < number_of_medals:
+                    with st.container(border=True):
+                        col1, col2 = st.columns([3, 1])
+                        with col1:
+                            st.subheader(
+                                f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
+                            )
+                            st.markdown(
+                                f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
+                                unsafe_allow_html=True,
+                            )
 
-            index += 1
-            if index < number_of_medals:
-                with st.container(border=True):
-                    col1, col2 = st.columns([3, 1])
-                    with col1:
-                        st.subheader(
-                            f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
-                        )
-                        st.markdown(
-                            f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
-                            unsafe_allow_html=True,
-                        )
+                        with col2:
+                            st.image(image=medals_dict[index]["image_path"])
 
-                    with col2:
-                        st.image(image=medals_dict[index]["image_path"])
+                index += 1
+                if index < number_of_medals:
+                    with st.container(border=True):
+                        col1, col2 = st.columns([3, 1])
+                        with col1:
+                            st.subheader(
+                                f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
+                            )
+                            st.markdown(
+                                f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
+                                unsafe_allow_html=True,
+                            )
 
-            index += 1
-            if index < number_of_medals:
-                with st.container(border=True):
-                    col1, col2 = st.columns([3, 1])
-                    with col1:
-                        st.subheader(
-                            f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
-                        )
-                        st.markdown(
-                            f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
-                            unsafe_allow_html=True,
-                        )
+                        with col2:
+                            st.image(image=medals_dict[index]["image_path"])
 
-                    with col2:
-                        st.image(image=medals_dict[index]["image_path"])
+                index += 1
+                if index < number_of_medals:
+                    with st.container(border=True):
+                        col1, col2 = st.columns([3, 1])
+                        with col1:
+                            st.subheader(
+                                f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
+                            )
+                            st.markdown(
+                                f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
+                                unsafe_allow_html=True,
+                            )
 
-            index += 1
-            if index < number_of_medals:
-                with st.container(border=True):
-                    col1, col2 = st.columns([3, 1])
-                    with col1:
-                        st.subheader(
-                            f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
-                        )
-                        st.markdown(
-                            f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
-                            unsafe_allow_html=True,
-                        )
+                        with col2:
+                            st.image(image=medals_dict[index]["image_path"])
 
-                    with col2:
-                        st.image(image=medals_dict[index]["image_path"])
+                index += 1
+                if index < number_of_medals:
+                    with st.container(border=True):
+                        col1, col2 = st.columns([3, 1])
+                        with col1:
+                            st.subheader(
+                                f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
+                            )
+                            st.markdown(
+                                f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
+                                unsafe_allow_html=True,
+                            )
 
-            index += 1
-            if index < number_of_medals:
-                with st.container(border=True):
-                    col1, col2 = st.columns([3, 1])
-                    with col1:
-                        st.subheader(
-                            f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
-                        )
-                        st.markdown(
-                            f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
-                            unsafe_allow_html=True,
-                        )
+                        with col2:
+                            st.image(image=medals_dict[index]["image_path"])
 
-                    with col2:
-                        st.image(image=medals_dict[index]["image_path"])
+                index += 1
+                if index < number_of_medals:
+                    with st.container(border=True):
+                        col1, col2 = st.columns([3, 1])
+                        with col1:
+                            st.subheader(
+                                f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
+                            )
+                            st.markdown(
+                                f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
+                                unsafe_allow_html=True,
+                            )
 
-            index += 1
-            if index < number_of_medals:
-                with st.container(border=True):
-                    col1, col2 = st.columns([3, 1])
-                    with col1:
-                        st.subheader(
-                            f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
-                        )
-                        st.markdown(
-                            f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
-                            unsafe_allow_html=True,
-                        )
+                        with col2:
+                            st.image(image=medals_dict[index]["image_path"])
 
-                    with col2:
-                        st.image(image=medals_dict[index]["image_path"])
+                index += 1
+                if index < number_of_medals:
+                    with st.container(border=True):
+                        col1, col2 = st.columns([3, 1])
+                        with col1:
+                            st.subheader(
+                                f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
+                            )
+                            st.markdown(
+                                f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
+                                unsafe_allow_html=True,
+                            )
 
-            index += 1
-            if index < number_of_medals:
-                with st.container(border=True):
-                    col1, col2 = st.columns([3, 1])
-                    with col1:
-                        st.subheader(
-                            f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
-                        )
-                        st.markdown(
-                            f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
-                            unsafe_allow_html=True,
-                        )
+                        with col2:
+                            st.image(image=medals_dict[index]["image_path"])
 
-                    with col2:
-                        st.image(image=medals_dict[index]["image_path"])
+                index += 1
+                if index < number_of_medals:
+                    with st.container(border=True):
+                        col1, col2 = st.columns([3, 1])
+                        with col1:
+                            st.subheader(
+                                f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
+                            )
+                            st.markdown(
+                                f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
+                                unsafe_allow_html=True,
+                            )
 
-            index += 1
-            if index < number_of_medals:
-                with st.container(border=True):
-                    col1, col2 = st.columns([3, 1])
-                    with col1:
-                        st.subheader(
-                            f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
-                        )
-                        st.markdown(
-                            f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
-                            unsafe_allow_html=True,
-                        )
+                        with col2:
+                            st.image(image=medals_dict[index]["image_path"])
 
-                    with col2:
-                        st.image(image=medals_dict[index]["image_path"])
+                index += 1
+                if index < number_of_medals:
+                    with st.container(border=True):
+                        col1, col2 = st.columns([3, 1])
+                        with col1:
+                            st.subheader(
+                                f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
+                            )
+                            st.markdown(
+                                f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
+                                unsafe_allow_html=True,
+                            )
 
-            index += 1
-            if index < number_of_medals:
-                with st.container(border=True):
-                    col1, col2 = st.columns([3, 1])
-                    with col1:
-                        st.subheader(
-                            f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
-                        )
-                        st.markdown(
-                            f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
-                            unsafe_allow_html=True,
-                        )
+                        with col2:
+                            st.image(image=medals_dict[index]["image_path"])
 
-                    with col2:
-                        st.image(image=medals_dict[index]["image_path"])
+                index += 1
+                if index < number_of_medals:
+                    with st.container(border=True):
+                        col1, col2 = st.columns([3, 1])
+                        with col1:
+                            st.subheader(
+                                f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
+                            )
+                            st.markdown(
+                                f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
+                                unsafe_allow_html=True,
+                            )
 
-            index += 1
-            if index < number_of_medals:
-                with st.container(border=True):
-                    col1, col2 = st.columns([3, 1])
-                    with col1:
-                        st.subheader(
-                            f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
-                        )
-                        st.markdown(
-                            f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
-                            unsafe_allow_html=True,
-                        )
+                        with col2:
+                            st.image(image=medals_dict[index]["image_path"])
 
-                    with col2:
-                        st.image(image=medals_dict[index]["image_path"])
+                index += 1
+                if index < number_of_medals:
+                    with st.container(border=True):
+                        col1, col2 = st.columns([3, 1])
+                        with col1:
+                            st.subheader(
+                                f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
+                            )
+                            st.markdown(
+                                f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
+                                unsafe_allow_html=True,
+                            )
 
-            index += 1
-            if index < number_of_medals:
-                with st.container(border=True):
-                    col1, col2 = st.columns([3, 1])
-                    with col1:
-                        st.subheader(
-                            f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
-                        )
-                        st.markdown(
-                            f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
-                            unsafe_allow_html=True,
-                        )
+                        with col2:
+                            st.image(image=medals_dict[index]["image_path"])
 
-                    with col2:
-                        st.image(image=medals_dict[index]["image_path"])
+                index += 1
+                if index < number_of_medals:
+                    with st.container(border=True):
+                        col1, col2 = st.columns([3, 1])
+                        with col1:
+                            st.subheader(
+                                f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
+                            )
+                            st.markdown(
+                                f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
+                                unsafe_allow_html=True,
+                            )
 
-            index += 1
-            if index < number_of_medals:
-                with st.container(border=True):
-                    col1, col2 = st.columns([3, 1])
-                    with col1:
-                        st.subheader(
-                            f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
-                        )
-                        st.markdown(
-                            f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
-                            unsafe_allow_html=True,
-                        )
+                        with col2:
+                            st.image(image=medals_dict[index]["image_path"])
 
-                    with col2:
-                        st.image(image=medals_dict[index]["image_path"])
+                index += 1
+                if index < number_of_medals:
+                    with st.container(border=True):
+                        col1, col2 = st.columns([3, 1])
+                        with col1:
+                            st.subheader(
+                                f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
+                            )
+                            st.markdown(
+                                f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
+                                unsafe_allow_html=True,
+                            )
 
-            index += 1
-            if index < number_of_medals:
-                with st.container(border=True):
-                    col1, col2 = st.columns([3, 1])
-                    with col1:
-                        st.subheader(
-                            f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
-                        )
-                        st.markdown(
-                            f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
-                            unsafe_allow_html=True,
-                        )
+                        with col2:
+                            st.image(image=medals_dict[index]["image_path"])
 
-                    with col2:
-                        st.image(image=medals_dict[index]["image_path"])
+                index += 1
+                if index < number_of_medals:
+                    with st.container(border=True):
+                        col1, col2 = st.columns([3, 1])
+                        with col1:
+                            st.subheader(
+                                f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
+                            )
+                            st.markdown(
+                                f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
+                                unsafe_allow_html=True,
+                            )
 
-            index += 1
-            if index < number_of_medals:
-                with st.container(border=True):
-                    col1, col2 = st.columns([3, 1])
-                    with col1:
-                        st.subheader(
-                            f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
-                        )
-                        st.markdown(
-                            f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
-                            unsafe_allow_html=True,
-                        )
+                        with col2:
+                            st.image(image=medals_dict[index]["image_path"])
 
-                    with col2:
-                        st.image(image=medals_dict[index]["image_path"])
+                index += 1
+                if index < number_of_medals:
+                    with st.container(border=True):
+                        col1, col2 = st.columns([3, 1])
+                        with col1:
+                            st.subheader(
+                                f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
+                            )
+                            st.markdown(
+                                f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
+                                unsafe_allow_html=True,
+                            )
 
-            index += 1
-            if index < number_of_medals:
-                with st.container(border=True):
-                    col1, col2 = st.columns([3, 1])
-                    with col1:
-                        st.subheader(
-                            f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
-                        )
-                        st.markdown(
-                            f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
-                            unsafe_allow_html=True,
-                        )
+                        with col2:
+                            st.image(image=medals_dict[index]["image_path"])
 
-                    with col2:
-                        st.image(image=medals_dict[index]["image_path"])
+                index += 1
+                if index < number_of_medals:
+                    with st.container(border=True):
+                        col1, col2 = st.columns([3, 1])
+                        with col1:
+                            st.subheader(
+                                f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
+                            )
+                            st.markdown(
+                                f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
+                                unsafe_allow_html=True,
+                            )
 
-            index += 1
-            if index < number_of_medals:
-                with st.container(border=True):
-                    col1, col2 = st.columns([3, 1])
-                    with col1:
-                        st.subheader(
-                            f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
-                        )
-                        st.markdown(
-                            f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
-                            unsafe_allow_html=True,
-                        )
+                        with col2:
+                            st.image(image=medals_dict[index]["image_path"])
 
-                    with col2:
-                        st.image(image=medals_dict[index]["image_path"])
+                index += 1
+                if index < number_of_medals:
+                    with st.container(border=True):
+                        col1, col2 = st.columns([3, 1])
+                        with col1:
+                            st.subheader(
+                                f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
+                            )
+                            st.markdown(
+                                f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
+                                unsafe_allow_html=True,
+                            )
 
-            index += 1
-            if index < number_of_medals:
-                with st.container(border=True):
-                    col1, col2 = st.columns([3, 1])
-                    with col1:
-                        st.subheader(
-                            f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
-                        )
-                        st.markdown(
-                            f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
-                            unsafe_allow_html=True,
-                        )
+                        with col2:
+                            st.image(image=medals_dict[index]["image_path"])
 
-                    with col2:
-                        st.image(image=medals_dict[index]["image_path"])
+                index += 1
+                if index < number_of_medals:
+                    with st.container(border=True):
+                        col1, col2 = st.columns([3, 1])
+                        with col1:
+                            st.subheader(
+                                f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
+                            )
+                            st.markdown(
+                                f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
+                                unsafe_allow_html=True,
+                            )
+
+                        with col2:
+                            st.image(image=medals_dict[index]["image_path"])
+
+                index += 1
+                if index < number_of_medals:
+                    with st.container(border=True):
+                        col1, col2 = st.columns([3, 1])
+                        with col1:
+                            st.subheader(
+                                f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
+                            )
+                            st.markdown(
+                                f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
+                                unsafe_allow_html=True,
+                            )
+
+                        with col2:
+                            st.image(image=medals_dict[index]["image_path"])
+
+                index += 1
+                if index < number_of_medals:
+                    with st.container(border=True):
+                        col1, col2 = st.columns([3, 1])
+                        with col1:
+                            st.subheader(
+                                f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
+                            )
+                            st.markdown(
+                                f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
+                                unsafe_allow_html=True,
+                            )
+
+                        with col2:
+                            st.image(image=medals_dict[index]["image_path"])
+
+                index += 1
+                if index < number_of_medals:
+                    with st.container(border=True):
+                        col1, col2 = st.columns([3, 1])
+                        with col1:
+                            st.subheader(
+                                f"{medals_dict[index]['Medal']} {medals_dict[index]['Medal Name']}"
+                            )
+                            st.markdown(
+                                f"{medals_dict[index]['Overview']}<br>*[Medal Background]({medals_dict[index]['medal_background']})*",
+                                unsafe_allow_html=True,
+                            )
+
+                        with col2:
+                            st.image(image=medals_dict[index]["image_path"])
+                
+    except Exception as e:
+        st.error(
+            """:lion_face: Unable to get league data. League ID is a number located in the league URL: `https://fantasy.premierleague.com/leagues/XXXXXX/standings/c`"""
+        )
 
 
 if __name__ == "__main__":
