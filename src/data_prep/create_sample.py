@@ -30,6 +30,7 @@ def get_all_data_sample(bootstrap_data, current_gameweek, player_data):
 
     # Get data for each sample
     all_data = []
+    counter = 0
     for team_id in sample_ids:
         team_name, team_data = get_all_team_data(
             team_id=team_id,
@@ -38,5 +39,7 @@ def get_all_data_sample(bootstrap_data, current_gameweek, player_data):
             player_data=player_data,
         )
         all_data.append(team_data)
+        counter += 1
+        print(f"Log: Team {counter} completed")
 
     return all_data
