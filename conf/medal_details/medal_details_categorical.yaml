@@ -1,7 +1,7 @@
 Ange Postecoglou Award:
   feature_name: player_region_iso_code_long
   sentiment: positive
-  text: You are flying the flag for <value>. Less than <percentage> of managers are from this country. <value> is the <rank_descending> ranked smallest country by total number of managers.
+  text: You are flying the flag for <value>. Around <percentage> (or less) of managers are from this country.
   target_column: percentage_share
   gold_threshold: 3
   silver_threshold: 5
