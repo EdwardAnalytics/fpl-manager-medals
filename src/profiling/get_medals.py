@@ -185,6 +185,10 @@ def get_categorical_medals(
         rank_ascending = p.ordinal(int(rank_ascending))
         rank_descending = p.ordinal(int(rank_descending))
 
+        # Fix for those round to 0%:
+        if percentage == 0:
+            percentage = 1
+
         overview = medal_details["text"].replace("<percentage>", f"{percentage}%")
         overview = overview.replace("<rank_ascending>", rank_ascending)
         overview = overview.replace("<rank_descending>", rank_descending)
