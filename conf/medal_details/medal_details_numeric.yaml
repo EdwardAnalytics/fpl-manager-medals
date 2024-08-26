@@ -185,7 +185,7 @@ Robbie Savage Award:
   feature_name: yellow_cards
   objective: maximise
   sentiment: negative
-  text: Your players receive many yellow cards. You are in the top <percentage> of managers by total number of yellow cards.
+  text: Your players receive many yellow cards. You are in the top <percentage> of managers by total number of yellow cards, your team has recieved <value>.
   gold_threshold: 10
   silver_threshold: 20
   bronze_threshold: 30
@@ -198,7 +198,7 @@ Patrick Viera Award:
   feature_name: red_cards
   objective: maximise
   sentiment: negative
-  text: Your players receive many red cards. You are in the top <percentage> of managers by total number of red cards.
+  text: Your players receive many red cards. You are in the top <percentage> of managers by total number of red cards, your team has recieved <value>.
   gold_threshold: 10
   silver_threshold: 20
   bronze_threshold: 30
@@ -211,7 +211,7 @@ Everton Award:
   feature_name: event_transfers_cost_total
   objective: maximise
   sentiment: negative
-  text: Your team get docked a lot of points for your transfers. You are in the top <percentage> of managers by total transfer cost.
+  text: Your team get docked a lot of points for your transfers. You are in the top <percentage> of managers by total transfer cost. Your total transfer cost is <value>.
   gold_threshold: 10
   silver_threshold: 20
   bronze_threshold: 30
