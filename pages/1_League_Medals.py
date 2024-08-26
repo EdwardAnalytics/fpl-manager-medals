@@ -158,7 +158,6 @@ def main():
                         current_gameweek=current_gameweek,
                         player_data=player_data,
                     )
-                # st.markdown(f"*Data up to Gameweek {training_meta['training_data_gameweek']}*")
 
                 st.header(f"{league_name} Medals", divider="grey")
 
@@ -482,6 +481,10 @@ def main():
                         hide_index=True,
                     )
                     st.text("")
+
+                st.markdown(
+                    f"*Data up to Gameweek {training_meta['training_data_gameweek']}*"
+                )
 
     except Exception as e:
         st.error(

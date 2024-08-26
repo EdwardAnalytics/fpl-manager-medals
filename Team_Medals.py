@@ -539,6 +539,10 @@ def main():
                         with col2:
                             st.image(image=medals_dict[index]["image_path"])
 
+                st.markdown(
+                    f"*Data up to Gameweek {training_meta['training_data_gameweek']}*"
+                )
+
     except Exception as e:
         st.error(
             """:lion_face: Unable to get team data. Team ID is located in the team points URL: `https://fantasy.premierleague.com/entry/XXXXXX/event/1`"""
