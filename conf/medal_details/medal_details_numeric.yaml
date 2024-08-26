@@ -192,7 +192,41 @@ Robbie Savage Award:
   image_path: assets/award_images/robbie_savage.png
   medal_background: https://www.premierleague.com/players/706/Robbie-Savage/stats
   medal_details: 
-    This award is presented to managers whose teams have accumulated a high number of yellow cards, indicating frequent disciplinary issues on the pitch.
+    This award is presented to managers whose teams have accumulated a high number of yellow cards, Similar to the red  card award, this indicates frequent disciplinary issues on the pitch .
 
+Patrick Viera Award:
+  feature_name: red_cards
+  objective: maximise
+  sentiment: negative
+  text: Your players receive many red cards. You are in the top <percentage> of managers by total number of red cards.
+  gold_threshold: 10
+  silver_threshold: 20
+  bronze_threshold: 30
+  image_path: assets/award_images/patrick_viera.png
+  medal_background:  https://www.premierleague.com/players/1132/Patrick-Vieira/stats
+  medal_details: 
+    This award is presented to managers whose teams have accumulated a high number of red cards. Similar to the yellow card award, this indicates frequent disciplinary issues on the pitch .
 
-  
+Everton Award:
+  feature_name: event_transfers_cost_total
+  objective: maximise
+  sentiment: negative
+  text: Your team get docked a lot of points for your transfers. You are in the top <percentage> of managers by total transfer cost.
+  gold_threshold: 10
+  silver_threshold: 20
+  bronze_threshold: 30
+  image_path: assets/award_images/sean_dyche.png
+  medal_background: https://www.bbc.co.uk/sport/football/67448714
+  medal_details: This award is presented to managers who incur the highest number of point deductions for making additional transfers beyond their allotted limit, reflecting the penalties they face for exceeding their eligible transfers.
+
+Richard Dunne Award:
+  feature_name: own_goals
+  objective: maximise
+  sentiment: negative
+  text: Your team score a lot of own goals. You are in the top <percentage> of managers by total number of own goals.
+  gold_threshold: 10
+  silver_threshold: 20
+  bronze_threshold: 30
+  image_path: assets/award_images/richard_dunne.png
+  medal_background: https://www.bbc.co.uk/sport/football/67448714
+  medal_details: This award is given to managers whose teams have recorded the highest number of own goals, highlighting the unfortunate instances where their players have inadvertently scored against their own side.
