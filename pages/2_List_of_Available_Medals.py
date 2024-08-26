@@ -24,6 +24,7 @@ medals_dict = {
 
 # Get medal names in list
 medal_names = list(medals_dict.keys())
+medal_names.sort()
 number_of_medals = len(medal_names)
 
 
