@@ -1,21 +1,23 @@
 #!/bin/bash
 
 # Pull the latest changes from the remote repository
-git pull
+#git pull
 
 # Set PYTHONPATH and run the Python script
-export PYTHONPATH=$(pwd)
-python scripts/python/get_training_profile_data.py
+#export PYTHONPATH=$(pwd)
+#python scripts/python/get_training_profile_data.py
 
-# Get the current timestamp
-current_timestamp=$(date +"%Y-%m-%d %H:%M:%S")
+# Get the score GW
+gameweek=$(jq -r '.training_data_gameweek' data/training_meta.json)
 
 # Add all changes to the staging area
 git add .
 
 # Commit changes with a dynamic message
-commit_message="Bort Bot: Retraining $current_timestamp"
-git commit -m "$commit_message"
+git commit -m "Bort Bot: Retraining for Gameweek $gameweek"
 
 # Push changes to the current branch
 git push
+
+#Print
+echo "Retrained for: Gameweek $gameweek"
