@@ -8,7 +8,8 @@
 #python scripts/python/get_training_profile_data.py
 
 # Get the score GW
-gameweek = python3 -c "import json; import sys; print(json.load(open('data/training_meta.json'))['training_data_gameweek'])"
+gameweek=$(python -c "import json; import sys; print(json.load(open('data/training_meta.json'))['training_data_gameweek'])")
+
 
 # Add all changes to the staging area
 git add .
