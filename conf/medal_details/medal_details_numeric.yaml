@@ -194,7 +194,7 @@ Robbie Savage Award:
   medal_details: 
     This award is presented to managers whose teams have accumulated a high number of yellow cards, Similar to the red  card award, this indicates frequent disciplinary issues on the pitch .
 
-Patrick Viera Award:
+Roy Keane Award:
   feature_name: red_cards
   objective: maximise
   sentiment: negative
@@ -202,8 +202,8 @@ Patrick Viera Award:
   gold_threshold: 10
   silver_threshold: 20
   bronze_threshold: 30
-  image_path: assets/award_images/patrick_viera.png
-  medal_background:  https://www.premierleague.com/players/1132/Patrick-Vieira/stats
+  image_path: assets/award_images/roy_keane.png
+  medal_background:  https://www.youtube.com/watch?v=2zxKY4jamVQ
   medal_details: 
     This award is presented to managers whose teams have accumulated a high number of red cards. Similar to the yellow card award, this indicates frequent disciplinary issues on the pitch .
 
@@ -228,5 +228,5 @@ Richard Dunne Award:
   silver_threshold: 20
   bronze_threshold: 30
   image_path: assets/award_images/richard_dunne.png
-  medal_background: https://www.bbc.co.uk/sport/football/67448714
+  medal_background: https://theanalyst.com/eu/2023/12/most-premier-league-own-goals-by-a-player
   medal_details: This award is given to managers whose teams have recorded the highest number of own goals, highlighting the unfortunate instances where their players have inadvertently scored against their own side.
