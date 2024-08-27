@@ -101,6 +101,25 @@ def get_team_data(team_id):
 
 
 def get_team_gw_data(team_id, team_history_data, current_gameweek):
+    """
+    Retrieves the gameweek picks data for a given team up to the specified current gameweek.
+
+    Parameters
+    ----------
+    team_id : int
+        The unique identifier for the team whose gameweek data is to be fetched.
+    team_history_data : dict
+        A dictionary containing the team's history data.
+    current_gameweek : int or str
+        The current gameweek number. If the season has not started, it can be set to "Season Not Started".
+
+    Returns
+    -------
+    team_gw_picks : pd.DataFrame
+        A DataFrame containing the team's picks for each gameweek up to the current gameweek.
+        Includes columns for element, position, multiplier, captaincy, vice-captaincy, gameweek number, and whether the bench boost was active.
+    """
+
     if current_gameweek == "Season Not Started":
         return "Season Not Started"
     else:
@@ -147,6 +166,21 @@ def get_team_gw_data(team_id, team_history_data, current_gameweek):
 
 
 def get_favourite_team(bootstrap_data, team_data):
+    """
+    Retrieves the name of the favorite team based on the team data.
+
+    Parameters
+    ----------
+    bootstrap_data : dict
+        A dictionary containing the bootstrap static data from the Fantasy Premier League API.
+    team_data : dict
+        A dictionary containing the team data from the Fantasy Premier League API.
+
+    Returns
+    -------
+    favourite_team : str
+        The name of the favorite team, or "Not Specified" if the favorite team is not found.
+    """
     try:
         team_ids = pd.DataFrame(bootstrap_data["teams"])[["id", "name"]]
         favourite_team = team_ids[team_ids["id"] == team_data["favourite_team"]][
@@ -158,6 +192,20 @@ def get_favourite_team(bootstrap_data, team_data):
 
 
 def get_bboost_gw(team_history_data):
+    """
+    Retrieves the gameweek number in which the Bench Boost chip was used.
+
+    Parameters
+    ----------
+    team_history_data : dict
+        A dictionary containing the team's history data.
+
+    Returns
+    -------
+    int or None
+        The gameweek number when the Bench Boost chip was used, or None if it was not used.
+    """
+
     chips = team_history_data["chips"]
     if chips:  # Check if data is not None or empty
         for item in chips:
@@ -167,12 +215,40 @@ def get_bboost_gw(team_history_data):
 
 
 def get_current_season_year(bootstrap_data):
+    """
+    Retrieves the current season year in the format "YYYY-YY".
+
+    Parameters
+    ----------
+    bootstrap_data : dict
+        A dictionary containing the bootstrap static data from the Fantasy Premier League API.
+
+    Returns
+    -------
+    current_season_year : str
+        The current season year in the format "YYYY-YY".
+    """
     year_start = bootstrap_data["events"][0]["deadline_time"][0:4]
     current_season_year = f"{year_start}-{str(int(year_start) + 1)[2:4]}"
     return current_season_year
 
 
 def get_player_data(current_season_year):
+    """
+    Retrieves player data for the current season from the GitHub repository. Fantasy-Premier-League by vaastav.
+
+    Parameters
+    ----------
+    current_season_year : str
+        The current season year in the format "YYYY-YY".
+
+    Returns
+    -------
+    player_data : pd.DataFrame or str
+        A DataFrame containing the merged gameweek player data if available, or "Season Not Started" if the data is not available.
+    current_gameweek : int or str
+        The latest gameweek number in the data, or "Season Not Started" if the data is not available.
+    """
     try:
         vaastav_url = f"https://raw.githubusercontent.com/vaastav/Fantasy-Premier-League/master/data/{current_season_year}/gws/merged_gw.csv"
 

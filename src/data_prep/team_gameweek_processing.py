@@ -2,6 +2,29 @@ import pandas as pd
 
 
 def get_player_gameweek_totals(player_data, team_gw_picks, favourite_team, rival_teams):
+    """
+    This looks at gameweek data for the teams players.
+
+    This calculates summary statistics for a teams selected players up to the current gameweek. This merges the teams picks with the player data.
+
+    Parameters
+    ----------
+    player_data : pd.DataFrame
+        A DataFrame containing player performance data for the current season.
+    team_gw_picks : pd.DataFrame
+        A DataFrame containing the gameweek picks for the team.
+    favourite_team : str
+        The name of the user's favorite team.
+    rival_teams : dict
+        A dictionary where keys are team names and values are lists of rival teams.
+
+    Returns
+    -------
+    player_gameweek_totals : dict
+        A dictionary containing aggregated statistics for the gameweek, including totals
+        for starters, all players, and a categorical indication of whether rival team players
+        were picked.
+    """
     # Append player gameweek data
     player_data = pd.merge(
         team_gw_picks,
@@ -72,6 +95,22 @@ def get_player_gameweek_totals(player_data, team_gw_picks, favourite_team, rival
 
 
 def get_season_gameweek_overview(team_history_data, current_gameweek):
+    """
+    This looks at gameweek data for the team overall - not at a player level (e.g. total point hits, points on bench etc.).
+
+    Parameters
+    ----------
+    team_history_data : dict
+        A dictionary containing the team's history data.
+    current_gameweek : int
+        The current gameweek number.
+
+    Returns
+    -------
+    current_season_overview_output : dict
+        A dictionary containing the season overview, including totals, means, and the latest
+        values for key statistics. Also includes the percentage of points left on the bench.
+    """
     current_season_overview = pd.DataFrame(team_history_data["current"])
     current_season_overview = current_season_overview[
         current_season_overview["event"] <= current_gameweek

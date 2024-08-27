@@ -3,6 +3,28 @@ import ast
 
 
 def get_kit_information(team_data):
+    """
+    Extracts and processes information about a team's kit from the provided team data.
+
+    The function checks if the team has a kit and extracts details such as the type of shirt, logo, socks, and shorts.
+    It also determines if the kit is considered a "full kit" (socks/shorts/shirt populated).
+
+    Parameters
+    ----------
+    team_data : dict
+        A dictionary containing data about the team, including a string representation of the team's kit details.
+
+    Returns
+    -------
+    kit_summary_data : dict
+        A dictionary summarizing the kit information with the following keys:
+        - "kit": Boolean indicating whether a kit is available.
+        - "kit_shirt_type": The type of shirt in the kit.
+        - "kit_shirt_logo": The logo on the shirt.
+        - "kit_socks_type": The type of socks in the kit.
+        - "kit_shorts": The type of shorts in the kit.
+        - "kit_full": Boolean indicating whether the kit is considered a "full kit" (socks/shorts/shirt populated).
+    """
     if team_data["kit"] is None:
         kit = False
         kit_shirt_type = None

@@ -7,6 +7,23 @@ from src.data_prep.team_summary.yoyo_rising_score import calculate_yoyo_rising_s
 
 
 def process_team_history(team_history_data):
+    """
+    Processes historical data of a team to compute various statistics, including minimum and maximum ranks,
+    total points, the earliest season year, career breaks, and scores indicating consistency and improvement.
+
+    This is all based on past season data.
+
+    Parameters
+    ----------
+    team_history_data : dict
+        A dictionary containing past seasons' data of the team, including ranks and total points.
+
+    Returns
+    -------
+    team_summary_history_data : dict
+        A dictionary containing computed historical statistics such as minimum and maximum ranks,
+        total points history, earliest season year, career breaks, and consistency scores.
+    """
     if len(team_history_data["past"]) == 0:
         min_rank_history = None
         max_rank_history = None
@@ -62,6 +79,26 @@ def process_team_history(team_history_data):
 
 
 def aggregate_team_data(team_data, kit_summary_data, team_summary_history_data):
+    """
+    Aggregates various pieces of team-related data, including current season data, kit information,
+    and historical performance, into a comprehensive summary.
+
+    Parameters
+    ----------
+    team_data : dict
+        A dictionary containing the current top level data for the team.
+    kit_summary_data : dict
+        A dictionary containing the team's kit information.
+    team_summary_history_data : dict
+        A dictionary containing the team's historical performance statistics.
+
+    Returns
+    -------
+    team_summary_data : dict
+        A dictionary containing aggregated data for the team, including identification information,
+        league participation, financials, overall performance, and kit details.
+    """
+
     # Create the team_summary_data dictionary
     team_summary_data = {
         "id": team_data["id"],
@@ -106,6 +143,22 @@ def aggregate_team_data(team_data, kit_summary_data, team_summary_history_data):
 
 
 def get_team_summary(team_data, team_history_data):
+    """
+    Generates a comprehensive summary of a team by combining historic season data, and indivudal feature details.
+
+    Parameters
+    ----------
+    team_data : dict
+        A dictionary containing the current top level data for the team.
+    team_history_data : dict
+        A dictionary containing the team's historical performance data.
+
+    Returns
+    -------
+    team_summary_data : dict
+        A dictionary containing a detailed summary of the team's overall data, including identification,
+        performance metrics, kit details, and historical statistics.
+    """
     # Get kit information
     kit_summary_data = get_kit_information(team_data)
 

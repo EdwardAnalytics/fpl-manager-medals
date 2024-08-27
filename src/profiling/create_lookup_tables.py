@@ -3,6 +3,27 @@ import numpy as np
 
 
 def create_distribution_table_numeric(df, column_name):
+    """
+    Creates a distribution table for a numeric column, including the total volume of samples,
+    and the percentage of values above and below each unique value.
+
+    Parameters
+    ----------
+    df : pd.DataFrame
+        The DataFrame containing the data.
+    column_name : str
+        The name of the column to create the distribution table for.
+
+    Returns
+    -------
+    distribution_table : pd.DataFrame
+        A DataFrame with the distribution information, including:
+        - "column_name": The name of the column.
+        - "value": Unique values in the column.
+        - "total_volume_sample": Counts of each unique value.
+        - "percentage_above": Cumulative percentage of rows with values above each unique value.
+        - "percentage_below": Cumulative percentage of rows with values below each unique value.
+    """
     # Calculate the total number of non-NaN rows
     total_non_nan_rows = len(df[column_name].dropna())
 
@@ -42,6 +63,23 @@ def create_distribution_table_numeric(df, column_name):
 def create_distribution_table_numeric_partitioned(
     df, column_name, partition_column="Not Specified"
 ):
+    """
+    Creates a distribution table for a numeric column, partitioned by another column if specified.
+
+    Parameters
+    ----------
+    df : pd.DataFrame
+        The DataFrame containing the data.
+    column_name : str
+        The name of the numeric column to create the distribution table for.
+    partition_column : str, optional
+        The name of the column to partition the data by (default is "Not Specified").
+
+    Returns
+    -------
+    final_distribution_table : pd.DataFrame
+        A DataFrame containing the partitioned distribution tables combined.
+    """
     if partition_column == "Not Specified":
         # No partitioning, just calculate the distribution
         return create_distribution_table_numeric(df, column_name)
@@ -71,6 +109,22 @@ def create_distribution_table_numeric_partitioned(
 
 
 def create_lookup_table_numeric(distribution_table, column_name):
+    """
+    Creates a lookup table for a numeric column using interpolation to estimate values
+    at specific percentage points.
+
+    Parameters
+    ----------
+    distribution_table : pd.DataFrame
+        The distribution table containing the column data.
+    column_name : str
+        The name of the column for which to create the lookup table.
+
+    Returns
+    -------
+    lookup_table : pd.DataFrame
+        A DataFrame containing interpolated values for specific percentage points above and below.
+    """
     # interpolate_percentage_above_below_numeric
 
     distribution_table = distribution_table[
@@ -116,6 +170,24 @@ def create_lookup_table_numeric(distribution_table, column_name):
 def create_lookup_table_numeric_partitioned(
     distribution_table, column_name, partition_column="Not Specified"
 ):
+    """
+    Creates a lookup table for a numeric column, partitioned by another column if specified. This applies linear interpolation to estimate values
+    at specific percentage points.
+
+    Parameters
+    ----------
+    distribution_table : pd.DataFrame
+        The distribution table containing the data.
+    column_name : str
+        The name of the numeric column to create the lookup table for.
+    partition_column : str, optional
+        The name of the column to partition the data by (default is "Not Specified").
+
+    Returns
+    -------
+    final_lookup_table : pd.DataFrame
+        A DataFrame containing the partitioned lookup tables combined.
+    """
     if partition_column == "Not Specified":
         # Filter the distribution table by the specified column_name
         filtered_table = distribution_table[
@@ -148,6 +220,21 @@ def create_lookup_table_numeric_partitioned(
 
 
 def create_lookup_table_categorical(df, column_name):
+    """
+    Creates a lookup table for a categorical column, including the proportion and rank of each unique value.
+
+    Parameters
+    ----------
+    df : pd.DataFrame
+        The DataFrame containing the data.
+    column_name : str
+        The name of the categorical column to create the lookup table for.
+
+    Returns
+    -------
+    lookup_table : pd.DataFrame
+        A DataFrame containing the proportion and rank of each unique value.
+    """
     # Calculate the proportion of each unique value
     percentage_share = df[column_name].value_counts(normalize=True)
 
@@ -175,6 +262,23 @@ def create_lookup_table_categorical(df, column_name):
 
 
 def create_lookup_tables_aggregated(df, impute_nulls):
+    """
+    Creates aggregated lookup tables for both numeric and categorical columns based on the specified data.
+
+    Parameters
+    ----------
+    df : pd.DataFrame
+        The DataFrame containing the data.
+    impute_nulls : dict
+        A dictionary specifying the values to use for imputing missing data.
+
+    Returns
+    -------
+    lookup_table_numeric : pd.DataFrame
+        A DataFrame containing the numeric lookup tables.
+    lookup_table_categorical : pd.DataFrame
+        A DataFrame containing the categorical lookup tables.
+    """
     column_data_types = {
         "player_region_iso_code_long": "categorical",
         "name_change_blocked": "categorical",

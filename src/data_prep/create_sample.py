@@ -15,6 +15,21 @@ random_seed = config["random_seed"]
 
 
 def get_sample_ids(training_sample_size, random_seed):
+    """
+    Generates a random sample of team IDs for training based on the total number of players.
+
+    Parameters
+    ----------
+    training_sample_size : int
+        The number of team IDs to sample.
+    random_seed : int
+        The seed for the random number generator to ensure reproducibility.
+
+    Returns
+    -------
+    sample_ids : list of int
+        A list containing randomly sampled team IDs.
+    """
     bootstrap_data = get_boostrap_data()
     total_players = bootstrap_data["total_players"]
     random.seed(random_seed)
@@ -24,6 +39,23 @@ def get_sample_ids(training_sample_size, random_seed):
 
 
 def get_all_data_sample(bootstrap_data, current_gameweek, player_data):
+    """
+    Retrieves data for a random sample of teams based on the provided bootstrap data, current gameweek, and player data.
+
+    Parameters
+    ----------
+    bootstrap_data : dict
+        A dictionary containing the bootstrap static data from the Fantasy Premier League API.
+    current_gameweek : int
+        The current gameweek number.
+    player_data : pd.DataFrame
+        A DataFrame containing player data for the current season.
+
+    Returns
+    -------
+    all_data : list of dict
+        A list containing data for each sampled team.
+    """
     # Get random sample of ids
     sample_ids = get_sample_ids(
         training_sample_size=training_sample_size, random_seed=random_seed

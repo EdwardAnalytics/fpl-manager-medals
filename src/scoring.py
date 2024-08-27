@@ -8,6 +8,27 @@ import json
 
 
 def get_team_medals(team_id, bootstrap_data, current_gameweek, player_data):
+    """
+    Retrieve medals for a specific team based on its ID and related data.
+
+    Parameters
+    ----------
+    team_id : int
+        The unique identifier for the team.
+    bootstrap_data : dict
+        Bootstrap data containing season and gameweek information.
+    current_gameweek : int
+        The current gameweek in the season.
+    player_data : pd.DataFrame or str
+        Player data as a DataFrame or a string indicating if the season has not started.
+
+    Returns
+    -------
+    team_name : str
+        The name of the team.
+    medals : pd.DataFrame
+        A DataFrame with medal details for the team.
+    """
     # Get player data
     current_season_year = get_current_season_year(bootstrap_data=bootstrap_data)
 
@@ -74,6 +95,21 @@ def get_team_medals(team_id, bootstrap_data, current_gameweek, player_data):
 
 
 def get_leagues_competing_in(team_id, max_league_size=300):
+    """
+    Get leagues that a specific team is competing in, filtered by league size.
+
+    Parameters
+    ----------
+    team_id : int
+        The unique identifier for the team.
+    max_league_size : int, optional
+        The maximum size of the leagues to include. Default is 300.
+
+    Returns
+    -------
+    classic_leagues : dict
+        A dictionary where keys are league names and values are league IDs.
+    """
     # Get leagues competing in
     team_data, team_history_data = get_team_data(team_id)
 
@@ -92,6 +128,29 @@ def get_leagues_competing_in(team_id, max_league_size=300):
 def get_league_medals(
     league_id, page_limit, bootstrap_data, current_gameweek, player_data
 ):
+    """
+    Retrieve medal information for all teams in a specified league.
+
+    Parameters
+    ----------
+    league_id : int
+        The unique identifier for the league.
+    page_limit : int
+        The maximum number of pages of league data to retrieve.
+    bootstrap_data : dict
+        Bootstrap data containing season and gameweek information.
+    current_gameweek : int
+        The current gameweek in the season.
+    player_data : pd.DataFrame or str
+        Player data as a DataFrame or a string indicating if the season has not started.
+
+    Returns
+    -------
+    league_name : str
+        The name of the league.
+    league_medals : pd.DataFrame
+        A DataFrame with medal details for each team in the league.
+    """
     league_details, league_data = get_league_data(
         league_id=league_id, current_gameweek=current_gameweek, page_limit=page_limit
     )

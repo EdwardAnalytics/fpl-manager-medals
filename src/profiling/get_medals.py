@@ -11,6 +11,28 @@ rival_teams = load_yaml_file(yaml_file_path)
 def team_medal_numeric(
     lookup_table_numeric, feature_name, value, objective, partition_value
 ):
+    """
+    Determine the percentage threshold and assign a medal based on a numeric feature.
+
+    Parameters
+    ----------
+    lookup_table_numeric : pd.DataFrame
+        DataFrame containing numeric lookup data with columns 'column_name',
+        'interpolated_value_below', 'interpolated_value_above', and 'percentage'.
+    feature_name : str
+        The name of the feature to lookup.
+    value : float
+        The value to compare against the lookup table.
+    objective : str
+        The objective for the comparison, which can be 'minimise' or 'maximise'.
+    partition_value : str
+        The partition value used to refine the feature name (e.g., a specific category).
+
+    Returns
+    -------
+    float
+        The percentage corresponding to the feature and value based on the given objective.
+    """
     if partition_value != "Not Specified":
         feature_name = f"{feature_name}_{partition_value}"
 
@@ -44,6 +66,27 @@ def team_medal_numeric(
 
 
 def team_medal_categorical(lookup_table_categorical, feature_name, value):
+    """
+    Determine the percentage threshold and assign a medal based on a categorical feature.
+
+    Parameters
+    ----------
+    lookup_table_categorical : pd.DataFrame
+        DataFrame containing categorical lookup data with columns 'column_name',
+        'value', 'percentage_share', 'rank_ascending', and 'rank_descending'.
+    feature_name : str
+        The name of the feature to lookup.
+    value : str
+        The value to compare against the lookup table.
+
+    Returns
+    -------
+    tuple
+        A tuple containing:
+        - int: The percentage corresponding to the feature and value.
+        - int: The rank in ascending order.
+        - int: The rank in descending order.
+    """
     # Categorical
     filtered_df = lookup_table_categorical[
         (lookup_table_categorical["column_name"] == feature_name)
@@ -80,6 +123,26 @@ def team_medal_categorical(lookup_table_categorical, feature_name, value):
 
 
 def get_numeric_medals(medal_details_numeric, lookup_table_numeric, team_data):
+    """
+    Calculate medals for numeric features based on thresholds and team data.
+
+    Parameters
+    ----------
+    medal_details_numeric : dict
+        Dictionary with medal details for numeric features including 'feature_name',
+        'objective', 'partition_feature', 'gold_threshold', 'silver_threshold',
+        'bronze_threshold', 'text', 'image_path', and 'medal_background'.
+    lookup_table_numeric : pd.DataFrame
+        DataFrame with numeric lookup data.
+    team_data : dict
+        Dictionary containing the team's data for comparison.
+
+    Returns
+    -------
+    pd.DataFrame
+        DataFrame with the results including columns for 'Medal Name', 'Medal', 'Overview',
+        'image_path', and 'medal_background'.
+    """
     medals = pd.DataFrame(
         columns=["Medal Name", "Medal", "Overview", "image_path", "medal_background"]
     )
@@ -156,6 +219,26 @@ def get_numeric_medals(medal_details_numeric, lookup_table_numeric, team_data):
 def get_categorical_medals(
     medal_details_categorical, lookup_table_categorical, team_data
 ):
+    """
+    Calculate medals for categorical features based on thresholds and team data.
+
+    Parameters
+    ----------
+    medal_details_categorical : dict
+        Dictionary with medal details for categorical features including
+        'feature_name', 'gold_threshold', 'silver_threshold', 'bronze_threshold',
+        'text', 'image_path', and 'medal_background'.
+    lookup_table_categorical : pd.DataFrame
+        DataFrame with categorical lookup data.
+    team_data : dict
+        Dictionary containing the team's data for comparison.
+
+    Returns
+    -------
+    pd.DataFrame
+        DataFrame with the results including columns for 'Medal Name', 'Medal', 'Overview',
+        'image_path', and 'medal_background'.
+    """
     medals = pd.DataFrame(
         columns=["Medal Name", "Medal", "Overview", "image_path", "medal_background"]
     )
@@ -211,6 +294,25 @@ def get_categorical_medals(
 
 
 def get_binary_medals(medal_details_binary, lookup_table_categorical, team_data):
+    """
+    Calculate medals for binary features based on thresholds and team data.
+
+    Parameters
+    ----------
+    medal_details_binary : dict
+        Dictionary with medal details for binary features including 'feature_name',
+        'gold_values', 'text', 'image_path', and 'medal_background'.
+    lookup_table_categorical : pd.DataFrame
+        DataFrame with categorical lookup data.
+    team_data : dict
+        Dictionary containing the team's data for comparison.
+
+    Returns
+    -------
+    pd.DataFrame
+        DataFrame with the results including columns for 'Medal Name', 'Medal', 'Overview',
+        'image_path', and 'medal_background'.
+    """
     medals = pd.DataFrame(
         columns=["Medal Name", "Medal", "Overview", "image_path", "medal_background"]
     )
@@ -264,6 +366,32 @@ def get_all_medals(
     medal_details_special,
     team_data,
 ):
+    """
+    Aggregate and calculate all types of medals (numeric, categorical, binary) for a team based on provided data.
+
+    Parameters
+    ----------
+    medal_details_numeric : dict
+        Dictionary with medal details for numeric features.
+    lookup_table_numeric : pd.DataFrame
+        DataFrame with numeric lookup data.
+    medal_details_categorical : dict
+        Dictionary with medal details for categorical features.
+    lookup_table_categorical : pd.DataFrame
+        DataFrame with categorical lookup data.
+    medal_details_binary : dict
+        Dictionary with medal details for binary features.
+    medal_details_special : dict
+        Dictionary with special medal details.
+    team_data : dict
+        Dictionary containing the team's data for comparison.
+
+    Returns
+    -------
+    pd.DataFrame
+        DataFrame with the combined results including columns for 'Medal Name', 'Medal', 'Overview',
+        'image_path', and 'medal_background', sorted by medal type (Gold, Silver, Bronze).
+    """
     medals_numeric = get_numeric_medals(
         medal_details_numeric=medal_details_numeric,
         lookup_table_numeric=lookup_table_numeric,

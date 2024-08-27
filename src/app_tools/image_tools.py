@@ -4,6 +4,20 @@ from PIL import Image, ImageDraw, ImageOps
 
 
 def convert_to_png(image_path, output_path):
+    """
+    Convert an image to PNG format and save it.
+
+    Parameters
+    ----------
+    image_path : str
+        Path to the input image file.
+    output_path : str
+        Path where the converted PNG image will be saved.
+
+    Returns
+    -------
+    None
+    """
     # Open an image file
     with Image.open(image_path) as img:
         # Convert image to PNG
@@ -13,6 +27,22 @@ def convert_to_png(image_path, output_path):
 
 
 def resize_image(image_path, output_path, size):
+    """
+    Resize an image to the specified size using LANCZOS resampling.
+
+    Parameters
+    ----------
+    image_path : str
+        Path to the input image file.
+    output_path : str
+        Path where the resized image will be saved.
+    size : int
+        The desired size of the image (both width and height) in pixels.
+
+    Returns
+    -------
+    None
+    """
     # Open an image file
     with Image.open(image_path) as img:
         # Resize the image using LANCZOS resampling
@@ -22,6 +52,22 @@ def resize_image(image_path, output_path, size):
 
 
 def round_corners(image_path, output_path, radius):
+    """
+    Round the corners of an image and save the result.
+
+    Parameters
+    ----------
+    image_path : str
+        Path to the input image file.
+    output_path : str
+        Path where the image with rounded corners will be saved.
+    radius : int
+        The radius of the rounded corners in pixels.
+
+    Returns
+    -------
+    None
+    """
     # Open an image file
     with Image.open(image_path) as img:
         # Create a mask to round the corners
@@ -38,6 +84,16 @@ def round_corners(image_path, output_path, radius):
 
 
 def format_images():
+    """
+    Format images by converting them to PNG, resizing, and rounding corners.
+
+    This function loads medal details from YAML files, processes each image according to the
+    medal details, and saves the formatted images.
+
+    Returns
+    -------
+    None
+    """
     # Get medal details
     yaml_file_path = "conf/medal_details/medal_details_numeric.yaml"
     medal_details_numeric = load_yaml_file(yaml_file_path)

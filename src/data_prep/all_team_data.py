@@ -16,6 +16,29 @@ rival_teams = load_yaml_file(yaml_file_path)
 
 
 def get_all_team_data(team_id, bootstrap_data, current_gameweek, player_data):
+    """
+    Retrieves and processes all relevant data for a specified team, including summary data,
+    gameweek performance, and season overview. Combines the data into a comprehensive dictionary.
+
+    Parameters
+    ----------
+    team_id : int
+        The unique identifier of the team.
+    bootstrap_data : dict
+        A dictionary containing general information needed to retrieve team-specific data.
+    current_gameweek : int
+        The current gameweek number for which data is being processed.
+    player_data : pd.DataFrame
+        A DataFrame containing player-specific data relevant to the current gameweek.
+
+    Returns
+    -------
+    team_name : str
+        The name of the team.
+    all_team_data : dict
+        A dictionary containing the team's summary, gameweek performance, and season overview data,
+        combined with additional information like the favorite team.
+    """
     # Load all team data
     team_data, team_history_data = get_team_data(team_id=team_id)
     team_name = team_data["name"]
