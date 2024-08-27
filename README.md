@@ -32,7 +32,7 @@ pip install -r requirements.txt
 
 Run the Streamlit app:
 ```
-streamlit run streamlit_app.py
+streamlit run Team_Medals.py
 ```
 
 Navigate to local host: http://127.0.0.1:8050/.
