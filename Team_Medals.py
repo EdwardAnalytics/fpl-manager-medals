@@ -57,9 +57,7 @@ st.markdown(
 def main():
     try:
         st.title(
-            "FPL Manager Medals: Team",
-            help="Note: The sidebar is hidden on mobile devices. Tap the > icon at the top left to access it. This includes getting medals for leagues and further information.",
-        )
+            "FPL Manager Medals: Team")
         if st.button(":twisted_rightwards_arrows: Switch to League Medals"):
             st.switch_page("pages/1_League_Medals.py")
 
