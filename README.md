@@ -19,16 +19,7 @@ Historical player data obtained from the following repository:
 ### Local Instructions
 Python Version: 3.11.7
 
-Clone this repo:
-```
-git clone https://github.com/edward-farragher/fpl-manager-medals.git
-cd fpl-manager-medals
-```
-
-Install requirements (in virtual environment):
-```
-pip install -r requirements.txt
-```
+Clone this repo and Install requirements (in virtual environment)
 
 Run the Streamlit app:
 ```
