@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Pull the latest changes from the remote repository
-#git pull
+git pull
 
 # Set PYTHONPATH and run the Python script
 export PYTHONPATH=$(pwd)
