@@ -56,8 +56,7 @@ st.markdown(
 
 def main():
     try:
-        st.title(
-            "FPL Manager Medals: Team")
+        st.title("FPL Manager Medals: Team")
         if st.button(":twisted_rightwards_arrows: Switch to League Medals"):
             st.switch_page("pages/1_League_Medals.py")
 
