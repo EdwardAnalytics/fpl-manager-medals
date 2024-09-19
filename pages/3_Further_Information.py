@@ -39,5 +39,5 @@ st.markdown(f"""
     
     6. **Medal Allocation:** Teams are evaluated against predefined thresholds for gold, silver, and bronze medals. Teams meeting the threshold are awarded the corresponding medal.
 
-    *For further details, please refer to the repository [here](https://github.com/edward-farragher/fpl-manager-medals).*
+    *For further details, please refer to the repository [here](https://github.com/EdwardAnalytics/fpl-manager-medals).*
     """)

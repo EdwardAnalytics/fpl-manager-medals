@@ -1,41 +1,28 @@
 import streamlit as st
-import base64
 
 from src.data_prep.load_data import (
     get_boostrap_data,
     get_current_season_year,
 )
-import json
 from src.scoring import get_league_medals, get_leagues_competing_in
 import pandas as pd
-from src.app_tools.yaml_loader import load_yaml_file
+from src.app_tools.yaml_loader import load_multiple_yaml_files_combined
+from src.app_tools.json_loader import load_json_file
+from src.app_tools.streamlit_csv_loader import load_csv_with_error_handling
+from src.streamlit_components.page_configuration import (
+    hide_streamlit_deploy_button,
+    create_streamlit_header_with_logo,
+)
 
 # Get medal details
-yaml_file_path = "conf/medal_details/medal_details_numeric.yaml"
-medal_details_numeric = load_yaml_file(yaml_file_path)
+file_paths = [
+    "conf/medal_details/medal_details_numeric.yaml",
+    "conf/medal_details/medal_details_categorical.yaml",
+    "conf/medal_details/medal_details_binary.yaml",
+    "conf/medal_details/medal_details_special.yaml",
+]
+medals_dict = load_multiple_yaml_files_combined(file_paths)
 
-yaml_file_path = "conf/medal_details/medal_details_categorical.yaml"
-medal_details_categorical = load_yaml_file(yaml_file_path)
-
-yaml_file_path = "conf/medal_details/medal_details_binary.yaml"
-medal_details_binary = load_yaml_file(yaml_file_path)
-
-yaml_file_path = "conf/medal_details/medal_details_special.yaml"
-medal_details_special = load_yaml_file(yaml_file_path)
-
-# Combine medals
-medals_dict = {
-    **medal_details_numeric,
-    **medal_details_categorical,
-    **medal_details_binary,
-    **medal_details_special,
-}
-
-
-# Get gameweek scored
-file_path = "data/training_meta.json"
-with open(file_path, "r") as file:
-    training_meta = json.load(file)
 
 # Pre processing
 # Get boostrap data
@@ -46,78 +33,33 @@ current_season_year = get_current_season_year(bootstrap_data=bootstrap_data)
 
 # Load metadata
 file_path = "data/training_meta.json"
-with open(file_path, "r") as file:
-    training_meta = json.load(file)
+training_meta = load_json_file(file_path)
+
 current_gameweek = training_meta["training_data_gameweek"]
 
 # Load player data
-try:  # i.e. season has started
-    file_path = f"data/vaastav-data/player_data_{current_season_year}.csv"
-    player_data = pd.read_csv(file_path)
-except:
-    player_data = "Season Not Started"
+file_path = f"data/vaastav-data/player_data_{current_season_year}.csv"
+player_data = load_csv_with_error_handling(file_path)
 
 # Page config
-st.set_page_config(
-    page_title="FPL Manager Medals: League",
-    page_icon=":soccer:",
-)
+title = "FPL Manager Medals: League"
+st.set_page_config(page_title=title, page_icon=":soccer:")
 
 
 # Hide deploy button
-st.markdown(
-    r"""
-    <style>
-    .stDeployButton {
-            visibility: hidden;
-        }
-    </style>
-    """,
-    unsafe_allow_html=True,
-)
+hide_streamlit_deploy_button()
 
 
 def main():
     try:
-        st.title("FPL Manager Medals: League")
+        st.title(title)
         if st.button(":twisted_rightwards_arrows: Switch to Team Medals"):
             st.switch_page("Team_Medals.py")
 
         # Add github link and logo
-        LOGO_IMAGE = "assets//pwt.png"
-
-        st.markdown(
-            """
-            <style>
-            .container {
-                display: flex;
-            }
-            .logo-text {
-                font-weight: 0 !important;
-                font-size: 15px !important;
-                padding-top: 0px !important;
-                margin-left: 0px;
-                font-style: italic; 
-            }
-            .logo-img {
-                float:right;
-                width: 28px;
-                height: 28px;
-                margin-right: 8px; 
-            }
-            </style>
-            """,
-            unsafe_allow_html=True,
-        )
-
-        st.markdown(
-            f"""
-            <div class="container">
-                <img class="logo-img" src="data:assets//pwt.png;base64,{base64.b64encode(open(LOGO_IMAGE, "rb").read()).decode()}">
-                <p class="logo-text"><a href="https://github.com/edward-farragher/fpl-manager-segmentation">GitHub Repo</a></p>
-            </div>
-            """,
-            unsafe_allow_html=True,
+        create_streamlit_header_with_logo(
+            github_url="https://github.com/EdwardAnalytics/fpl-manager-segmentation",
+            logo_image_path="assets/pwt.png",
         )
 
         # Input number
