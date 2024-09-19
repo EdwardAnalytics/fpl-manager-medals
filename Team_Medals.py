@@ -48,7 +48,7 @@ def main():
 
         # Add github link and logo
         create_streamlit_header_with_logo(
-            github_url="https://github.com/EdwardAnalytics/fpl-manager-segmentation",
+            github_url="https://github.com/EdwardAnalytics/fpl-manager-medals",
             logo_image_path="assets/pwt.png",
         )
 
