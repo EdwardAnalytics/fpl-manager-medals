@@ -96,3 +96,41 @@ def get_medal_documentation(index, number_of_medals, medal_names, medals_dict):
 
             with col2:
                 st.image(image=medals_dict[medal_name]["image_path"])
+
+
+def get_league_medal_scoring(
+    index, number_of_medals, medal_list, league_medals, medals_dict
+):
+    """
+    Displays league medal information based on the provided index and medal list.
+
+    Parameters
+    ----------
+    index : int
+        The current index in the list of medals. This determines which medal's information to display.
+    number_of_medals : int
+        The total number of medals in the list. The function will only process medals up to this number.
+    medal_list : list of str
+        A list of medal names. The function uses this list to determine which medal's details to display based on the current index.
+    league_medals : pd.DataFrame
+        A DataFrame containing league medal information. This DataFrame should include columns such as "Medal Name", "Manager", "Team", and "Medal".
+    medals_dict : dict
+        A dictionary containing additional details for each medal. The keys should be medal names and the values should be dictionaries with a key "medal_details" that provides descriptive information about the medal.
+
+    Returns
+    -------
+    None
+        This function does not return any value. It uses Streamlit functions to display the medal information on a web interface.
+    """
+    if index < number_of_medals:
+        medal_name = medal_list[index]
+        st.subheader(medal_name)
+        league_medals_filtered = league_medals[
+            league_medals["Medal Name"] == medal_name
+        ]
+        st.markdown(f"*{medals_dict[medal_name]['medal_details']}*")
+        st.dataframe(
+            league_medals_filtered[["Manager", "Team", "Medal"]],
+            hide_index=True,
+        )
+        st.text("")
