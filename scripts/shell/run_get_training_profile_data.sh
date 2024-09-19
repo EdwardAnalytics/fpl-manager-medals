@@ -14,7 +14,7 @@ gameweek=$(python -c "import json; import sys; print(json.load(open('data/traini
 git add .
 
 # Commit changes with a dynamic message
-git commit -m "Bort Bot: Retraining for Gameweek $gameweek"
+git commit -m "Retraining for Gameweek $gameweek"
 
 # Push changes to the current branch
 git push
