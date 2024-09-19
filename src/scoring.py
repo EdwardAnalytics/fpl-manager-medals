@@ -1,6 +1,6 @@
 from src.app_tools.yaml_loader import load_yaml_file
 from src.data_prep.all_team_data import get_all_team_data
-from src.profiling.get_medals import get_all_medals
+from src.profiling.get_medals_all_combined import get_all_medals
 import pandas as pd
 from src.data_prep.load_data import get_current_season_year, get_team_data
 from src.data_prep.load_data_league import get_league_data
