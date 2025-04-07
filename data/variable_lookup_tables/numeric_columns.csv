@@ -1,544 +1,544 @@
 column_name,percentage,interpolated_value_above,interpolated_value_below
 classic_leagues_competed_in,100,4.0,35.0
-classic_leagues_competed_in,95,6.048,15.069
-classic_leagues_competed_in,90,6.271,11.663
-classic_leagues_competed_in,85,6.494,10.25
-classic_leagues_competed_in,80,6.717,9.346
-classic_leagues_competed_in,75,6.94,8.677
-classic_leagues_competed_in,70,7.134,8.119
-classic_leagues_competed_in,65,7.317,7.742
-classic_leagues_competed_in,60,7.5,7.415
-classic_leagues_competed_in,55,7.683,7.087
-classic_leagues_competed_in,50,7.866,6.866
-classic_leagues_competed_in,45,8.087,6.683
-classic_leagues_competed_in,40,8.415,6.5
-classic_leagues_competed_in,35,8.742,6.317
-classic_leagues_competed_in,30,9.119,6.134
-classic_leagues_competed_in,25,9.677,5.94
-classic_leagues_competed_in,20,10.346,5.717
-classic_leagues_competed_in,15,11.25,5.494
-classic_leagues_competed_in,10,12.663,5.271
-classic_leagues_competed_in,5,16.069,5.048
+classic_leagues_competed_in,95,6.02,14.522
+classic_leagues_competed_in,90,6.226,11.508
+classic_leagues_competed_in,85,6.431,10.124
+classic_leagues_competed_in,80,6.636,9.248
+classic_leagues_competed_in,75,6.842,8.597
+classic_leagues_competed_in,70,7.043,8.025
+classic_leagues_competed_in,65,7.23,7.662
+classic_leagues_competed_in,60,7.416,7.308
+classic_leagues_competed_in,55,7.603,6.976
+classic_leagues_competed_in,50,7.79,6.79
+classic_leagues_competed_in,45,7.976,6.603
+classic_leagues_competed_in,40,8.308,6.416
+classic_leagues_competed_in,35,8.662,6.23
+classic_leagues_competed_in,30,9.025,6.043
+classic_leagues_competed_in,25,9.597,5.842
+classic_leagues_competed_in,20,10.248,5.636
+classic_leagues_competed_in,15,11.124,5.431
+classic_leagues_competed_in,10,12.508,5.226
+classic_leagues_competed_in,5,15.522,5.02
 h2h_leagues_competed_in,100,0.0,9.0
-h2h_leagues_competed_in,95,0.059,0.994
-h2h_leagues_competed_in,90,0.119,0.532
-h2h_leagues_competed_in,85,0.178,0.071
-h2h_leagues_competed_in,80,0.237,0.0
-h2h_leagues_competed_in,75,0.297,0.0
-h2h_leagues_competed_in,70,0.356,0.0
-h2h_leagues_competed_in,65,0.416,0.0
-h2h_leagues_competed_in,60,0.475,0.0
-h2h_leagues_competed_in,55,0.534,0.0
-h2h_leagues_competed_in,50,0.594,0.0
-h2h_leagues_competed_in,45,0.653,0.0
-h2h_leagues_competed_in,40,0.712,0.0
-h2h_leagues_competed_in,35,0.772,0.0
-h2h_leagues_competed_in,30,0.831,0.0
-h2h_leagues_competed_in,25,0.89,0.0
-h2h_leagues_competed_in,20,0.95,0.0
-h2h_leagues_competed_in,15,1.071,0.0
-h2h_leagues_competed_in,10,1.532,0.0
-h2h_leagues_competed_in,5,1.994,0.0
-last_deadline_bank,100,0.0,287.0
-last_deadline_bank,95,0.188,31.009
-last_deadline_bank,90,0.376,20.473
-last_deadline_bank,85,0.564,15.246
-last_deadline_bank,80,0.752,11.782
-last_deadline_bank,75,0.94,9.275
-last_deadline_bank,70,1.388,7.682
-last_deadline_bank,65,1.957,5.982
-last_deadline_bank,60,2.601,4.681
-last_deadline_bank,55,3.263,3.875
-last_deadline_bank,50,3.943,2.943
-last_deadline_bank,45,4.875,2.263
-last_deadline_bank,40,5.681,1.601
-last_deadline_bank,35,6.982,0.957
-last_deadline_bank,30,8.682,0.388
-last_deadline_bank,25,10.275,0.0
-last_deadline_bank,20,12.782,0.0
-last_deadline_bank,15,16.246,0.0
-last_deadline_bank,10,21.473,0.0
-last_deadline_bank,5,32.009,0.0
-last_deadline_value,100,984.0,1021.0
-last_deadline_value,95,993.782,1010.525
-last_deadline_value,90,995.936,1008.876
-last_deadline_value,85,997.425,1007.68
-last_deadline_value,80,998.623,1006.638
-last_deadline_value,75,999.549,1005.746
-last_deadline_value,70,1000.354,1005.001
-last_deadline_value,65,1001.128,1004.289
-last_deadline_value,60,1001.873,1003.57
-last_deadline_value,55,1002.559,1002.864
-last_deadline_value,50,1003.222,1002.222
-last_deadline_value,45,1003.864,1001.559
-last_deadline_value,40,1004.57,1000.873
-last_deadline_value,35,1005.289,1000.128
-last_deadline_value,30,1006.001,999.354
-last_deadline_value,25,1006.746,998.549
-last_deadline_value,20,1007.638,997.623
-last_deadline_value,15,1008.68,996.425
-last_deadline_value,10,1009.876,994.936
-last_deadline_value,5,1011.525,992.782
-last_deadline_total_transfers,100,0.0,42.0
-last_deadline_total_transfers,95,0.268,10.552
-last_deadline_total_transfers,90,0.536,7.169
-last_deadline_total_transfers,85,0.804,5.612
-last_deadline_total_transfers,80,1.216,4.742
-last_deadline_total_transfers,75,2.013,4.174
-last_deadline_total_transfers,70,2.401,3.807
-last_deadline_total_transfers,65,2.788,3.529
-last_deadline_total_transfers,60,3.128,3.25
-last_deadline_total_transfers,55,3.409,2.972
-last_deadline_total_transfers,50,3.69,2.69
-last_deadline_total_transfers,45,3.972,2.409
-last_deadline_total_transfers,40,4.25,2.128
-last_deadline_total_transfers,35,4.529,1.788
-last_deadline_total_transfers,30,4.807,1.401
-last_deadline_total_transfers,25,5.174,1.013
-last_deadline_total_transfers,20,5.742,0.216
-last_deadline_total_transfers,15,6.612,0.0
-last_deadline_total_transfers,10,8.169,0.0
-last_deadline_total_transfers,5,11.552,0.0
-summary_overall_points,100,0.0,403.0
-summary_overall_points,95,142.955,353.881
-summary_overall_points,90,193.448,343.006
-summary_overall_points,85,221.108,334.048
-summary_overall_points,80,237.062,326.793
-summary_overall_points,75,249.904,320.329
-summary_overall_points,70,259.836,314.261
-summary_overall_points,65,267.298,308.118
-summary_overall_points,60,275.306,301.94
-summary_overall_points,55,282.752,295.237
-summary_overall_points,50,290.089,289.089
-summary_overall_points,45,296.237,281.752
-summary_overall_points,40,302.94,274.306
-summary_overall_points,35,309.118,266.298
-summary_overall_points,30,315.261,258.836
-summary_overall_points,25,321.329,248.904
-summary_overall_points,20,327.793,236.062
-summary_overall_points,15,335.048,220.108
-summary_overall_points,10,344.006,192.448
-summary_overall_points,5,354.881,141.478
-summary_overall_rank,100,0.0,10279000.0
-summary_overall_rank,95,542336.0,9739589.564
-summary_overall_rank,90,1055448.231,9217335.0
-summary_overall_rank,85,1634955.267,8649106.178
-summary_overall_rank,80,2191851.179,8153064.284
-summary_overall_rank,75,2706094.791,7613810.643
-summary_overall_rank,70,3223871.583,7116000.154
-summary_overall_rank,65,3745111.258,6716013.806
-summary_overall_rank,60,4248662.287,6217945.269
-summary_overall_rank,55,4763217.592,5741303.818
-summary_overall_rank,50,5233291.734,5219521.099
-summary_overall_rank,45,5747394.727,4751498.408
-summary_overall_rank,40,6231443.746,4241168.396
-summary_overall_rank,35,6722187.224,3726511.864
-summary_overall_rank,30,7123901.02,3206300.166
-summary_overall_rank,25,7623415.5,2694529.522
-summary_overall_rank,20,8156019.03,2183432.552
-summary_overall_rank,15,8653712.139,1617376.767
-summary_overall_rank,10,9223021.273,1042775.246
-summary_overall_rank,5,9742587.812,536337.567
+h2h_leagues_competed_in,95,0.06,1.012
+h2h_leagues_competed_in,90,0.119,0.552
+h2h_leagues_competed_in,85,0.179,0.1
+h2h_leagues_competed_in,80,0.238,0.0
+h2h_leagues_competed_in,75,0.298,0.0
+h2h_leagues_competed_in,70,0.358,0.0
+h2h_leagues_competed_in,65,0.417,0.0
+h2h_leagues_competed_in,60,0.477,0.0
+h2h_leagues_competed_in,55,0.536,0.0
+h2h_leagues_competed_in,50,0.596,0.0
+h2h_leagues_competed_in,45,0.656,0.0
+h2h_leagues_competed_in,40,0.715,0.0
+h2h_leagues_competed_in,35,0.775,0.0
+h2h_leagues_competed_in,30,0.834,0.0
+h2h_leagues_competed_in,25,0.894,0.0
+h2h_leagues_competed_in,20,0.954,0.0
+h2h_leagues_competed_in,15,1.1,0.0
+h2h_leagues_competed_in,10,1.552,0.0
+h2h_leagues_competed_in,5,2.012,0.0
+last_deadline_bank,100,0.0,265.0
+last_deadline_bank,95,0.28,65.884
+last_deadline_bank,90,0.559,44.69
+last_deadline_bank,85,0.839,32.547
+last_deadline_bank,80,1.294,25.352
+last_deadline_bank,75,1.988,19.755
+last_deadline_bank,70,2.833,16.367
+last_deadline_bank,65,3.747,13.668
+last_deadline_bank,60,4.925,10.514
+last_deadline_bank,55,5.987,8.474
+last_deadline_bank,50,7.615,6.615
+last_deadline_bank,45,9.474,4.987
+last_deadline_bank,40,11.514,3.925
+last_deadline_bank,35,14.668,2.747
+last_deadline_bank,30,17.367,1.833
+last_deadline_bank,25,20.755,0.988
+last_deadline_bank,20,26.352,0.294
+last_deadline_bank,15,33.547,0.0
+last_deadline_bank,10,45.69,0.0
+last_deadline_bank,5,67.442,0.0
+last_deadline_value,100,952.0,1073.0
+last_deadline_value,95,979.881,1043.828
+last_deadline_value,90,984.944,1035.757
+last_deadline_value,85,989.275,1029.926
+last_deadline_value,80,993.012,1025.8
+last_deadline_value,75,995.779,1022.131
+last_deadline_value,70,998.783,1018.433
+last_deadline_value,65,1001.409,1015.346
+last_deadline_value,60,1003.923,1012.775
+last_deadline_value,55,1006.563,1010.381
+last_deadline_value,50,1008.862,1007.862
+last_deadline_value,45,1011.381,1005.563
+last_deadline_value,40,1013.775,1002.923
+last_deadline_value,35,1016.346,1000.409
+last_deadline_value,30,1019.433,997.783
+last_deadline_value,25,1023.131,994.779
+last_deadline_value,20,1026.8,992.012
+last_deadline_value,15,1030.926,988.275
+last_deadline_value,10,1036.757,983.944
+last_deadline_value,5,1044.828,978.881
+last_deadline_total_transfers,100,0.0,269.0
+last_deadline_total_transfers,95,0.331,51.515
+last_deadline_total_transfers,90,0.662,39.78
+last_deadline_total_transfers,85,0.993,35.286
+last_deadline_total_transfers,80,3.102,32.671
+last_deadline_total_transfers,75,6.069,30.828
+last_deadline_total_transfers,70,8.674,29.408
+last_deadline_total_transfers,65,12.266,28.156
+last_deadline_total_transfers,60,16.279,26.963
+last_deadline_total_transfers,55,20.378,25.48
+last_deadline_total_transfers,50,23.943,22.943
+last_deadline_total_transfers,45,26.48,19.378
+last_deadline_total_transfers,40,27.963,15.279
+last_deadline_total_transfers,35,29.156,11.266
+last_deadline_total_transfers,30,30.408,7.674
+last_deadline_total_transfers,25,31.828,5.069
+last_deadline_total_transfers,20,33.671,2.102
+last_deadline_total_transfers,15,36.286,0.0
+last_deadline_total_transfers,10,40.78,0.0
+last_deadline_total_transfers,5,52.515,0.0
+summary_overall_points,100,0.0,2153.0
+summary_overall_points,95,797.818,1972.37
+summary_overall_points,90,1134.588,1924.641
+summary_overall_points,85,1271.697,1890.659
+summary_overall_points,80,1344.87,1858.4
+summary_overall_points,75,1408.701,1825.644
+summary_overall_points,70,1464.681,1794.398
+summary_overall_points,65,1514.77,1765.967
+summary_overall_points,60,1556.549,1735.687
+summary_overall_points,55,1607.526,1691.955
+summary_overall_points,50,1653.199,1652.199
+summary_overall_points,45,1692.955,1606.526
+summary_overall_points,40,1736.687,1555.549
+summary_overall_points,35,1766.967,1513.77
+summary_overall_points,30,1795.398,1463.681
+summary_overall_points,25,1826.644,1407.701
+summary_overall_points,20,1859.4,1343.87
+summary_overall_points,15,1891.659,1270.348
+summary_overall_points,10,1925.641,1132.794
+summary_overall_points,5,1973.37,794.818
+summary_overall_rank,100,0.0,11372234.0
+summary_overall_rank,95,511174.636,10785426.0
+summary_overall_rank,90,1080794.029,10221282.5
+summary_overall_rank,85,1629825.364,9606386.242
+summary_overall_rank,80,2197946.167,9082250.303
+summary_overall_rank,75,2813857.0,8430886.5
+summary_overall_rank,70,3413914.182,7850902.455
+summary_overall_rank,65,3943670.545,7260998.212
+summary_overall_rank,60,4467813.147,6776953.206
+summary_overall_rank,55,5091827.364,6183658.273
+summary_overall_rank,50,5640587.0,5637112.0
+summary_overall_rank,45,6184386.455,5089800.0
+summary_overall_rank,40,6782313.853,4461256.882
+summary_overall_rank,35,7263323.333,3942616.485
+summary_overall_rank,30,7856515.697,3410317.697
+summary_overall_rank,25,8440515.0,2811855.5
+summary_overall_rank,20,9086532.424,2184986.742
+summary_overall_rank,15,9608550.758,1628939.909
+summary_overall_rank,10,10224985.382,1080239.794
+summary_overall_rank,5,10787230.727,506450.818
 leagues_admin,100,0.0,5.0
-leagues_admin,95,0.059,0.84
-leagues_admin,90,0.118,0.427
-leagues_admin,85,0.177,0.014
-leagues_admin,80,0.236,0.0
-leagues_admin,75,0.295,0.0
-leagues_admin,70,0.354,0.0
-leagues_admin,65,0.413,0.0
-leagues_admin,60,0.472,0.0
-leagues_admin,55,0.53,0.0
-leagues_admin,50,0.589,0.0
-leagues_admin,45,0.648,0.0
-leagues_admin,40,0.707,0.0
-leagues_admin,35,0.766,0.0
-leagues_admin,30,0.825,0.0
-leagues_admin,25,0.884,0.0
-leagues_admin,20,0.943,0.0
-leagues_admin,15,1.014,0.0
-leagues_admin,10,1.427,0.0
-leagues_admin,5,1.84,0.0
+leagues_admin,95,0.058,0.803
+leagues_admin,90,0.116,0.354
+leagues_admin,85,0.174,0.0
+leagues_admin,80,0.232,0.0
+leagues_admin,75,0.291,0.0
+leagues_admin,70,0.349,0.0
+leagues_admin,65,0.407,0.0
+leagues_admin,60,0.465,0.0
+leagues_admin,55,0.523,0.0
+leagues_admin,50,0.581,0.0
+leagues_admin,45,0.639,0.0
+leagues_admin,40,0.697,0.0
+leagues_admin,35,0.755,0.0
+leagues_admin,30,0.813,0.0
+leagues_admin,25,0.872,0.0
+leagues_admin,20,0.93,0.0
+leagues_admin,15,0.988,0.0
+leagues_admin,10,1.354,0.0
+leagues_admin,5,1.803,0.0
 min_rank_history,100,432.0,11389902.0
-min_rank_history,95,71039.8,9691718.8
-min_rank_history,90,163716.2,8203320.0
-min_rank_history,85,285040.6,6837822.8
-min_rank_history,80,455426.0,5722115.8
-min_rank_history,75,652510.0,4861561.0
-min_rank_history,70,863306.6,4260634.0
-min_rank_history,65,1160350.2,3714139.4
-min_rank_history,60,1491551.4,3198164.2
-min_rank_history,55,1814387.4,2705912.0
-min_rank_history,50,2221530.0,2220670.0
-min_rank_history,45,2717058.4,1808221.4
-min_rank_history,40,3206394.4,1489157.4
-min_rank_history,35,3715609.2,1159212.2
-min_rank_history,30,4261585.8,862255.4
-min_rank_history,25,4862770.0,650558.0
-min_rank_history,20,5726460.0,454334.6
-min_rank_history,15,6870153.4,282402.2
-min_rank_history,10,8205414.6,160176.0
-min_rank_history,5,9727642.0,69545.6
+min_rank_history,95,72869.958,9978450.396
+min_rank_history,90,165823.51,8486687.408
+min_rank_history,85,293532.306,7146795.408
+min_rank_history,80,461178.625,5967043.604
+min_rank_history,75,668185.0,5009524.0
+min_rank_history,70,905705.396,4387579.312
+min_rank_history,65,1197995.184,3888721.265
+min_rank_history,60,1522678.653,3336332.612
+min_rank_history,55,1892588.521,2839646.042
+min_rank_history,50,2321316.0,2317281.0
+min_rank_history,45,2840856.542,1886386.833
+min_rank_history,40,3342887.367,1512561.204
+min_rank_history,35,3895195.959,1194275.918
+min_rank_history,30,4396264.333,903741.646
+min_rank_history,25,5021634.0,663817.0
+min_rank_history,20,6006295.958,459456.25
+min_rank_history,15,7152708.061,293114.224
+min_rank_history,10,8512841.878,165680.449
+min_rank_history,5,9990777.542,71042.312
 max_total_points_history,100,4.0,2665.0
-max_total_points_history,95,1381.2,2474.134
-max_total_points_history,90,1659.2,2409.9
-max_total_points_history,85,1797.8,2364.733
-max_total_points_history,80,1885.2,2326.899
-max_total_points_history,75,1949.749,2295.201
-max_total_points_history,70,2000.6,2258.344
-max_total_points_history,65,2040.057,2233.08
-max_total_points_history,60,2077.45,2202.799
-max_total_points_history,55,2107.629,2169.943
-max_total_points_history,50,2141.497,2139.749
-max_total_points_history,45,2170.943,2106.629
-max_total_points_history,40,2204.598,2076.45
-max_total_points_history,35,2234.08,2039.029
-max_total_points_history,30,2259.344,1999.6
-max_total_points_history,25,2296.201,1948.749
-max_total_points_history,20,2327.899,1882.6
-max_total_points_history,15,2365.733,1796.4
-max_total_points_history,10,2410.9,1657.2
-max_total_points_history,5,2475.134,1376.8
+max_total_points_history,95,1317.021,2470.396
+max_total_points_history,90,1613.4,2406.592
+max_total_points_history,85,1774.794,2362.598
+max_total_points_history,80,1863.594,2323.868
+max_total_points_history,75,1934.0,2292.331
+max_total_points_history,70,1987.519,2254.469
+max_total_points_history,65,2028.241,2229.699
+max_total_points_history,60,2065.6,2197.138
+max_total_points_history,55,2102.281,2163.6
+max_total_points_history,50,2133.0,2132.0
+max_total_points_history,45,2164.6,2101.281
+max_total_points_history,40,2199.069,2064.2
+max_total_points_history,35,2230.699,2027.241
+max_total_points_history,30,2255.469,1986.519
+max_total_points_history,25,2293.331,1933.0
+max_total_points_history,20,2324.868,1862.198
+max_total_points_history,15,2363.598,1772.897
+max_total_points_history,10,2408.592,1611.2
+max_total_points_history,5,2471.396,1313.604
 earliest_season_year_history,100,2006.0,2023.0
-earliest_season_year_history,95,2011.149,2022.755
-earliest_season_year_history,90,2013.503,2022.511
-earliest_season_year_history,85,2015.877,2022.266
-earliest_season_year_history,80,2016.942,2022.021
-earliest_season_year_history,75,2017.861,2021.751
-earliest_season_year_history,70,2018.739,2021.478
-earliest_season_year_history,65,2019.42,2021.205
-earliest_season_year_history,60,2020.015,2020.874
-earliest_season_year_history,55,2020.449,2020.369
-earliest_season_year_history,50,2020.883,2019.883
-earliest_season_year_history,45,2021.369,2019.449
-earliest_season_year_history,40,2021.874,2019.015
-earliest_season_year_history,35,2022.205,2018.42
-earliest_season_year_history,30,2022.478,2017.739
-earliest_season_year_history,25,2022.751,2016.861
-earliest_season_year_history,20,2023.0,2015.942
-earliest_season_year_history,15,2023.0,2014.877
-earliest_season_year_history,10,2023.0,2012.503
-earliest_season_year_history,5,2023.0,2010.149
+earliest_season_year_history,95,2011.195,2022.762
+earliest_season_year_history,90,2013.593,2022.524
+earliest_season_year_history,85,2016.008,2022.286
+earliest_season_year_history,80,2017.021,2022.047
+earliest_season_year_history,75,2017.906,2021.789
+earliest_season_year_history,70,2018.798,2021.526
+earliest_season_year_history,65,2019.489,2021.263
+earliest_season_year_history,60,2020.085,2021.001
+earliest_season_year_history,55,2020.527,2020.483
+earliest_season_year_history,50,2020.97,2019.97
+earliest_season_year_history,45,2021.483,2019.527
+earliest_season_year_history,40,2022.001,2019.085
+earliest_season_year_history,35,2022.263,2018.489
+earliest_season_year_history,30,2022.526,2017.798
+earliest_season_year_history,25,2022.789,2016.906
+earliest_season_year_history,20,2023.0,2016.021
+earliest_season_year_history,15,2023.0,2015.008
+earliest_season_year_history,10,2023.0,2012.593
+earliest_season_year_history,5,2023.0,2010.195
 career_break_history,100,0.0,9.0
-career_break_history,95,0.11,1.887
-career_break_history,90,0.22,1.303
-career_break_history,85,0.331,0.943
-career_break_history,80,0.441,0.824
-career_break_history,75,0.551,0.705
-career_break_history,70,0.661,0.586
-career_break_history,65,0.771,0.467
-career_break_history,60,0.882,0.348
-career_break_history,55,0.992,0.229
-career_break_history,50,1.11,0.11
-career_break_history,45,1.229,0.0
-career_break_history,40,1.348,0.0
-career_break_history,35,1.467,0.0
-career_break_history,30,1.586,0.0
-career_break_history,25,1.705,0.0
-career_break_history,20,1.824,0.0
-career_break_history,15,1.943,0.0
-career_break_history,10,2.303,0.0
-career_break_history,5,2.887,0.0
+career_break_history,95,0.1,1.824
+career_break_history,90,0.2,1.194
+career_break_history,85,0.3,0.91
+career_break_history,80,0.4,0.78
+career_break_history,75,0.5,0.65
+career_break_history,70,0.6,0.52
+career_break_history,65,0.7,0.39
+career_break_history,60,0.8,0.26
+career_break_history,55,0.9,0.13
+career_break_history,50,1.0,0.0
+career_break_history,45,1.13,0.0
+career_break_history,40,1.26,0.0
+career_break_history,35,1.39,0.0
+career_break_history,30,1.52,0.0
+career_break_history,25,1.65,0.0
+career_break_history,20,1.78,0.0
+career_break_history,15,1.91,0.0
+career_break_history,10,2.194,0.0
+career_break_history,5,2.824,0.0
 seasons_played_in,100,1.0,18.0
-seasons_played_in,95,1.188,11.982
-seasons_played_in,90,1.376,9.435
-seasons_played_in,85,1.565,7.598
-seasons_played_in,80,1.753,6.491
-seasons_played_in,75,1.941,5.534
-seasons_played_in,70,2.203,4.735
-seasons_played_in,65,2.499,4.024
-seasons_played_in,60,2.795,3.527
-seasons_played_in,55,3.138,3.038
-seasons_played_in,50,3.586,2.586
-seasons_played_in,45,4.038,2.138
-seasons_played_in,40,4.527,1.795
-seasons_played_in,35,5.024,1.499
-seasons_played_in,30,5.735,1.203
-seasons_played_in,25,6.534,1.0
-seasons_played_in,20,7.491,1.0
-seasons_played_in,15,8.598,1.0
-seasons_played_in,10,10.435,1.0
-seasons_played_in,5,12.982,1.0
+seasons_played_in,95,1.181,11.88
+seasons_played_in,90,1.362,9.355
+seasons_played_in,85,1.542,7.553
+seasons_played_in,80,1.723,6.451
+seasons_played_in,75,1.904,5.496
+seasons_played_in,70,2.135,4.67
+seasons_played_in,65,2.424,3.944
+seasons_played_in,60,2.713,3.429
+seasons_played_in,55,3.002,2.923
+seasons_played_in,50,3.462,2.462
+seasons_played_in,45,3.923,2.002
+seasons_played_in,40,4.429,1.713
+seasons_played_in,35,4.944,1.424
+seasons_played_in,30,5.67,1.135
+seasons_played_in,25,6.496,1.0
+seasons_played_in,20,7.451,1.0
+seasons_played_in,15,8.553,1.0
+seasons_played_in,10,10.355,1.0
+seasons_played_in,5,12.88,1.0
 yoyo_score,100,2241.0,5748219.667
-yoyo_score,95,238804.031,2853674.885
-yoyo_score,90,382449.488,2291921.011
-yoyo_score,85,493882.038,2030359.277
-yoyo_score,80,599913.25,1825961.269
-yoyo_score,75,676205.812,1673082.229
-yoyo_score,70,774487.782,1531180.108
-yoyo_score,65,847212.287,1406074.93
-yoyo_score,60,921962.647,1281380.109
-yoyo_score,55,1014505.103,1194426.452
-yoyo_score,50,1118373.708,1117396.075
-yoyo_score,45,1195491.517,1014192.907
-yoyo_score,40,1282233.083,921825.075
-yoyo_score,35,1407506.492,847122.471
-yoyo_score,30,1531414.462,774169.858
-yoyo_score,25,1674059.959,675632.044
-yoyo_score,20,1826069.721,599583.472
-yoyo_score,15,2031186.643,492982.888
-yoyo_score,10,2301573.057,381978.41
-yoyo_score,5,2862797.811,237161.357
+yoyo_score,95,242557.114,2887596.864
+yoyo_score,90,374643.667,2315434.654
+yoyo_score,85,476395.131,2020226.597
+yoyo_score,80,589378.256,1793501.937
+yoyo_score,75,667610.114,1642912.416
+yoyo_score,70,771403.785,1510144.224
+yoyo_score,65,848962.018,1391353.417
+yoyo_score,60,928841.05,1278738.881
+yoyo_score,55,1013705.563,1190648.362
+yoyo_score,50,1108857.75,1108477.978
+yoyo_score,45,1192648.242,1012957.181
+yoyo_score,40,1280341.013,925957.921
+yoyo_score,35,1393009.811,847637.598
+yoyo_score,30,1518035.381,768526.243
+yoyo_score,25,1647989.396,666637.501
+yoyo_score,20,1795421.598,587651.358
+yoyo_score,15,2024601.037,476038.767
+yoyo_score,10,2327657.164,374533.805
+yoyo_score,5,2890725.909,241850.841
 rising_score,100,-9290710.0,10065148.0
-rising_score,95,-2183026.741,2961069.074
-rising_score,90,-1126795.574,1775242.057
-rising_score,85,-789572.803,1065835.059
-rising_score,80,-571321.923,671872.367
-rising_score,75,-438527.001,456075.898
-rising_score,70,-338780.679,256243.343
-rising_score,65,-247782.626,149072.468
-rising_score,60,-190443.82,50616.339
-rising_score,55,-135506.048,-15916.401
-rising_score,50,-71215.191,-72136.446
-rising_score,45,-14081.289,-135968.269
-rising_score,40,51285.916,-190784.864
-rising_score,35,149810.938,-251059.721
-rising_score,30,256351.866,-341718.267
-rising_score,25,462007.724,-440863.281
-rising_score,20,674155.391,-572560.636
-rising_score,15,1079493.918,-793880.413
-rising_score,10,1781324.754,-1129353.451
-rising_score,5,2973087.984,-2188012.082
-assists,100,0.0,19.0
-assists,95,2.705,13.671
-assists,90,4.121,12.317
-assists,85,5.152,11.516
-assists,80,5.994,10.865
-assists,75,6.58,10.32
-assists,70,7.14,9.799
-assists,65,7.64,9.314
-assists,60,8.12,8.846
-assists,55,8.549,8.412
-assists,50,8.977,7.977
-assists,45,9.412,7.549
-assists,40,9.846,7.12
-assists,35,10.314,6.64
-assists,30,10.799,6.14
-assists,25,11.32,5.58
-assists,20,11.865,4.994
-assists,15,12.516,4.152
-assists,10,13.317,3.121
-assists,5,14.671,1.705
-bonus,100,0.0,55.0
-bonus,95,12.385,42.094
-bonus,90,17.718,39.5
-bonus,85,20.242,37.687
-bonus,80,22.5,36.226
-bonus,75,24.088,34.93
-bonus,70,25.373,33.688
-bonus,65,26.67,32.56
-bonus,60,28.007,31.375
-bonus,55,29.084,30.239
-bonus,50,30.139,29.139
-bonus,45,31.239,28.084
-bonus,40,32.375,27.007
-bonus,35,33.56,25.67
-bonus,30,34.688,24.373
-bonus,25,35.93,23.088
-bonus,20,37.226,21.5
-bonus,15,38.687,19.242
-bonus,10,40.5,16.718
-bonus,5,43.094,11.385
-bps,100,0.0,1393.0
-bps,95,497.0,1221.5
-bps,90,724.5,1185.3
-bps,85,822.0,1155.0
-bps,80,874.0,1132.154
-bps,75,907.0,1114.0
-bps,70,934.272,1096.0
-bps,65,959.858,1078.223
-bps,60,981.749,1060.375
-bps,55,1002.599,1041.749
-bps,50,1022.749,1021.749
-bps,45,1042.749,1001.599
-bps,40,1061.375,980.749
-bps,35,1079.223,958.858
-bps,30,1097.0,933.272
-bps,25,1115.0,906.0
-bps,20,1133.154,873.0
-bps,15,1156.0,821.0
-bps,10,1186.3,723.5
-bps,5,1222.5,496.0
-clean_sheets,100,0.0,31.0
-clean_sheets,95,7.816,23.449
-clean_sheets,90,10.582,22.154
-clean_sheets,85,12.477,21.217
-clean_sheets,80,13.775,20.489
-clean_sheets,75,14.879,19.852
-clean_sheets,70,15.672,19.313
-clean_sheets,65,16.405,18.764
-clean_sheets,60,17.086,18.202
-clean_sheets,55,17.606,17.66
-clean_sheets,50,18.128,17.128
-clean_sheets,45,18.66,16.606
-clean_sheets,40,19.202,16.086
-clean_sheets,35,19.764,15.405
-clean_sheets,30,20.313,14.672
-clean_sheets,25,20.852,13.879
-clean_sheets,20,21.489,12.775
-clean_sheets,15,22.217,11.477
-clean_sheets,10,23.154,9.582
-clean_sheets,5,24.449,6.816
-goals_conceded,100,0.0,82.0
-goals_conceded,95,26.167,58.0
-goals_conceded,90,33.756,54.855
-goals_conceded,85,37.014,52.902
-goals_conceded,80,38.89,51.131
-goals_conceded,75,40.295,49.871
-goals_conceded,70,41.525,48.752
-goals_conceded,65,42.564,47.672
-goals_conceded,60,43.506,46.459
-goals_conceded,55,44.487,45.361
-goals_conceded,50,45.437,44.437
-goals_conceded,45,46.361,43.487
-goals_conceded,40,47.459,42.506
-goals_conceded,35,48.672,41.564
-goals_conceded,30,49.752,40.525
-goals_conceded,25,50.871,39.295
-goals_conceded,20,52.131,37.89
-goals_conceded,15,53.902,36.014
-goals_conceded,10,55.855,32.756
-goals_conceded,5,59.0,25.168
-goals_scored,100,0.0,26.0
-goals_scored,95,5.525,20.194
-goals_scored,90,7.545,18.977
-goals_scored,85,8.808,18.094
-goals_scored,80,9.791,17.38
-goals_scored,75,10.654,16.757
-goals_scored,70,11.537,16.221
-goals_scored,65,12.372,15.655
-goals_scored,60,13.122,15.067
-goals_scored,55,13.854,14.401
-goals_scored,50,14.663,13.663
-goals_scored,45,15.401,12.854
-goals_scored,40,16.067,12.122
-goals_scored,35,16.655,11.372
-goals_scored,30,17.221,10.537
-goals_scored,25,17.757,9.654
-goals_scored,20,18.38,8.791
-goals_scored,15,19.094,7.808
-goals_scored,10,19.977,6.545
-goals_scored,5,21.194,4.525
-own_goals,100,0.0,2.0
-own_goals,95,0.058,0.666
-own_goals,90,0.117,0.315
-own_goals,85,0.175,0.0
-own_goals,80,0.234,0.0
-own_goals,75,0.292,0.0
-own_goals,70,0.351,0.0
-own_goals,65,0.409,0.0
-own_goals,60,0.468,0.0
-own_goals,55,0.526,0.0
-own_goals,50,0.585,0.0
-own_goals,45,0.643,0.0
-own_goals,40,0.702,0.0
-own_goals,35,0.76,0.0
-own_goals,30,0.819,0.0
-own_goals,25,0.877,0.0
-own_goals,20,0.936,0.0
-own_goals,15,0.994,0.0
-own_goals,10,1.315,0.0
-own_goals,5,1.666,0.0
-penalties_missed,100,0.0,1.0
-penalties_missed,95,0.05,0.0
-penalties_missed,90,0.101,0.0
-penalties_missed,85,0.151,0.0
-penalties_missed,80,0.201,0.0
-penalties_missed,75,0.252,0.0
-penalties_missed,70,0.302,0.0
-penalties_missed,65,0.352,0.0
-penalties_missed,60,0.403,0.0
-penalties_missed,55,0.453,0.0
-penalties_missed,50,0.503,0.0
-penalties_missed,45,0.554,0.0
-penalties_missed,40,0.604,0.0
-penalties_missed,35,0.654,0.0
-penalties_missed,30,0.705,0.0
-penalties_missed,25,0.755,0.0
-penalties_missed,20,0.805,0.0
-penalties_missed,15,0.856,0.0
-penalties_missed,10,0.906,0.0
-penalties_missed,5,0.956,0.0
-penalties_saved,100,0.0,1.0
-penalties_saved,95,0.054,0.265
-penalties_saved,90,0.107,0.0
-penalties_saved,85,0.161,0.0
-penalties_saved,80,0.215,0.0
-penalties_saved,75,0.268,0.0
-penalties_saved,70,0.322,0.0
-penalties_saved,65,0.376,0.0
-penalties_saved,60,0.429,0.0
-penalties_saved,55,0.483,0.0
-penalties_saved,50,0.536,0.0
-penalties_saved,45,0.59,0.0
-penalties_saved,40,0.644,0.0
-penalties_saved,35,0.697,0.0
-penalties_saved,30,0.751,0.0
-penalties_saved,25,0.805,0.0
-penalties_saved,20,0.858,0.0
-penalties_saved,15,0.912,0.0
-penalties_saved,10,0.966,0.0
-penalties_saved,5,1.0,0.0
-red_cards,100,0.0,2.0
-red_cards,95,0.056,0.547
-red_cards,90,0.112,0.041
-red_cards,85,0.167,0.0
-red_cards,80,0.223,0.0
-red_cards,75,0.279,0.0
-red_cards,70,0.335,0.0
-red_cards,65,0.391,0.0
-red_cards,60,0.446,0.0
-red_cards,55,0.502,0.0
-red_cards,50,0.558,0.0
-red_cards,45,0.614,0.0
-red_cards,40,0.67,0.0
-red_cards,35,0.725,0.0
-red_cards,30,0.781,0.0
-red_cards,25,0.837,0.0
-red_cards,20,0.893,0.0
-red_cards,15,0.949,0.0
-red_cards,10,1.041,0.0
-red_cards,5,1.547,0.0
-yellow_cards,100,0.0,17.0
-yellow_cards,95,3.494,11.182
-yellow_cards,90,4.577,10.234
-yellow_cards,85,5.235,9.55
-yellow_cards,80,5.719,8.955
-yellow_cards,75,6.159,8.558
-yellow_cards,70,6.537,8.161
-yellow_cards,65,6.914,7.808
-yellow_cards,60,7.236,7.485
-yellow_cards,55,7.542,7.162
-yellow_cards,50,7.847,6.847
-yellow_cards,45,8.162,6.542
-yellow_cards,40,8.485,6.236
-yellow_cards,35,8.808,5.914
-yellow_cards,30,9.161,5.537
-yellow_cards,25,9.558,5.159
-yellow_cards,20,9.955,4.719
-yellow_cards,15,10.55,4.235
-yellow_cards,10,11.234,3.577
-yellow_cards,5,12.182,2.494
-saves,100,0.0,31.0
-saves,95,7.51,23.457
-saves,90,9.34,22.764
-saves,85,10.253,22.433
-saves,80,11.019,22.102
-saves,75,11.592,20.837
-saves,70,12.246,19.773
-saves,65,13.234,18.843
-saves,60,14.389,18.268
-saves,55,15.085,17.175
-saves,50,16.595,15.595
-saves,45,18.175,14.085
-saves,40,19.268,13.389
-saves,35,19.843,12.234
-saves,30,20.773,11.246
-saves,25,21.837,10.592
-saves,20,23.102,10.019
-saves,15,23.433,9.253
-saves,10,23.764,8.34
-saves,5,24.457,6.51
+rising_score,95,-2215785.727,2961030.205
+rising_score,90,-1119844.612,1699688.896
+rising_score,85,-778749.551,1046026.521
+rising_score,80,-573497.84,669767.577
+rising_score,75,-454314.713,453168.067
+rising_score,70,-346906.03,256243.807
+rising_score,65,-253434.431,153808.682
+rising_score,60,-195593.763,52343.16
+rising_score,55,-138347.01,-17334.421
+rising_score,50,-74443.052,-76157.722
+rising_score,45,-15911.736,-140049.903
+rising_score,40,53818.685,-197531.657
+rising_score,35,154996.047,-254156.346
+rising_score,30,256352.015,-347813.493
+rising_score,25,456135.419,-456099.481
+rising_score,20,671872.956,-576917.786
+rising_score,15,1047128.791,-780251.243
+rising_score,10,1715274.306,-1126812.276
+rising_score,5,2972928.932,-2217900.545
+assists,100,0.0,0.0
+assists,95,0.0,0.0
+assists,90,0.0,0.0
+assists,85,0.0,0.0
+assists,80,0.0,0.0
+assists,75,0.0,0.0
+assists,70,0.0,0.0
+assists,65,0.0,0.0
+assists,60,0.0,0.0
+assists,55,0.0,0.0
+assists,50,0.0,0.0
+assists,45,0.0,0.0
+assists,40,0.0,0.0
+assists,35,0.0,0.0
+assists,30,0.0,0.0
+assists,25,0.0,0.0
+assists,20,0.0,0.0
+assists,15,0.0,0.0
+assists,10,0.0,0.0
+assists,5,0.0,0.0
+bonus,100,0.0,0.0
+bonus,95,0.0,0.0
+bonus,90,0.0,0.0
+bonus,85,0.0,0.0
+bonus,80,0.0,0.0
+bonus,75,0.0,0.0
+bonus,70,0.0,0.0
+bonus,65,0.0,0.0
+bonus,60,0.0,0.0
+bonus,55,0.0,0.0
+bonus,50,0.0,0.0
+bonus,45,0.0,0.0
+bonus,40,0.0,0.0
+bonus,35,0.0,0.0
+bonus,30,0.0,0.0
+bonus,25,0.0,0.0
+bonus,20,0.0,0.0
+bonus,15,0.0,0.0
+bonus,10,0.0,0.0
+bonus,5,0.0,0.0
+bps,100,0.0,0.0
+bps,95,0.0,0.0
+bps,90,0.0,0.0
+bps,85,0.0,0.0
+bps,80,0.0,0.0
+bps,75,0.0,0.0
+bps,70,0.0,0.0
+bps,65,0.0,0.0
+bps,60,0.0,0.0
+bps,55,0.0,0.0
+bps,50,0.0,0.0
+bps,45,0.0,0.0
+bps,40,0.0,0.0
+bps,35,0.0,0.0
+bps,30,0.0,0.0
+bps,25,0.0,0.0
+bps,20,0.0,0.0
+bps,15,0.0,0.0
+bps,10,0.0,0.0
+bps,5,0.0,0.0
+clean_sheets,100,0.0,0.0
+clean_sheets,95,0.0,0.0
+clean_sheets,90,0.0,0.0
+clean_sheets,85,0.0,0.0
+clean_sheets,80,0.0,0.0
+clean_sheets,75,0.0,0.0
+clean_sheets,70,0.0,0.0
+clean_sheets,65,0.0,0.0
+clean_sheets,60,0.0,0.0
+clean_sheets,55,0.0,0.0
+clean_sheets,50,0.0,0.0
+clean_sheets,45,0.0,0.0
+clean_sheets,40,0.0,0.0
+clean_sheets,35,0.0,0.0
+clean_sheets,30,0.0,0.0
+clean_sheets,25,0.0,0.0
+clean_sheets,20,0.0,0.0
+clean_sheets,15,0.0,0.0
+clean_sheets,10,0.0,0.0
+clean_sheets,5,0.0,0.0
+goals_conceded,100,0.0,0.0
+goals_conceded,95,0.0,0.0
+goals_conceded,90,0.0,0.0
+goals_conceded,85,0.0,0.0
+goals_conceded,80,0.0,0.0
+goals_conceded,75,0.0,0.0
+goals_conceded,70,0.0,0.0
+goals_conceded,65,0.0,0.0
+goals_conceded,60,0.0,0.0
+goals_conceded,55,0.0,0.0
+goals_conceded,50,0.0,0.0
+goals_conceded,45,0.0,0.0
+goals_conceded,40,0.0,0.0
+goals_conceded,35,0.0,0.0
+goals_conceded,30,0.0,0.0
+goals_conceded,25,0.0,0.0
+goals_conceded,20,0.0,0.0
+goals_conceded,15,0.0,0.0
+goals_conceded,10,0.0,0.0
+goals_conceded,5,0.0,0.0
+goals_scored,100,0.0,0.0
+goals_scored,95,0.0,0.0
+goals_scored,90,0.0,0.0
+goals_scored,85,0.0,0.0
+goals_scored,80,0.0,0.0
+goals_scored,75,0.0,0.0
+goals_scored,70,0.0,0.0
+goals_scored,65,0.0,0.0
+goals_scored,60,0.0,0.0
+goals_scored,55,0.0,0.0
+goals_scored,50,0.0,0.0
+goals_scored,45,0.0,0.0
+goals_scored,40,0.0,0.0
+goals_scored,35,0.0,0.0
+goals_scored,30,0.0,0.0
+goals_scored,25,0.0,0.0
+goals_scored,20,0.0,0.0
+goals_scored,15,0.0,0.0
+goals_scored,10,0.0,0.0
+goals_scored,5,0.0,0.0
+own_goals,100,0.0,0.0
+own_goals,95,0.0,0.0
+own_goals,90,0.0,0.0
+own_goals,85,0.0,0.0
+own_goals,80,0.0,0.0
+own_goals,75,0.0,0.0
+own_goals,70,0.0,0.0
+own_goals,65,0.0,0.0
+own_goals,60,0.0,0.0
+own_goals,55,0.0,0.0
+own_goals,50,0.0,0.0
+own_goals,45,0.0,0.0
+own_goals,40,0.0,0.0
+own_goals,35,0.0,0.0
+own_goals,30,0.0,0.0
+own_goals,25,0.0,0.0
+own_goals,20,0.0,0.0
+own_goals,15,0.0,0.0
+own_goals,10,0.0,0.0
+own_goals,5,0.0,0.0
+penalties_missed,100,0.0,0.0
+penalties_missed,95,0.0,0.0
+penalties_missed,90,0.0,0.0
+penalties_missed,85,0.0,0.0
+penalties_missed,80,0.0,0.0
+penalties_missed,75,0.0,0.0
+penalties_missed,70,0.0,0.0
+penalties_missed,65,0.0,0.0
+penalties_missed,60,0.0,0.0
+penalties_missed,55,0.0,0.0
+penalties_missed,50,0.0,0.0
+penalties_missed,45,0.0,0.0
+penalties_missed,40,0.0,0.0
+penalties_missed,35,0.0,0.0
+penalties_missed,30,0.0,0.0
+penalties_missed,25,0.0,0.0
+penalties_missed,20,0.0,0.0
+penalties_missed,15,0.0,0.0
+penalties_missed,10,0.0,0.0
+penalties_missed,5,0.0,0.0
+penalties_saved,100,0.0,0.0
+penalties_saved,95,0.0,0.0
+penalties_saved,90,0.0,0.0
+penalties_saved,85,0.0,0.0
+penalties_saved,80,0.0,0.0
+penalties_saved,75,0.0,0.0
+penalties_saved,70,0.0,0.0
+penalties_saved,65,0.0,0.0
+penalties_saved,60,0.0,0.0
+penalties_saved,55,0.0,0.0
+penalties_saved,50,0.0,0.0
+penalties_saved,45,0.0,0.0
+penalties_saved,40,0.0,0.0
+penalties_saved,35,0.0,0.0
+penalties_saved,30,0.0,0.0
+penalties_saved,25,0.0,0.0
+penalties_saved,20,0.0,0.0
+penalties_saved,15,0.0,0.0
+penalties_saved,10,0.0,0.0
+penalties_saved,5,0.0,0.0
+red_cards,100,0.0,0.0
+red_cards,95,0.0,0.0
+red_cards,90,0.0,0.0
+red_cards,85,0.0,0.0
+red_cards,80,0.0,0.0
+red_cards,75,0.0,0.0
+red_cards,70,0.0,0.0
+red_cards,65,0.0,0.0
+red_cards,60,0.0,0.0
+red_cards,55,0.0,0.0
+red_cards,50,0.0,0.0
+red_cards,45,0.0,0.0
+red_cards,40,0.0,0.0
+red_cards,35,0.0,0.0
+red_cards,30,0.0,0.0
+red_cards,25,0.0,0.0
+red_cards,20,0.0,0.0
+red_cards,15,0.0,0.0
+red_cards,10,0.0,0.0
+red_cards,5,0.0,0.0
+yellow_cards,100,0.0,0.0
+yellow_cards,95,0.0,0.0
+yellow_cards,90,0.0,0.0
+yellow_cards,85,0.0,0.0
+yellow_cards,80,0.0,0.0
+yellow_cards,75,0.0,0.0
+yellow_cards,70,0.0,0.0
+yellow_cards,65,0.0,0.0
+yellow_cards,60,0.0,0.0
+yellow_cards,55,0.0,0.0
+yellow_cards,50,0.0,0.0
+yellow_cards,45,0.0,0.0
+yellow_cards,40,0.0,0.0
+yellow_cards,35,0.0,0.0
+yellow_cards,30,0.0,0.0
+yellow_cards,25,0.0,0.0
+yellow_cards,20,0.0,0.0
+yellow_cards,15,0.0,0.0
+yellow_cards,10,0.0,0.0
+yellow_cards,5,0.0,0.0
+saves,100,0.0,0.0
+saves,95,0.0,0.0
+saves,90,0.0,0.0
+saves,85,0.0,0.0
+saves,80,0.0,0.0
+saves,75,0.0,0.0
+saves,70,0.0,0.0
+saves,65,0.0,0.0
+saves,60,0.0,0.0
+saves,55,0.0,0.0
+saves,50,0.0,0.0
+saves,45,0.0,0.0
+saves,40,0.0,0.0
+saves,35,0.0,0.0
+saves,30,0.0,0.0
+saves,25,0.0,0.0
+saves,20,0.0,0.0
+saves,15,0.0,0.0
+saves,10,0.0,0.0
+saves,5,0.0,0.0
 rival_team_player_Ipswich,100,0.0,0.0
 rival_team_player_Ipswich,95,0.0,0.0
 rival_team_player_Ipswich,90,0.0,0.0
@@ -559,26 +559,26 @@ rival_team_player_Ipswich,20,0.0,0.0
 rival_team_player_Ipswich,15,0.0,0.0
 rival_team_player_Ipswich,10,0.0,0.0
 rival_team_player_Ipswich,5,0.0,0.0
-rival_team_player_Man Utd,100,0.0,30.0
-rival_team_player_Man Utd,95,5.307,22.745
-rival_team_player_Man Utd,90,7.447,20.757
-rival_team_player_Man Utd,85,8.919,19.739
-rival_team_player_Man Utd,80,10.209,19.193
-rival_team_player_Man Utd,75,10.699,18.023
-rival_team_player_Man Utd,70,11.753,16.819
-rival_team_player_Man Utd,65,12.549,15.763
-rival_team_player_Man Utd,60,13.336,14.884
-rival_team_player_Man Utd,55,14.42,14.514
-rival_team_player_Man Utd,50,15.144,14.144
-rival_team_player_Man Utd,45,15.514,13.42
-rival_team_player_Man Utd,40,15.884,12.336
-rival_team_player_Man Utd,35,16.763,11.549
-rival_team_player_Man Utd,30,17.819,10.753
-rival_team_player_Man Utd,25,19.023,9.699
-rival_team_player_Man Utd,20,20.193,9.209
-rival_team_player_Man Utd,15,20.739,7.919
-rival_team_player_Man Utd,10,21.757,6.447
-rival_team_player_Man Utd,5,23.745,4.307
+rival_team_player_Man Utd,100,0.0,0.0
+rival_team_player_Man Utd,95,0.0,0.0
+rival_team_player_Man Utd,90,0.0,0.0
+rival_team_player_Man Utd,85,0.0,0.0
+rival_team_player_Man Utd,80,0.0,0.0
+rival_team_player_Man Utd,75,0.0,0.0
+rival_team_player_Man Utd,70,0.0,0.0
+rival_team_player_Man Utd,65,0.0,0.0
+rival_team_player_Man Utd,60,0.0,0.0
+rival_team_player_Man Utd,55,0.0,0.0
+rival_team_player_Man Utd,50,0.0,0.0
+rival_team_player_Man Utd,45,0.0,0.0
+rival_team_player_Man Utd,40,0.0,0.0
+rival_team_player_Man Utd,35,0.0,0.0
+rival_team_player_Man Utd,30,0.0,0.0
+rival_team_player_Man Utd,25,0.0,0.0
+rival_team_player_Man Utd,20,0.0,0.0
+rival_team_player_Man Utd,15,0.0,0.0
+rival_team_player_Man Utd,10,0.0,0.0
+rival_team_player_Man Utd,5,0.0,0.0
 rival_team_player_Not Specified,100,0.0,0.0
 rival_team_player_Not Specified,95,0.0,0.0
 rival_team_player_Not Specified,90,0.0,0.0
@@ -599,126 +599,126 @@ rival_team_player_Not Specified,20,0.0,0.0
 rival_team_player_Not Specified,15,0.0,0.0
 rival_team_player_Not Specified,10,0.0,0.0
 rival_team_player_Not Specified,5,0.0,0.0
-rival_team_player_Liverpool,100,0.0,19.0
-rival_team_player_Liverpool,95,0.193,10.437
-rival_team_player_Liverpool,90,0.386,9.183
-rival_team_player_Liverpool,85,0.579,7.89
-rival_team_player_Liverpool,80,0.772,6.818
-rival_team_player_Liverpool,75,0.965,5.484
-rival_team_player_Liverpool,70,1.614,4.792
-rival_team_player_Liverpool,65,2.304,4.497
-rival_team_player_Liverpool,60,2.929,4.202
-rival_team_player_Liverpool,55,3.541,3.799
-rival_team_player_Liverpool,50,4.159,3.159
-rival_team_player_Liverpool,45,4.799,2.541
-rival_team_player_Liverpool,40,5.202,1.929
-rival_team_player_Liverpool,35,5.497,1.304
-rival_team_player_Liverpool,30,5.792,0.614
-rival_team_player_Liverpool,25,6.484,0.0
-rival_team_player_Liverpool,20,7.818,0.0
-rival_team_player_Liverpool,15,8.89,0.0
-rival_team_player_Liverpool,10,10.183,0.0
-rival_team_player_Liverpool,5,11.437,0.0
-rival_team_player_West Ham,100,3.0,31.0
-rival_team_player_West Ham,95,6.05,25.3
-rival_team_player_West Ham,90,8.133,24.067
-rival_team_player_West Ham,85,8.7,22.9
-rival_team_player_West Ham,80,9.4,21.2
-rival_team_player_West Ham,75,10.167,19.25
-rival_team_player_West Ham,70,10.733,16.9
-rival_team_player_West Ham,65,11.45,16.05
-rival_team_player_West Ham,60,12.3,15.467
-rival_team_player_West Ham,55,13.3,14.85
-rival_team_player_West Ham,50,15.0,14.0
-rival_team_player_West Ham,45,15.85,12.3
-rival_team_player_West Ham,40,16.467,11.3
-rival_team_player_West Ham,35,17.15,10.45
-rival_team_player_West Ham,30,19.7,9.733
-rival_team_player_West Ham,25,21.5,9.167
-rival_team_player_West Ham,20,22.6,8.4
-rival_team_player_West Ham,15,24.8,7.1
-rival_team_player_West Ham,10,25.533,5.4
-rival_team_player_West Ham,5,27.499,3.7
-rival_team_player_Chelsea,100,0.0,35.0
-rival_team_player_Chelsea,95,6.763,30.279
-rival_team_player_Chelsea,90,9.683,27.725
-rival_team_player_Chelsea,85,11.538,24.737
-rival_team_player_Chelsea,80,12.7,23.475
-rival_team_player_Chelsea,75,13.55,21.972
-rival_team_player_Chelsea,70,14.788,20.522
-rival_team_player_Chelsea,65,15.437,19.583
-rival_team_player_Chelsea,60,15.938,18.892
-rival_team_player_Chelsea,55,17.045,17.919
-rival_team_player_Chelsea,50,18.194,17.194
-rival_team_player_Chelsea,45,18.919,16.045
-rival_team_player_Chelsea,40,19.892,14.938
-rival_team_player_Chelsea,35,20.583,14.437
-rival_team_player_Chelsea,30,21.522,13.788
-rival_team_player_Chelsea,25,22.972,12.55
-rival_team_player_Chelsea,20,24.475,11.7
-rival_team_player_Chelsea,15,25.737,10.538
-rival_team_player_Chelsea,10,28.725,8.683
-rival_team_player_Chelsea,5,31.279,5.763
-rival_team_player_Man City,100,0.0,30.0
-rival_team_player_Man City,95,1.333,19.214
-rival_team_player_Man City,90,3.778,16.5
-rival_team_player_Man City,85,4.938,14.619
-rival_team_player_Man City,80,5.552,13.733
-rival_team_player_Man City,75,6.2,12.5
-rival_team_player_Man City,70,7.071,11.667
-rival_team_player_Man City,65,8.129,11.152
-rival_team_player_Man City,60,8.677,9.952
-rival_team_player_Man City,55,9.389,9.548
-rival_team_player_Man City,50,10.143,9.143
-rival_team_player_Man City,45,10.548,8.389
-rival_team_player_Man City,40,10.952,7.677
-rival_team_player_Man City,35,12.152,7.129
-rival_team_player_Man City,30,12.667,6.071
-rival_team_player_Man City,25,13.5,5.2
-rival_team_player_Man City,20,14.733,4.552
-rival_team_player_Man City,15,15.619,3.938
-rival_team_player_Man City,10,17.5,2.778
-rival_team_player_Man City,5,20.214,0.333
-rival_team_player_Arsenal,100,0.0,28.0
-rival_team_player_Arsenal,95,2.2,19.533
-rival_team_player_Arsenal,90,4.01,17.346
-rival_team_player_Arsenal,85,5.069,15.28
-rival_team_player_Arsenal,80,5.9,14.517
-rival_team_player_Arsenal,75,6.905,13.75
-rival_team_player_Arsenal,70,8.079,12.37
-rival_team_player_Arsenal,65,8.733,11.29
-rival_team_player_Arsenal,60,9.64,10.535
-rival_team_player_Arsenal,55,10.236,9.944
-rival_team_player_Arsenal,50,10.59,9.59
-rival_team_player_Arsenal,45,10.944,9.236
-rival_team_player_Arsenal,40,11.535,8.64
-rival_team_player_Arsenal,35,12.29,7.733
-rival_team_player_Arsenal,30,13.37,7.079
-rival_team_player_Arsenal,25,14.75,5.905
-rival_team_player_Arsenal,20,15.517,4.9
-rival_team_player_Arsenal,15,16.28,4.069
-rival_team_player_Arsenal,10,18.346,3.01
-rival_team_player_Arsenal,5,20.533,1.2
-rival_team_player_Spurs,100,0.0,32.0
-rival_team_player_Spurs,95,4.183,24.29
-rival_team_player_Spurs,90,5.586,19.908
-rival_team_player_Spurs,85,6.913,19.363
-rival_team_player_Spurs,80,7.886,18.633
-rival_team_player_Spurs,75,9.437,17.45
-rival_team_player_Spurs,70,10.478,16.609
-rival_team_player_Spurs,65,11.462,16.014
-rival_team_player_Spurs,60,12.489,14.912
-rival_team_player_Spurs,55,13.975,14.503
-rival_team_player_Spurs,50,15.094,14.094
-rival_team_player_Spurs,45,15.503,12.975
-rival_team_player_Spurs,40,15.912,11.489
-rival_team_player_Spurs,35,17.014,10.462
-rival_team_player_Spurs,30,17.609,9.478
-rival_team_player_Spurs,25,18.45,8.437
-rival_team_player_Spurs,20,19.633,6.886
-rival_team_player_Spurs,15,20.725,5.913
-rival_team_player_Spurs,10,21.817,4.586
-rival_team_player_Spurs,5,25.29,3.183
+rival_team_player_Liverpool,100,0.0,0.0
+rival_team_player_Liverpool,95,0.0,0.0
+rival_team_player_Liverpool,90,0.0,0.0
+rival_team_player_Liverpool,85,0.0,0.0
+rival_team_player_Liverpool,80,0.0,0.0
+rival_team_player_Liverpool,75,0.0,0.0
+rival_team_player_Liverpool,70,0.0,0.0
+rival_team_player_Liverpool,65,0.0,0.0
+rival_team_player_Liverpool,60,0.0,0.0
+rival_team_player_Liverpool,55,0.0,0.0
+rival_team_player_Liverpool,50,0.0,0.0
+rival_team_player_Liverpool,45,0.0,0.0
+rival_team_player_Liverpool,40,0.0,0.0
+rival_team_player_Liverpool,35,0.0,0.0
+rival_team_player_Liverpool,30,0.0,0.0
+rival_team_player_Liverpool,25,0.0,0.0
+rival_team_player_Liverpool,20,0.0,0.0
+rival_team_player_Liverpool,15,0.0,0.0
+rival_team_player_Liverpool,10,0.0,0.0
+rival_team_player_Liverpool,5,0.0,0.0
+rival_team_player_West Ham,100,0.0,0.0
+rival_team_player_West Ham,95,0.0,0.0
+rival_team_player_West Ham,90,0.0,0.0
+rival_team_player_West Ham,85,0.0,0.0
+rival_team_player_West Ham,80,0.0,0.0
+rival_team_player_West Ham,75,0.0,0.0
+rival_team_player_West Ham,70,0.0,0.0
+rival_team_player_West Ham,65,0.0,0.0
+rival_team_player_West Ham,60,0.0,0.0
+rival_team_player_West Ham,55,0.0,0.0
+rival_team_player_West Ham,50,0.0,0.0
+rival_team_player_West Ham,45,0.0,0.0
+rival_team_player_West Ham,40,0.0,0.0
+rival_team_player_West Ham,35,0.0,0.0
+rival_team_player_West Ham,30,0.0,0.0
+rival_team_player_West Ham,25,0.0,0.0
+rival_team_player_West Ham,20,0.0,0.0
+rival_team_player_West Ham,15,0.0,0.0
+rival_team_player_West Ham,10,0.0,0.0
+rival_team_player_West Ham,5,0.0,0.0
+rival_team_player_Chelsea,100,0.0,0.0
+rival_team_player_Chelsea,95,0.0,0.0
+rival_team_player_Chelsea,90,0.0,0.0
+rival_team_player_Chelsea,85,0.0,0.0
+rival_team_player_Chelsea,80,0.0,0.0
+rival_team_player_Chelsea,75,0.0,0.0
+rival_team_player_Chelsea,70,0.0,0.0
+rival_team_player_Chelsea,65,0.0,0.0
+rival_team_player_Chelsea,60,0.0,0.0
+rival_team_player_Chelsea,55,0.0,0.0
+rival_team_player_Chelsea,50,0.0,0.0
+rival_team_player_Chelsea,45,0.0,0.0
+rival_team_player_Chelsea,40,0.0,0.0
+rival_team_player_Chelsea,35,0.0,0.0
+rival_team_player_Chelsea,30,0.0,0.0
+rival_team_player_Chelsea,25,0.0,0.0
+rival_team_player_Chelsea,20,0.0,0.0
+rival_team_player_Chelsea,15,0.0,0.0
+rival_team_player_Chelsea,10,0.0,0.0
+rival_team_player_Chelsea,5,0.0,0.0
+rival_team_player_Man City,100,0.0,0.0
+rival_team_player_Man City,95,0.0,0.0
+rival_team_player_Man City,90,0.0,0.0
+rival_team_player_Man City,85,0.0,0.0
+rival_team_player_Man City,80,0.0,0.0
+rival_team_player_Man City,75,0.0,0.0
+rival_team_player_Man City,70,0.0,0.0
+rival_team_player_Man City,65,0.0,0.0
+rival_team_player_Man City,60,0.0,0.0
+rival_team_player_Man City,55,0.0,0.0
+rival_team_player_Man City,50,0.0,0.0
+rival_team_player_Man City,45,0.0,0.0
+rival_team_player_Man City,40,0.0,0.0
+rival_team_player_Man City,35,0.0,0.0
+rival_team_player_Man City,30,0.0,0.0
+rival_team_player_Man City,25,0.0,0.0
+rival_team_player_Man City,20,0.0,0.0
+rival_team_player_Man City,15,0.0,0.0
+rival_team_player_Man City,10,0.0,0.0
+rival_team_player_Man City,5,0.0,0.0
+rival_team_player_Arsenal,100,0.0,0.0
+rival_team_player_Arsenal,95,0.0,0.0
+rival_team_player_Arsenal,90,0.0,0.0
+rival_team_player_Arsenal,85,0.0,0.0
+rival_team_player_Arsenal,80,0.0,0.0
+rival_team_player_Arsenal,75,0.0,0.0
+rival_team_player_Arsenal,70,0.0,0.0
+rival_team_player_Arsenal,65,0.0,0.0
+rival_team_player_Arsenal,60,0.0,0.0
+rival_team_player_Arsenal,55,0.0,0.0
+rival_team_player_Arsenal,50,0.0,0.0
+rival_team_player_Arsenal,45,0.0,0.0
+rival_team_player_Arsenal,40,0.0,0.0
+rival_team_player_Arsenal,35,0.0,0.0
+rival_team_player_Arsenal,30,0.0,0.0
+rival_team_player_Arsenal,25,0.0,0.0
+rival_team_player_Arsenal,20,0.0,0.0
+rival_team_player_Arsenal,15,0.0,0.0
+rival_team_player_Arsenal,10,0.0,0.0
+rival_team_player_Arsenal,5,0.0,0.0
+rival_team_player_Spurs,100,0.0,0.0
+rival_team_player_Spurs,95,0.0,0.0
+rival_team_player_Spurs,90,0.0,0.0
+rival_team_player_Spurs,85,0.0,0.0
+rival_team_player_Spurs,80,0.0,0.0
+rival_team_player_Spurs,75,0.0,0.0
+rival_team_player_Spurs,70,0.0,0.0
+rival_team_player_Spurs,65,0.0,0.0
+rival_team_player_Spurs,60,0.0,0.0
+rival_team_player_Spurs,55,0.0,0.0
+rival_team_player_Spurs,50,0.0,0.0
+rival_team_player_Spurs,45,0.0,0.0
+rival_team_player_Spurs,40,0.0,0.0
+rival_team_player_Spurs,35,0.0,0.0
+rival_team_player_Spurs,30,0.0,0.0
+rival_team_player_Spurs,25,0.0,0.0
+rival_team_player_Spurs,20,0.0,0.0
+rival_team_player_Spurs,15,0.0,0.0
+rival_team_player_Spurs,10,0.0,0.0
+rival_team_player_Spurs,5,0.0,0.0
 rival_team_player_Newcastle,100,0.0,0.0
 rival_team_player_Newcastle,95,0.0,0.0
 rival_team_player_Newcastle,90,0.0,0.0
@@ -739,106 +739,106 @@ rival_team_player_Newcastle,20,0.0,0.0
 rival_team_player_Newcastle,15,0.0,0.0
 rival_team_player_Newcastle,10,0.0,0.0
 rival_team_player_Newcastle,5,0.0,0.0
-rival_team_player_Aston Villa,100,0.0,5.0
-rival_team_player_Aston Villa,95,0.118,3.667
-rival_team_player_Aston Villa,90,0.235,2.5
-rival_team_player_Aston Villa,85,0.353,0.0
-rival_team_player_Aston Villa,80,0.471,0.0
-rival_team_player_Aston Villa,75,0.588,0.0
-rival_team_player_Aston Villa,70,0.706,0.0
-rival_team_player_Aston Villa,65,0.824,0.0
-rival_team_player_Aston Villa,60,0.941,0.0
-rival_team_player_Aston Villa,55,1.059,0.0
-rival_team_player_Aston Villa,50,1.176,0.0
-rival_team_player_Aston Villa,45,1.294,0.0
-rival_team_player_Aston Villa,40,1.412,0.0
-rival_team_player_Aston Villa,35,1.529,0.0
-rival_team_player_Aston Villa,30,1.647,0.0
-rival_team_player_Aston Villa,25,1.765,0.0
-rival_team_player_Aston Villa,20,1.882,0.0
-rival_team_player_Aston Villa,15,2.0,0.0
-rival_team_player_Aston Villa,10,4.0,0.0
-rival_team_player_Aston Villa,5,5.0,0.0
-rival_team_player_Brighton,100,0.0,10.0
-rival_team_player_Brighton,95,0.22,9.45
-rival_team_player_Brighton,90,0.44,8.4
-rival_team_player_Brighton,85,0.66,5.9
-rival_team_player_Brighton,80,0.88,5.533
-rival_team_player_Brighton,75,1.5,5.167
-rival_team_player_Brighton,70,2.3,4.85
-rival_team_player_Brighton,65,2.85,4.575
-rival_team_player_Brighton,60,3.267,4.3
-rival_team_player_Brighton,55,3.633,4.025
-rival_team_player_Brighton,50,4.0,3.0
-rival_team_player_Brighton,45,5.025,2.633
-rival_team_player_Brighton,40,5.3,2.267
-rival_team_player_Brighton,35,5.575,1.85
-rival_team_player_Brighton,30,5.85,1.3
-rival_team_player_Brighton,25,6.5,0.5
-rival_team_player_Brighton,20,7.6,0.0
-rival_team_player_Brighton,15,8.7,0.0
-rival_team_player_Brighton,10,9.8,0.0
-rival_team_player_Brighton,5,10.0,0.0
-rival_team_player_Everton,100,0.0,13.0
-rival_team_player_Everton,95,0.388,10.9
-rival_team_player_Everton,90,0.775,9.45
-rival_team_player_Everton,85,1.163,8.675
-rival_team_player_Everton,80,1.55,7.9
-rival_team_player_Everton,75,1.938,7.125
-rival_team_player_Everton,70,2.867,6.675
-rival_team_player_Everton,65,3.9,6.288
-rival_team_player_Everton,60,4.7,5.8
-rival_team_player_Everton,55,5.238,5.025
-rival_team_player_Everton,50,5.625,4.625
-rival_team_player_Everton,45,6.025,4.238
-rival_team_player_Everton,40,6.8,3.4
-rival_team_player_Everton,35,7.575,1.9
-rival_team_player_Everton,30,8.35,0.867
-rival_team_player_Everton,25,9.062,0.0
-rival_team_player_Everton,20,9.45,0.0
-rival_team_player_Everton,15,9.837,0.0
-rival_team_player_Everton,10,10.9,0.0
-rival_team_player_Everton,5,12.45,0.0
-rival_team_player_Fulham,100,0.0,15.0
-rival_team_player_Fulham,95,0.35,13.6
-rival_team_player_Fulham,90,0.7,11.8
-rival_team_player_Fulham,85,1.05,9.9
-rival_team_player_Fulham,80,1.4,9.2
-rival_team_player_Fulham,75,1.75,8.5
-rival_team_player_Fulham,70,2.6,7.8
-rival_team_player_Fulham,65,4.7,7.1
-rival_team_player_Fulham,60,5.4,5.8
-rival_team_player_Fulham,55,5.867,4.7
-rival_team_player_Fulham,50,6.333,4.0
-rival_team_player_Fulham,45,6.8,3.3
-rival_team_player_Fulham,40,7.4,2.6
-rival_team_player_Fulham,35,8.2,1.8
-rival_team_player_Fulham,30,9.6,0.4
-rival_team_player_Fulham,25,10.75,0.0
-rival_team_player_Fulham,20,11.8,0.0
-rival_team_player_Fulham,15,12.85,0.0
-rival_team_player_Fulham,10,14.2,0.0
-rival_team_player_Fulham,5,15.0,0.0
-rival_team_player_Brentford,100,0.0,11.0
-rival_team_player_Brentford,95,0.163,10.35
-rival_team_player_Brentford,90,0.325,9.7
-rival_team_player_Brentford,85,0.488,9.05
-rival_team_player_Brentford,80,0.65,7.2
-rival_team_player_Brentford,75,0.813,5.75
-rival_team_player_Brentford,70,0.975,5.1
-rival_team_player_Brentford,65,2.1,4.725
-rival_team_player_Brentford,60,3.2,4.4
-rival_team_player_Brentford,55,3.85,4.075
-rival_team_player_Brentford,50,4.5,3.5
-rival_team_player_Brentford,45,5.075,2.7
-rival_team_player_Brentford,40,5.4,1.4
-rival_team_player_Brentford,35,5.725,0.55
-rival_team_player_Brentford,30,6.3,0.0
-rival_team_player_Brentford,25,8.25,0.0
-rival_team_player_Brentford,20,9.4,0.0
-rival_team_player_Brentford,15,10.05,0.0
-rival_team_player_Brentford,10,10.7,0.0
-rival_team_player_Brentford,5,11.0,0.0
+rival_team_player_Aston Villa,100,0.0,0.0
+rival_team_player_Aston Villa,95,0.0,0.0
+rival_team_player_Aston Villa,90,0.0,0.0
+rival_team_player_Aston Villa,85,0.0,0.0
+rival_team_player_Aston Villa,80,0.0,0.0
+rival_team_player_Aston Villa,75,0.0,0.0
+rival_team_player_Aston Villa,70,0.0,0.0
+rival_team_player_Aston Villa,65,0.0,0.0
+rival_team_player_Aston Villa,60,0.0,0.0
+rival_team_player_Aston Villa,55,0.0,0.0
+rival_team_player_Aston Villa,50,0.0,0.0
+rival_team_player_Aston Villa,45,0.0,0.0
+rival_team_player_Aston Villa,40,0.0,0.0
+rival_team_player_Aston Villa,35,0.0,0.0
+rival_team_player_Aston Villa,30,0.0,0.0
+rival_team_player_Aston Villa,25,0.0,0.0
+rival_team_player_Aston Villa,20,0.0,0.0
+rival_team_player_Aston Villa,15,0.0,0.0
+rival_team_player_Aston Villa,10,0.0,0.0
+rival_team_player_Aston Villa,5,0.0,0.0
+rival_team_player_Brighton,100,0.0,0.0
+rival_team_player_Brighton,95,0.0,0.0
+rival_team_player_Brighton,90,0.0,0.0
+rival_team_player_Brighton,85,0.0,0.0
+rival_team_player_Brighton,80,0.0,0.0
+rival_team_player_Brighton,75,0.0,0.0
+rival_team_player_Brighton,70,0.0,0.0
+rival_team_player_Brighton,65,0.0,0.0
+rival_team_player_Brighton,60,0.0,0.0
+rival_team_player_Brighton,55,0.0,0.0
+rival_team_player_Brighton,50,0.0,0.0
+rival_team_player_Brighton,45,0.0,0.0
+rival_team_player_Brighton,40,0.0,0.0
+rival_team_player_Brighton,35,0.0,0.0
+rival_team_player_Brighton,30,0.0,0.0
+rival_team_player_Brighton,25,0.0,0.0
+rival_team_player_Brighton,20,0.0,0.0
+rival_team_player_Brighton,15,0.0,0.0
+rival_team_player_Brighton,10,0.0,0.0
+rival_team_player_Brighton,5,0.0,0.0
+rival_team_player_Everton,100,0.0,0.0
+rival_team_player_Everton,95,0.0,0.0
+rival_team_player_Everton,90,0.0,0.0
+rival_team_player_Everton,85,0.0,0.0
+rival_team_player_Everton,80,0.0,0.0
+rival_team_player_Everton,75,0.0,0.0
+rival_team_player_Everton,70,0.0,0.0
+rival_team_player_Everton,65,0.0,0.0
+rival_team_player_Everton,60,0.0,0.0
+rival_team_player_Everton,55,0.0,0.0
+rival_team_player_Everton,50,0.0,0.0
+rival_team_player_Everton,45,0.0,0.0
+rival_team_player_Everton,40,0.0,0.0
+rival_team_player_Everton,35,0.0,0.0
+rival_team_player_Everton,30,0.0,0.0
+rival_team_player_Everton,25,0.0,0.0
+rival_team_player_Everton,20,0.0,0.0
+rival_team_player_Everton,15,0.0,0.0
+rival_team_player_Everton,10,0.0,0.0
+rival_team_player_Everton,5,0.0,0.0
+rival_team_player_Fulham,100,0.0,0.0
+rival_team_player_Fulham,95,0.0,0.0
+rival_team_player_Fulham,90,0.0,0.0
+rival_team_player_Fulham,85,0.0,0.0
+rival_team_player_Fulham,80,0.0,0.0
+rival_team_player_Fulham,75,0.0,0.0
+rival_team_player_Fulham,70,0.0,0.0
+rival_team_player_Fulham,65,0.0,0.0
+rival_team_player_Fulham,60,0.0,0.0
+rival_team_player_Fulham,55,0.0,0.0
+rival_team_player_Fulham,50,0.0,0.0
+rival_team_player_Fulham,45,0.0,0.0
+rival_team_player_Fulham,40,0.0,0.0
+rival_team_player_Fulham,35,0.0,0.0
+rival_team_player_Fulham,30,0.0,0.0
+rival_team_player_Fulham,25,0.0,0.0
+rival_team_player_Fulham,20,0.0,0.0
+rival_team_player_Fulham,15,0.0,0.0
+rival_team_player_Fulham,10,0.0,0.0
+rival_team_player_Fulham,5,0.0,0.0
+rival_team_player_Brentford,100,0.0,0.0
+rival_team_player_Brentford,95,0.0,0.0
+rival_team_player_Brentford,90,0.0,0.0
+rival_team_player_Brentford,85,0.0,0.0
+rival_team_player_Brentford,80,0.0,0.0
+rival_team_player_Brentford,75,0.0,0.0
+rival_team_player_Brentford,70,0.0,0.0
+rival_team_player_Brentford,65,0.0,0.0
+rival_team_player_Brentford,60,0.0,0.0
+rival_team_player_Brentford,55,0.0,0.0
+rival_team_player_Brentford,50,0.0,0.0
+rival_team_player_Brentford,45,0.0,0.0
+rival_team_player_Brentford,40,0.0,0.0
+rival_team_player_Brentford,35,0.0,0.0
+rival_team_player_Brentford,30,0.0,0.0
+rival_team_player_Brentford,25,0.0,0.0
+rival_team_player_Brentford,20,0.0,0.0
+rival_team_player_Brentford,15,0.0,0.0
+rival_team_player_Brentford,10,0.0,0.0
+rival_team_player_Brentford,5,0.0,0.0
 rival_team_player_Southampton,100,0.0,0.0
 rival_team_player_Southampton,95,0.0,0.0
 rival_team_player_Southampton,90,0.0,0.0
@@ -879,46 +879,46 @@ rival_team_player_Nott'm Forest,20,0.0,0.0
 rival_team_player_Nott'm Forest,15,0.0,0.0
 rival_team_player_Nott'm Forest,10,0.0,0.0
 rival_team_player_Nott'm Forest,5,0.0,0.0
-rival_team_player_Wolves,100,0.0,10.0
-rival_team_player_Wolves,95,0.267,9.6
-rival_team_player_Wolves,90,0.533,9.2
-rival_team_player_Wolves,85,0.8,8.6
-rival_team_player_Wolves,80,1.4,7.8
-rival_team_player_Wolves,75,3.0,7.0
-rival_team_player_Wolves,70,4.6,6.2
-rival_team_player_Wolves,65,5.12,5.4
-rival_team_player_Wolves,60,5.28,4.84
-rival_team_player_Wolves,55,5.44,4.52
-rival_team_player_Wolves,50,5.6,4.2
-rival_team_player_Wolves,45,5.76,3.88
-rival_team_player_Wolves,40,5.92,3.56
-rival_team_player_Wolves,35,6.8,3.24
-rival_team_player_Wolves,30,8.1,2.6
-rival_team_player_Wolves,25,8.5,1.0
-rival_team_player_Wolves,20,8.9,0.2
-rival_team_player_Wolves,15,9.6,0.0
-rival_team_player_Wolves,10,10.0,0.0
-rival_team_player_Wolves,5,10.0,0.0
-rival_team_player_Crystal Palace,100,0.0,12.0
-rival_team_player_Crystal Palace,95,0.077,6.0
-rival_team_player_Crystal Palace,90,0.154,5.5
-rival_team_player_Crystal Palace,85,0.231,5.0
-rival_team_player_Crystal Palace,80,0.308,3.0
-rival_team_player_Crystal Palace,75,0.385,2.0
-rival_team_player_Crystal Palace,70,0.462,1.0
-rival_team_player_Crystal Palace,65,0.538,0.0
-rival_team_player_Crystal Palace,60,0.615,0.0
-rival_team_player_Crystal Palace,55,0.692,0.0
-rival_team_player_Crystal Palace,50,0.769,0.0
-rival_team_player_Crystal Palace,45,0.846,0.0
-rival_team_player_Crystal Palace,40,0.923,0.0
-rival_team_player_Crystal Palace,35,1.0,0.0
-rival_team_player_Crystal Palace,30,2.0,0.0
-rival_team_player_Crystal Palace,25,3.0,0.0
-rival_team_player_Crystal Palace,20,5.0,0.0
-rival_team_player_Crystal Palace,15,6.0,0.0
-rival_team_player_Crystal Palace,10,9.0,0.0
-rival_team_player_Crystal Palace,5,12.0,0.0
+rival_team_player_Wolves,100,0.0,0.0
+rival_team_player_Wolves,95,0.0,0.0
+rival_team_player_Wolves,90,0.0,0.0
+rival_team_player_Wolves,85,0.0,0.0
+rival_team_player_Wolves,80,0.0,0.0
+rival_team_player_Wolves,75,0.0,0.0
+rival_team_player_Wolves,70,0.0,0.0
+rival_team_player_Wolves,65,0.0,0.0
+rival_team_player_Wolves,60,0.0,0.0
+rival_team_player_Wolves,55,0.0,0.0
+rival_team_player_Wolves,50,0.0,0.0
+rival_team_player_Wolves,45,0.0,0.0
+rival_team_player_Wolves,40,0.0,0.0
+rival_team_player_Wolves,35,0.0,0.0
+rival_team_player_Wolves,30,0.0,0.0
+rival_team_player_Wolves,25,0.0,0.0
+rival_team_player_Wolves,20,0.0,0.0
+rival_team_player_Wolves,15,0.0,0.0
+rival_team_player_Wolves,10,0.0,0.0
+rival_team_player_Wolves,5,0.0,0.0
+rival_team_player_Crystal Palace,100,0.0,0.0
+rival_team_player_Crystal Palace,95,0.0,0.0
+rival_team_player_Crystal Palace,90,0.0,0.0
+rival_team_player_Crystal Palace,85,0.0,0.0
+rival_team_player_Crystal Palace,80,0.0,0.0
+rival_team_player_Crystal Palace,75,0.0,0.0
+rival_team_player_Crystal Palace,70,0.0,0.0
+rival_team_player_Crystal Palace,65,0.0,0.0
+rival_team_player_Crystal Palace,60,0.0,0.0
+rival_team_player_Crystal Palace,55,0.0,0.0
+rival_team_player_Crystal Palace,50,0.0,0.0
+rival_team_player_Crystal Palace,45,0.0,0.0
+rival_team_player_Crystal Palace,40,0.0,0.0
+rival_team_player_Crystal Palace,35,0.0,0.0
+rival_team_player_Crystal Palace,30,0.0,0.0
+rival_team_player_Crystal Palace,25,0.0,0.0
+rival_team_player_Crystal Palace,20,0.0,0.0
+rival_team_player_Crystal Palace,15,0.0,0.0
+rival_team_player_Crystal Palace,10,0.0,0.0
+rival_team_player_Crystal Palace,5,0.0,0.0
 rival_team_player_Bournemouth,100,0.0,0.0
 rival_team_player_Bournemouth,95,0.0,0.0
 rival_team_player_Bournemouth,90,0.0,0.0
@@ -959,203 +959,203 @@ rival_team_player_Leicester,20,0.0,0.0
 rival_team_player_Leicester,15,0.0,0.0
 rival_team_player_Leicester,10,0.0,0.0
 rival_team_player_Leicester,5,0.0,0.0
-total_players_starters,100,0.0,59.0
-total_players_starters,95,33.484,54.859
-total_players_starters,90,44.927,54.417
-total_players_starters,85,47.243,53.975
-total_players_starters,80,55.133,53.533
-total_players_starters,75,55.385,53.092
-total_players_starters,70,55.638,52.65
-total_players_starters,65,55.89,52.208
-total_players_starters,60,56.143,51.766
-total_players_starters,55,56.395,51.325
-total_players_starters,50,56.647,50.883
-total_players_starters,45,56.9,50.441
-total_players_starters,40,57.152,50.0
-total_players_starters,35,57.405,49.558
-total_players_starters,30,57.657,49.116
-total_players_starters,25,57.91,48.674
-total_players_starters,20,58.162,48.233
-total_players_starters,15,58.414,42.676
-total_players_starters,10,58.667,38.622
-total_players_starters,5,58.919,26.847
-total_players_all,100,0.0,75.0
-total_players_all,95,46.635,74.092
-total_players_all,90,63.203,73.185
-total_players_all,85,71.21,72.277
-total_players_all,80,75.0,71.369
-total_players_all,75,75.0,70.462
-total_players_all,70,75.0,69.554
-total_players_all,65,75.0,68.647
-total_players_all,60,75.0,67.739
-total_players_all,55,75.0,66.831
-total_players_all,50,75.0,65.924
-total_players_all,45,75.0,65.016
-total_players_all,40,75.0,64.108
-total_players_all,35,75.0,63.201
-total_players_all,30,75.0,62.293
-total_players_all,25,75.0,61.386
-total_players_all,20,75.0,60.478
-total_players_all,15,75.0,56.21
-total_players_all,10,75.0,48.203
-total_players_all,5,75.0,31.635
-points_on_bench_total,100,0.0,95.0
-points_on_bench_total,95,2.174,53.582
-points_on_bench_total,90,5.482,45.63
-points_on_bench_total,85,8.345,40.691
-points_on_bench_total,80,10.649,37.089
-points_on_bench_total,75,12.827,33.859
-points_on_bench_total,70,14.778,31.241
-points_on_bench_total,65,16.826,28.641
-points_on_bench_total,60,19.013,26.284
-points_on_bench_total,55,21.097,24.088
-points_on_bench_total,50,23.297,22.297
-points_on_bench_total,45,25.088,20.097
-points_on_bench_total,40,27.284,18.013
-points_on_bench_total,35,29.641,15.826
-points_on_bench_total,30,32.241,13.778
-points_on_bench_total,25,34.859,11.827
-points_on_bench_total,20,38.089,9.649
-points_on_bench_total,15,41.691,7.345
-points_on_bench_total,10,46.63,4.482
-points_on_bench_total,5,54.582,1.174
-event_transfers_total,100,0.0,42.0
-event_transfers_total,95,0.267,10.552
-event_transfers_total,90,0.535,7.169
-event_transfers_total,85,0.802,5.612
-event_transfers_total,80,1.211,4.742
-event_transfers_total,75,2.01,4.174
-event_transfers_total,70,2.398,3.807
-event_transfers_total,65,2.786,3.528
-event_transfers_total,60,3.126,3.249
-event_transfers_total,55,3.407,2.97
-event_transfers_total,50,3.689,2.689
-event_transfers_total,45,3.97,2.407
-event_transfers_total,40,4.249,2.126
-event_transfers_total,35,4.528,1.786
-event_transfers_total,30,4.807,1.398
-event_transfers_total,25,5.174,1.01
-event_transfers_total,20,5.742,0.211
-event_transfers_total,15,6.612,0.0
-event_transfers_total,10,8.169,0.0
-event_transfers_total,5,11.552,0.0
-event_transfers_cost_total,100,0.0,156.0
-event_transfers_cost_total,95,0.323,30.616
-event_transfers_cost_total,90,0.646,16.824
-event_transfers_cost_total,85,0.968,10.05
-event_transfers_cost_total,80,1.291,6.195
-event_transfers_cost_total,75,1.614,3.604
-event_transfers_cost_total,70,1.937,2.221
-event_transfers_cost_total,65,2.259,0.839
-event_transfers_cost_total,60,2.582,0.0
-event_transfers_cost_total,55,2.905,0.0
-event_transfers_cost_total,50,3.228,0.0
-event_transfers_cost_total,45,3.55,0.0
-event_transfers_cost_total,40,3.873,0.0
-event_transfers_cost_total,35,4.839,0.0
-event_transfers_cost_total,30,6.221,0.0
-event_transfers_cost_total,25,7.604,0.0
-event_transfers_cost_total,20,10.195,0.0
-event_transfers_cost_total,15,14.05,0.0
-event_transfers_cost_total,10,20.824,0.0
-event_transfers_cost_total,5,34.616,0.0
-bank_mean,100,0.0,265.0
-bank_mean,95,0.06,23.0
-bank_mean,90,0.12,15.6
-bank_mean,85,0.181,12.0
-bank_mean,80,0.7,9.955
-bank_mean,75,1.174,8.683
-bank_mean,70,1.691,7.331
-bank_mean,65,2.243,6.2
-bank_mean,60,2.928,5.275
-bank_mean,55,3.277,4.78
-bank_mean,50,4.146,3.946
-bank_mean,45,4.98,3.155
-bank_mean,40,5.438,2.764
-bank_mean,35,6.4,2.086
-bank_mean,30,7.466,1.59
-bank_mean,25,8.883,0.974
-bank_mean,20,10.155,0.55
-bank_mean,15,12.2,0.0
-bank_mean,10,15.8,0.0
-bank_mean,5,23.5,0.0
-bank_latest,100,0.0,265.0
-bank_latest,95,0.184,30.866
-bank_latest,90,0.369,20.266
-bank_latest,85,0.553,15.08
-bank_latest,80,0.737,11.667
-bank_latest,75,0.921,9.212
-bank_latest,70,1.328,7.612
-bank_latest,65,1.901,5.889
-bank_latest,60,2.541,4.632
-bank_latest,55,3.205,3.808
-bank_latest,50,3.89,2.89
-bank_latest,45,4.808,2.205
-bank_latest,40,5.632,1.541
-bank_latest,35,6.889,0.901
-bank_latest,30,8.612,0.328
-bank_latest,25,10.212,0.0
-bank_latest,20,12.667,0.0
-bank_latest,15,16.08,0.0
-bank_latest,10,21.266,0.0
-bank_latest,5,31.866,0.0
-value_latest,100,0.0,1021.0
-value_latest,95,993.239,1010.512
-value_latest,90,995.646,1008.858
-value_latest,85,997.243,1007.657
-value_latest,80,998.474,1006.61
-value_latest,75,999.447,1005.72
-value_latest,70,1000.268,1004.971
-value_latest,65,1001.055,1004.254
-value_latest,60,1001.809,1003.529
-value_latest,55,1002.507,1002.823
-value_latest,50,1003.177,1002.177
-value_latest,45,1003.823,1001.507
-value_latest,40,1004.529,1000.809
-value_latest,35,1005.254,1000.055
-value_latest,30,1005.971,999.268
-value_latest,25,1006.72,998.447
-value_latest,20,1007.61,997.474
-value_latest,15,1008.657,996.243
-value_latest,10,1009.858,994.646
-value_latest,5,1011.512,992.239
-total_points_latest,100,0.0,403.0
-total_points_latest,95,133.5,353.749
-total_points_latest,90,189.199,342.777
-total_points_latest,85,218.251,333.894
-total_points_latest,80,235.272,326.643
-total_points_latest,75,248.668,320.052
-total_points_latest,70,258.428,314.035
-total_points_latest,65,266.529,307.857
-total_points_latest,60,274.579,301.63
-total_points_latest,55,282.228,294.84
-total_points_latest,50,289.652,288.652
-total_points_latest,45,295.84,281.228
-total_points_latest,40,302.63,273.579
-total_points_latest,35,308.857,265.529
-total_points_latest,30,315.035,257.428
-total_points_latest,25,321.052,247.668
-total_points_latest,20,327.643,234.272
-total_points_latest,15,334.894,217.251
-total_points_latest,10,343.777,188.199
-total_points_latest,5,354.749,131.0
-points_on_bench_percentage,100,0.0,112.0
-points_on_bench_percentage,95,1.105,22.235
-points_on_bench_percentage,90,2.34,17.725
-points_on_bench_percentage,85,3.335,15.151
-points_on_bench_percentage,80,4.179,13.465
-points_on_bench_percentage,75,4.903,12.046
-points_on_bench_percentage,70,5.647,11.04
-points_on_bench_percentage,65,6.382,10.0
-points_on_bench_percentage,60,7.107,9.198
-points_on_bench_percentage,55,7.835,8.362
-points_on_bench_percentage,50,8.574,7.574
-points_on_bench_percentage,45,9.362,6.835
-points_on_bench_percentage,40,10.198,6.107
-points_on_bench_percentage,35,11.0,5.382
-points_on_bench_percentage,30,12.04,4.647
-points_on_bench_percentage,25,13.046,3.903
-points_on_bench_percentage,20,14.465,3.179
-points_on_bench_percentage,15,16.151,2.335
-points_on_bench_percentage,10,18.725,1.34
-points_on_bench_percentage,5,23.235,0.105
+total_players_starters,100,0.0,0.0
+total_players_starters,95,0.0,0.0
+total_players_starters,90,0.0,0.0
+total_players_starters,85,0.0,0.0
+total_players_starters,80,0.0,0.0
+total_players_starters,75,0.0,0.0
+total_players_starters,70,0.0,0.0
+total_players_starters,65,0.0,0.0
+total_players_starters,60,0.0,0.0
+total_players_starters,55,0.0,0.0
+total_players_starters,50,0.0,0.0
+total_players_starters,45,0.0,0.0
+total_players_starters,40,0.0,0.0
+total_players_starters,35,0.0,0.0
+total_players_starters,30,0.0,0.0
+total_players_starters,25,0.0,0.0
+total_players_starters,20,0.0,0.0
+total_players_starters,15,0.0,0.0
+total_players_starters,10,0.0,0.0
+total_players_starters,5,0.0,0.0
+total_players_all,100,0.0,0.0
+total_players_all,95,0.0,0.0
+total_players_all,90,0.0,0.0
+total_players_all,85,0.0,0.0
+total_players_all,80,0.0,0.0
+total_players_all,75,0.0,0.0
+total_players_all,70,0.0,0.0
+total_players_all,65,0.0,0.0
+total_players_all,60,0.0,0.0
+total_players_all,55,0.0,0.0
+total_players_all,50,0.0,0.0
+total_players_all,45,0.0,0.0
+total_players_all,40,0.0,0.0
+total_players_all,35,0.0,0.0
+total_players_all,30,0.0,0.0
+total_players_all,25,0.0,0.0
+total_players_all,20,0.0,0.0
+total_players_all,15,0.0,0.0
+total_players_all,10,0.0,0.0
+total_players_all,5,0.0,0.0
+points_on_bench_total,100,0.0,0.0
+points_on_bench_total,95,0.0,0.0
+points_on_bench_total,90,0.0,0.0
+points_on_bench_total,85,0.0,0.0
+points_on_bench_total,80,0.0,0.0
+points_on_bench_total,75,0.0,0.0
+points_on_bench_total,70,0.0,0.0
+points_on_bench_total,65,0.0,0.0
+points_on_bench_total,60,0.0,0.0
+points_on_bench_total,55,0.0,0.0
+points_on_bench_total,50,0.0,0.0
+points_on_bench_total,45,0.0,0.0
+points_on_bench_total,40,0.0,0.0
+points_on_bench_total,35,0.0,0.0
+points_on_bench_total,30,0.0,0.0
+points_on_bench_total,25,0.0,0.0
+points_on_bench_total,20,0.0,0.0
+points_on_bench_total,15,0.0,0.0
+points_on_bench_total,10,0.0,0.0
+points_on_bench_total,5,0.0,0.0
+event_transfers_total,100,0.0,0.0
+event_transfers_total,95,0.0,0.0
+event_transfers_total,90,0.0,0.0
+event_transfers_total,85,0.0,0.0
+event_transfers_total,80,0.0,0.0
+event_transfers_total,75,0.0,0.0
+event_transfers_total,70,0.0,0.0
+event_transfers_total,65,0.0,0.0
+event_transfers_total,60,0.0,0.0
+event_transfers_total,55,0.0,0.0
+event_transfers_total,50,0.0,0.0
+event_transfers_total,45,0.0,0.0
+event_transfers_total,40,0.0,0.0
+event_transfers_total,35,0.0,0.0
+event_transfers_total,30,0.0,0.0
+event_transfers_total,25,0.0,0.0
+event_transfers_total,20,0.0,0.0
+event_transfers_total,15,0.0,0.0
+event_transfers_total,10,0.0,0.0
+event_transfers_total,5,0.0,0.0
+event_transfers_cost_total,100,0.0,0.0
+event_transfers_cost_total,95,0.0,0.0
+event_transfers_cost_total,90,0.0,0.0
+event_transfers_cost_total,85,0.0,0.0
+event_transfers_cost_total,80,0.0,0.0
+event_transfers_cost_total,75,0.0,0.0
+event_transfers_cost_total,70,0.0,0.0
+event_transfers_cost_total,65,0.0,0.0
+event_transfers_cost_total,60,0.0,0.0
+event_transfers_cost_total,55,0.0,0.0
+event_transfers_cost_total,50,0.0,0.0
+event_transfers_cost_total,45,0.0,0.0
+event_transfers_cost_total,40,0.0,0.0
+event_transfers_cost_total,35,0.0,0.0
+event_transfers_cost_total,30,0.0,0.0
+event_transfers_cost_total,25,0.0,0.0
+event_transfers_cost_total,20,0.0,0.0
+event_transfers_cost_total,15,0.0,0.0
+event_transfers_cost_total,10,0.0,0.0
+event_transfers_cost_total,5,0.0,0.0
+bank_mean,100,0.0,0.0
+bank_mean,95,0.0,0.0
+bank_mean,90,0.0,0.0
+bank_mean,85,0.0,0.0
+bank_mean,80,0.0,0.0
+bank_mean,75,0.0,0.0
+bank_mean,70,0.0,0.0
+bank_mean,65,0.0,0.0
+bank_mean,60,0.0,0.0
+bank_mean,55,0.0,0.0
+bank_mean,50,0.0,0.0
+bank_mean,45,0.0,0.0
+bank_mean,40,0.0,0.0
+bank_mean,35,0.0,0.0
+bank_mean,30,0.0,0.0
+bank_mean,25,0.0,0.0
+bank_mean,20,0.0,0.0
+bank_mean,15,0.0,0.0
+bank_mean,10,0.0,0.0
+bank_mean,5,0.0,0.0
+bank_latest,100,0.0,0.0
+bank_latest,95,0.0,0.0
+bank_latest,90,0.0,0.0
+bank_latest,85,0.0,0.0
+bank_latest,80,0.0,0.0
+bank_latest,75,0.0,0.0
+bank_latest,70,0.0,0.0
+bank_latest,65,0.0,0.0
+bank_latest,60,0.0,0.0
+bank_latest,55,0.0,0.0
+bank_latest,50,0.0,0.0
+bank_latest,45,0.0,0.0
+bank_latest,40,0.0,0.0
+bank_latest,35,0.0,0.0
+bank_latest,30,0.0,0.0
+bank_latest,25,0.0,0.0
+bank_latest,20,0.0,0.0
+bank_latest,15,0.0,0.0
+bank_latest,10,0.0,0.0
+bank_latest,5,0.0,0.0
+value_latest,100,0.0,0.0
+value_latest,95,0.0,0.0
+value_latest,90,0.0,0.0
+value_latest,85,0.0,0.0
+value_latest,80,0.0,0.0
+value_latest,75,0.0,0.0
+value_latest,70,0.0,0.0
+value_latest,65,0.0,0.0
+value_latest,60,0.0,0.0
+value_latest,55,0.0,0.0
+value_latest,50,0.0,0.0
+value_latest,45,0.0,0.0
+value_latest,40,0.0,0.0
+value_latest,35,0.0,0.0
+value_latest,30,0.0,0.0
+value_latest,25,0.0,0.0
+value_latest,20,0.0,0.0
+value_latest,15,0.0,0.0
+value_latest,10,0.0,0.0
+value_latest,5,0.0,0.0
+total_points_latest,100,0.0,0.0
+total_points_latest,95,0.0,0.0
+total_points_latest,90,0.0,0.0
+total_points_latest,85,0.0,0.0
+total_points_latest,80,0.0,0.0
+total_points_latest,75,0.0,0.0
+total_points_latest,70,0.0,0.0
+total_points_latest,65,0.0,0.0
+total_points_latest,60,0.0,0.0
+total_points_latest,55,0.0,0.0
+total_points_latest,50,0.0,0.0
+total_points_latest,45,0.0,0.0
+total_points_latest,40,0.0,0.0
+total_points_latest,35,0.0,0.0
+total_points_latest,30,0.0,0.0
+total_points_latest,25,0.0,0.0
+total_points_latest,20,0.0,0.0
+total_points_latest,15,0.0,0.0
+total_points_latest,10,0.0,0.0
+total_points_latest,5,0.0,0.0
+points_on_bench_percentage,100,0.0,0.0
+points_on_bench_percentage,95,0.0,0.0
+points_on_bench_percentage,90,0.0,0.0
+points_on_bench_percentage,85,0.0,0.0
+points_on_bench_percentage,80,0.0,0.0
+points_on_bench_percentage,75,0.0,0.0
+points_on_bench_percentage,70,0.0,0.0
+points_on_bench_percentage,65,0.0,0.0
+points_on_bench_percentage,60,0.0,0.0
+points_on_bench_percentage,55,0.0,0.0
+points_on_bench_percentage,50,0.0,0.0
+points_on_bench_percentage,45,0.0,0.0
+points_on_bench_percentage,40,0.0,0.0
+points_on_bench_percentage,35,0.0,0.0
+points_on_bench_percentage,30,0.0,0.0
+points_on_bench_percentage,25,0.0,0.0
+points_on_bench_percentage,20,0.0,0.0
+points_on_bench_percentage,15,0.0,0.0
+points_on_bench_percentage,10,0.0,0.0
+points_on_bench_percentage,5,0.0,0.0
