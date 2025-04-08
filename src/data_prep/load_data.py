@@ -259,7 +259,18 @@ def get_player_data(current_season_year):
         current_gameweek = max(player_data["GW"])
 
     except:
-        player_data = "Season Not Started"
-        current_gameweek = "Season Not Started"
+        try:
+            # Manual fix due to api changes
+            local_url = "data/merged_gw.csv"
+
+            # Read the CSV file into a pandas DataFrame
+            player_data = pd.read_csv(local_url)
+
+            # Get latest GW in data
+            current_gameweek = max(player_data["GW"])
+
+        except:
+            player_data = "Season Not Started"
+            current_gameweek = "Season Not Started"
 
     return player_data, current_gameweek
